@@ -1,0 +1,26 @@
+/******* Customized Bootstrap ********/
+
+$primary: #fe9b8e;
+$secondary: #354f8e;
+$light: #eff5f9;
+$dark: #1d2a4d;
+
+$font-family-sans-serif: "Marcellus", sans-serif;
+
+$headings-font-family: "Marcellus", sans-serif;
+
+$body-color: #848e9f;
+
+$headings-color: $dark;
+
+$headings-font-weight: 700;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$link-decoration: none;
+
+@import "bootstrap/scss/bootstrap";

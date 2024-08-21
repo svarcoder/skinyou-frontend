@@ -1,0 +1,113 @@
+import React from "react";
+import BlogImg1 from "../../assets/cosmetician-gives-botox-injection-in-the-stomach-N3Y4WGD-1024x678.jpg";
+import BlogImg2 from "../../assets/beautiful-patient-woman-smile-lying-on-bed-in-surg-P2RWSH3-1024x678.jpg";
+import BlogImg3 from "../../assets/woman-in-cosmetology-studio-on-laser-hair-removal-8SLYCSJ-1024x678.jpg";
+import UserImg from "../../assets/user.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
+
+const articles = [
+  {
+    id: 1,
+    title: "Dr. Geeta’s article on “How to treat hyperpigmentation",
+    description:
+      "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
+    blogImage: BlogImg1,
+    authorImage: UserImg,
+    author: "Dr. Geeta",
+    views: 12345,
+    comments: 123,
+  },
+  {
+    id: 2,
+    title: "Dr. Geeta’s article on How technology has changed beauty",
+    description:
+      "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
+    blogImage: BlogImg2,
+    authorImage: UserImg,
+    author: "Dr. Geeta",
+    views: 12345,
+    comments: 123,
+  },
+  {
+    id: 1,
+    title:
+      "Dr. Geeta’s article on Everything you wanted to know about threadlift",
+    description:
+      "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
+    blogImage: BlogImg3,
+    authorImage: UserImg,
+    author: "Dr. Geeta",
+    views: 12345,
+    comments: 123,
+  },
+];
+
+const Blog: React.FC = () => {
+  return (
+    <div className="container-fluid py-5">
+      <div className="container">
+        <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
+          <h5 className="d-inline-block text-primary about">Latest</h5>
+          <h1 className="display-4">News From the Blog</h1>
+        </div>
+        <div className="row g-5">
+          {articles.map((article) => (
+            <div className="col-xl-4 col-lg-6" key={article?.id}>
+              <div className=" rounded overflow-hidden">
+                <img
+                  className="img-fluid rounded w-100"
+                  src={article.blogImage}
+                  alt="img"
+                />
+                <div className="pt-4 pb-4">
+                  <a className="h3 d-block mb-3" href="/">
+                    {article.title}
+                  </a>
+                  <p className="m-0">{article.description}</p>
+                </div>
+                {/* <div className="d-flex justify-content-between border-top p-4">
+                  <div className="d-flex align-items-center">
+                    <img
+                      className="rounded-circle me-2"
+                      src={article.authorImage}
+                      width={25}
+                      height={25}
+                      alt="img"
+                    />
+                    <small>{article.author}</small>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <small className="ms-3">
+                      <FontAwesomeIcon
+                        icon={faEye}
+                        className="text-primary me-1"
+                      />
+                      {article.views}
+                    </small>
+                    <small className="ms-3">
+                      <FontAwesomeIcon
+                        icon={faComment}
+                        className="text-primary me-1"
+                      />
+                      {article.comments}
+                    </small>
+                  </div>
+                </div> */}
+
+                <button
+                  className="btn btn-outline-dark rounded-pill py-3 px-5"
+                  type="submit"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Blog;

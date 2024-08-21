@@ -1,0 +1,357 @@
+/********** Template CSS **********/
+:root {
+  --primary: #fe9b8e;
+  --secondary: #354f8e;
+  --light: #eff5f9;
+  --dark: #1d2a4d;
+}
+
+.btn {
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 8px 6px -6px #555555;
+  -moz-box-shadow: 0 8px 6px -6px #555555;
+  box-shadow: 0 8px 6px -6px #555555;
+}
+
+.btn-primary {
+  color: #ffffff;
+}
+
+.btn-square {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-sm-square {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-lg-square {
+  width: 46px;
+  height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+a,
+.active {
+  font-family: "Marcellus", sans-serif !important;
+}
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  z-index: 99;
+}
+
+.navbar-wrap {
+  position: absolute;
+  top: 60px;
+  z-index: 9999999999;
+  height: 80px;
+  background: transparent;
+}
+
+.navbar-wrap .container {
+  padding: 0;
+}
+
+.navbar-wrap .navbar {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+.logo {
+  height: 80px;
+  width: 100px;
+}
+
+.hero-text {
+  margin-top: 20%;
+}
+
+.btn-outline-light {
+  border-color: #606c38 !important;
+  color: #606c38 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  position: relative;
+  margin-left: 30px;
+  padding: 30px 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--dark);
+  outline: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (min-width: 992px) {
+  /* .navbar-light .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    background: var(--primary);
+    transition: 0.5s;
+  } */
+
+  .navbar-light .navbar-nav .nav-link:hover::before,
+  .navbar-light .navbar-nav .nav-link.active::before {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+}
+
+.custom-text {
+  color: #606c38;
+}
+
+.hero-header {
+  background: url(../assets/bot.jpg) top right no-repeat;
+  background-size: cover;
+  /* background-color: #fcedea; */
+  height: 100vh;
+}
+
+.service-item {
+  position: relative;
+  height: 350px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.about {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 2rem;
+}
+
+.services-wrap {
+  height: 500px !important;
+}
+
+.service-item .service-icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  /* transform: rotate(-14deg); */
+}
+
+.service-item .service-icon img {
+  /* transform: rotate(15deg); */
+  height: 100px;
+}
+
+.text-wrap {
+  position: relative;
+  z-index: 4;
+}
+
+.testimonial-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/spa-background-with-a-space-for-a-text-MM3Z8HQ.jpg");
+  background-position: 0px -229px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.11;
+  z-index: 1;
+}
+
+.container-top {
+  margin-top: 80px;
+}
+
+.background-image-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  background-image: url("../assets/flowers-and-eucaaliptus-composition-M9PL2FC-removebg-preview.png");
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-item a.btn {
+  position: absolute;
+  width: 60px;
+  bottom: -48px;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+}
+
+.service-item:hover a.btn {
+  bottom: -24px;
+  opacity: 1;
+}
+
+.price-carousel::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background: var(--primary);
+  border-radius: 8px 8px 50% 50%;
+  z-index: -1;
+}
+
+.price-carousel .slick-slide {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px;
+  margin-top: 35px;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+  position: relative;
+  margin: 0 5px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  background: #ffffff;
+  font-size: 22px;
+  border-radius: 45px;
+  transition: 0.5s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+  color: var(--dark);
+}
+
+@media (min-width: 576px) {
+  .team-item .row {
+    height: 350px;
+  }
+}
+
+.team-carousel .owl-nav {
+  position: absolute;
+  padding: 0 45px;
+  width: 100%;
+  height: 45px;
+  top: calc(50% - 22.5px);
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: var(--primary);
+  border-radius: 45px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover {
+  background: var(--dark);
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background: var(--light);
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+}
+
+.testimonial-carousel .owl-item img {
+  width: 150px;
+  height: 150px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em;
+  line-height: 1.5em;
+}
+
+.footer-icon {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.drpdwn-wrap {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
