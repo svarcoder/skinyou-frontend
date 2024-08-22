@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
     <>
       <div>
         <div
-          className="container-fluid text-light mt-5 py-5"
+          className="container-fluid text-light py-5"
           style={{ backgroundColor: "#FFFFFF" }}
         >
           <div className="container py-5">
