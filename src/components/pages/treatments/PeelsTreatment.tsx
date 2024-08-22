@@ -9,7 +9,7 @@ import { faSearch, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
-const BridalPackage: React.FC = () => {
+const PeelsTreatment: React.FC = () => {
   const services = [
     "Web Design",
     "Web Development",
@@ -39,257 +39,176 @@ const BridalPackage: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">Bridal Packages</h3>
+                <h3 className="mb-4">GEL PEELS / CHEMICAL PEELS TREATMENT</h3>
 
-                <h5>
-                  Wedding Mantras – For Flawless Skin & Super Confidence On Your
-                  Big Day!
-                </h5>
+                <h5>For radiant and younger looking skin.</h5>
 
-                <p>
-                  It’s that once-in-a-lifetime moment when you have to look your
-                  radiant and most gorgeous best. And no bride wants to take
-                  chances with that. And since weddings mean several days of
-                  heavy make-up, non-stop food, alcohol and late nights, it’s
-                  best to start a skin regimen as soon as possible.
-                </p>
-
-                <p>
-                  Walking into skin clinics much before the D-day can help give
-                  you near perfect results.
-                </p>
-
-                <p>
-                  Skin treatments for brides and their families should be
-                  planned at least 6 months before the wedding. One can choose
-                  between 6, 4 or 2 months package based on their skin concerns,
-                  time schedule and expectations.
-                </p>
-
-                <h5>Benefits</h5>
+                <h5>Some Skin Facts</h5>
 
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Whitening Treatment
+                    It is largest organ in the body.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Glow Facials
+                    Made up of millions of cells that protect us from external
+                    environmental factors.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Dark Circle Reduction
+                    Everyday thousands of cells die flake off and are replaced
+                    by new cells from beneath the skin.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Skin Tightening
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Inch Loss/ Slimming
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Body Whitening
+                    As we age, this process begins to slow down and the skin
+                    begins to look dull, dark and blotchy. Fine lines and other
+                    signs of sun damage also start appearing.
                   </p>
                 </p>
 
-                <h5>Here’s A Guide On How To Prepare For The Big Day</h5>
-
-                <p>
-                  Note – Our signature facials can be done at anytime to get the
-                  perfect glow.
-                </p>
-
-                <h5>4 – 6 months ahead</h5>
-
-                <p>
-                  Make a list of all your skin problems and expectations before
-                  you visit us. Remember skin treatments are a collaborative
-                  process between skin & you and you. Prescribed appointments
-                  must be kept for desired results.
-                </p>
-
-                <p>
-                  At Skin & You Clinic, Mumbai, we start with a personalized
-                  consult and a Skin Analysis. A home care plan is discussed and
-                  formulated and appointments are scheduled every 4–6 weeks to
-                  monitor results. Consultations include acne, dermatitis,
-                  pigmentation, dark circles, tanned skin and any other medical
-                  skin conditions. The following are the problems that can be
-                  tackled with different treatments.
-                </p>
+                <h5>Chemical Peels Tackle</h5>
 
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Body and facial hair –
-                    <Link to="/medical-clinic/laser-treatment/painless-laser-hair-removal">
-                      PainlessLaser Hair Removal
-                    </Link>
+                    Fine lines and Wrinkles
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Acne scar, rejuvenation, age spots/sun spots –{" "}
-                    <Link to="/treatments/derma-roller-treatment">
-                      Derma roller, Mesotherapy
-                    </Link>
+                    Uneven pigmentation
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Removal of any skin growth from the body –{" "}
-                    <Link to="/treatments/rf-growth-removal-cautery">
-                      RF Growth Removal
-                    </Link>
+                    Shallow acne scars
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Inch loss and body shaping –{" "}
-                    <Link to="/treatments/body-slimming-treatment">
-                      Body Slimming Treatment,
-                    </Link>
-                    <Link to="/treatments/accent-ultra-skin-body-contouring">
-                      Accent Ultra Body Contouring
-                    </Link>
+                    Sun damaged scars
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Check for internal nutritious deficiencies and formulate a
-                    diet plan
+                    Age spots
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Dandruff, dry lusterless hair and hair fall –{" "}
-                    <Link to="/treatments/hair-loss-treatment">
-                      Hair Loss treatment
-                    </Link>
+                    Freckling
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    Dull, tired and neglected skin
                   </p>
                 </p>
 
-                <h5> 1 to 2 Months before the wedding </h5>
+                <h5>About Chemical Peeling/Skin Rejuvenation</h5>
+
                 <p>
-                  {" "}
-                  There is still time at this point to take care of the finer
-                  aspects.
+                  This simple technique involves a solution applied to the skin
+                  to remove dead skin cells and stimulate the production of new
+                  skin cells. It tightens the skin, reduces wrinkling and
+                  restores a more youthful appearance.
                 </p>
-
-                <p className="d-flex flex-column justify-content-start">
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Permanent hair removal is possible with 2-3 sittings and can
-                    be continued after the wedding
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Hand treatments to wear the perfect ring
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Treatment for cracked heels and feet
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Open pores can be treated by a pore cleansing facial
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Booking a make-up artist and make-up advice
-                  </p>
-                </p>
-
-                <h5>2 to 4 weeks ahead </h5>
+                <h5>Different Types Of Peels </h5>
                 <p>
-                  Radiance treatments can start and the following skin issues
-                  can be tackled
+                  After determining with the doctor the level of skin
+                  improvement you desire, the type of peel will be decided. Some
+                  of the types are
                 </p>
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Skin tightening, lines and wrinkles –{" "}
-                    <Link to="/treatments/caci-treatment">
-                      Caci Treatment{" "}
-                    </Link>{" "}
-                    or{" "}
-                    <Link to="/treatments/non-surgicalskin-tightening">
-                      Non Surgical Skin Tightening
-                    </Link>
+                    Superficial Peels – These are light peels that cause some
+                    redness and possible dryness for a few days.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Skin rejuvenation, fine lines, opulence –
-                    <Link to="/treatments/oxygen-facial-treatment">
-                      OxygenFacial
-                    </Link>{" "}
-                    – a pure oxygen infusion into the skin with serums
-                    containing vitamins
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Fine lines, wrinkles, face contouring –
-                    <Link to="/treatments/botox-treatment">Botox</Link> for a
-                    youthful look
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Ideal smile and luscious lips –{" "}
-                    <Link to="/treatments/dermal-filler-treatment">
-                      Dermal Fillers{" "}
-                    </Link>{" "}
-                    –Juvederm XC , Restylane
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Uneven Tone & Texture –{" "}
-                    <Link to="/treatments/skin-polishing-microdermabrasion">
-                      Skin Polishing
-                    </Link>
-                    ,
-                    <Link to="/treatments/mesotheraphy-treatment">
-                      Mesotherapy
-                    </Link>{" "}
-                    ,
-                    <Link to="/treatments/gel-peels-chemical-peels-treatment">
-                      Gel peels
-                    </Link>
+                    Medium and Deep Peels – These can result in dryness,
+                    swelling, peeling or sometimes scabbing.
                   </p>
                 </p>
 
-                <h5> 2-3 days before the Big Day</h5>
                 <p>
-                  This is the time when cocktails and parties begin and quick
-                  fixes save the day.{" "}
+                  Note – Moisturisers should to be applied regularly for a few
+                  days with strict sun protection/avoidance. At first the new
+                  skin, may look pinkish but within a week’s time, it will
+                  gradually blend in. Following a chemical peel, your new skin
+                  will be tighter, smoother and maybe even lighter than before
+                  it.
                 </p>
+
+                <h5>Advice For Chemical Peels</h5>
+
+                <h5>Pre Treatment</h5>
+
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Late night party fix OxygenFacial, Non Surgical Skin
-                    Tightening
+                    Stop all applications, 2 days before the treatment is to
+                    start.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    For a glow or dry skin – Caci Treatment, Skin polishing.
+                    Use sunscreen regularly before the start of the treatment.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Addressing active lesions with spot treatments – Spot peels
-                    /cortisone injection
-                  </p>
-                  <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    What to carry on your honey moon – A customized honeymoon
-                    product kit to continue the flawless look
+                    If on any kind of medication, please share all details with
+                    the doctor performing the procedure.
                   </p>
                 </p>
 
-                <h5>Why Skin & You Clinic for Bridal Services ? </h5>
+                <h5>On the Day of Treatment</h5>
+
+                <p className="d-flex flex-column justify-content-start">
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    Do not wear any make-up on the day of the treatment.
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />A
+                    peel procedure can sometimes have some very short-term
+                    after-effects, so don’t be alarmed if you experience
+                    redness, irritation, peeling and scabbing of skin for 1-2
+                    days after the treatment.
+                  </p>
+                </p>
+
+                <h5>Post Treatment</h5>
+
+                <p className="d-flex flex-column justify-content-start">
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    Avoid direct sun exposure after the treatment. Use sun
+                    screen regularly, SPF 30+ or as advised.
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    Avoid saunas, steam and sunbathing for 7 days after the
+                    procedure.
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    You can wash your face 6-8 hours after the procedure, but we
+                    recommend using a gentle face wash.
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    We recommend a gap of 3-4 weeks between peels.
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    Post the procedure, remember to use a moisturizer every 6
+                    hours for at least 3 days
+                  </p>
+                </p>
+
+                <h5>Why Skin & You Clinic for Peels Procedure? </h5>
                 <p>
-                  A customised plan is made as each bride is different and each
-                  has different concerns. Skin & You Clinic is the one stop
-                  destination for all bridal skin and slimming. We understand
-                  the need to look good on the wedding day. We have treated
-                  countless brides and they have looked there best on the most
-                  important day of there life.{" "}
+                  We at Skin & You Clinic conduct all type of peel with lasting
+                  results. All peels are done under complete medical guidance
+                  with the latest peels used with good efficacy,safety and
+                  toleribility profile.{" "}
                 </p>
 
                 <div className="d-flex justify-content-between bg-light rounded p-4 mt-4 mb-4">
@@ -481,4 +400,4 @@ const BridalPackage: React.FC = () => {
   );
 };
 
-export default BridalPackage;
+export default PeelsTreatment;

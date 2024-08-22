@@ -44,12 +44,118 @@ const navItems = [
         label: "Hydration Facial Treatment",
       },
       {
-        path: "/treatments/hydration-facial-treatment",
-        label: "Hydration Facial Treatment",
+        path: "/treatments/glutathione-whitening-treatment",
+        label: "Glutathione Whitening Treatment",
       },
       {
-        path: "/treatments/hydration-facial-treatment",
-        label: "Hydration Facial Treatment",
+        path: "/treatments/cosmelan-depigmentation-treatment",
+        label: "Cosmelan Depigmentation Treatment",
+      },
+      {
+        path: "/treatments/low-level-light-laser-for-hair-loss",
+        label: "Low Level Light Laser for Hair Loss",
+      },
+      {
+        path: "/treatments/botox-treatment",
+        label: "Botox Treatment",
+      },
+      {
+        path: "/treatments/dermal-filler-treatment",
+        label: "Dermal Filler Treatment",
+      },
+      {
+        path: "/treatments/clear-lift-photo-facial",
+        label: "Clear Lift Photo Facial",
+      },
+      {
+        path: "/treatments/pore-tightening-treatment",
+        label: "Pore Tighting Treatment",
+      },
+      {
+        path: "/treatments/derma-roller-treatment",
+        label: "Derma Roller Treatment",
+      },
+      {
+        path: "/treatments/mesotheraphy-treatment",
+        label: "Mesotheraphy Treatment",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Placenta Extract Treatment",
+      },
+      //hdjhdjjd
+
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Prp Vampire Facelift",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Liquid Facelift Treatment",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Stretch Marks Treatment",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Non Surgical Skin Tightening",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Hair Loss Treatment",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Semi Permanent Make Up",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Medical Tattooing",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Painless Laser Hair Removal",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Ndyag/ Hair Removal Treatment",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Accent Ultra Skin Body Contouring",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Accent Ultra RF Pixel",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "RF Growth Removal",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Harmony XL Birth Mark Removal",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Harmony XL Spider Vein Removal",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "PRP for Hair Loss Treatment",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Stem Cells for Hair Loss",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Painless Tattoo Removal",
+      },
+      {
+        path: "/treatments/placenta-extract-treatment",
+        label: "Body Slimming Treatment",
       },
     ],
   },
@@ -134,7 +240,7 @@ const NavBar: React.FC = () => {
                         <div className="drpdwn-wrap">
                           <div className="drpdwn-element">
                             {item.subItems
-                              .slice(0, 6)
+                              .slice(0, 13)
                               .map((subItem, subIndex) => (
                                 <Link
                                   key={subIndex}
@@ -150,7 +256,7 @@ const NavBar: React.FC = () => {
                           </div>
                           <div className="drpdwn-element">
                             {item.subItems
-                              .slice(6, 12)
+                              .slice(13, 26)
                               .map((subItem, subIndex) => (
                                 <Link
                                   key={subIndex}
@@ -166,7 +272,7 @@ const NavBar: React.FC = () => {
                           </div>
                           <div className="drpdwn-element">
                             {item.subItems
-                              .slice(12, 18)
+                              .slice(26, 39)
                               .map((subItem, subIndex) => (
                                 <Link
                                   key={subIndex}

@@ -17,14 +17,14 @@ const LandingPage: React.FC = () => {
       <Hero />
       <About />
       <Services2 />
-      <Services />
-      <Apointment />
+      {/* <Services /> */}
+      {/* <Apointment /> */}
       {/* <Pricing /> */}
       {/* <Team /> */}
       {/* <Search /> */}
       <Blog />
       <Testimonials />
-      <Message />
+      {/* <Message /> */}
     </>
   );
 };

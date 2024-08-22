@@ -43,14 +43,14 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <div className="container-fluid py-5 testimonial-wrap">
+    <div className="container-fluid p-0 testimonial-wrap">
       <div className="container">
-        <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
-          <h5 className="d-inline-block text-primary text-uppercase about text-wrap">
+        <div className="text-center mx-auto  mb-5" style={{ maxWidth: 500 }}>
+          <h5 className="d-inline-block mt-2 text-primary about">
             Testimonial
           </h5>
-          <h1 className="display-4">Patients Say About Our Services</h1>
         </div>
+
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="testimonial-carousel">
@@ -58,7 +58,7 @@ const Testimonials: React.FC = () => {
                 {testimonials &&
                   testimonials.map((item, i) => (
                     <div className="testimonial-item text-center" key={i}>
-                      <div className="position-relative mb-5">
+                      <div className="position-relative mb-2">
                         <img
                           className="img-fluid rounded-circle mx-auto"
                           src={item?.image}
