@@ -17,11 +17,15 @@ import TighteningFacialTreatment from "../pages/treatments/TighteningFacialTreat
 import CleanUpTreatment from "../pages/treatments/CleanUpTreatment";
 import OxygenTreatment from "../pages/treatments/OxygenTreatment";
 import HydrationFacialTreatment from "../pages/treatments/HydrationFacialTreatment";
+import InstantTalkButton from "../apointmentButton/InstantTalkButton";
+import BackToTopButton from "../BackToTopButton.tsx/BackToTopButton";
 
 const HomeRoute: React.FC = () => {
   return (
     <Router>
       {/* <TopBar /> */}
+      <InstantTalkButton />
+      <BackToTopButton />
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />

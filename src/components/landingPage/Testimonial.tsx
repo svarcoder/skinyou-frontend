@@ -3,8 +3,13 @@ import Testimonials1 from "../../assets/testimonial-1.jpg";
 import Testimonials2 from "../../assets/testimonial-2.jpg";
 import Testimonials3 from "../../assets/testimonial-3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faQuoteLeft,
+  faCircleArrowRight,
+  faCircleArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
+import useWindowWidth from "../../hook/useWindowWidth";
 
 const testimonials = [
   {
@@ -31,16 +36,58 @@ const testimonials = [
 ];
 
 const Testimonials: React.FC = () => {
+  const windowWidth = useWindowWidth();
+
+  const NextArrow = (props: any) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          bottom: "-25px",
+          zIndex: "99999999",
+        }} // Position down
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faCircleArrowRight} />
+      </div>
+    );
+  };
+
+  const PrevArrow = (props: any) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          bottom: "-25px",
+          zIndex: "99999999",
+        }}
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faCircleArrowLeft} style={{ fontSize: "1px" }} />
+      </div>
+    );
+  };
+
   const settings = {
     dots: false,
     infinite: true,
-    arrows: false,
+    arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
+
+  console.log(windowWidth);
 
   return (
     <div className="container-fluid p-0 testimonial-wrap">
