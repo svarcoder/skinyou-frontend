@@ -5,6 +5,12 @@ import BlogImg3 from "../../assets/woman-in-cosmetology-studio-on-laser-hair-rem
 import UserImg from "../../assets/user.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
+import useWindowWidth from "../../hook/useWindowWidth";
+import {
+  faCircleArrowRight,
+  faCircleArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import Slider from "react-slick";
 
 const articles = [
   {
@@ -44,6 +50,57 @@ const articles = [
 ];
 
 const Blog: React.FC = () => {
+  const windowWidth = useWindowWidth();
+
+  const NextArrow = (props: any) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          bottom: "-25px",
+          zIndex: "99999999",
+        }} // Position down
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faCircleArrowRight} />
+      </div>
+    );
+  };
+
+  const PrevArrow = (props: any) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          bottom: "-25px",
+          zIndex: "99999999",
+        }}
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faCircleArrowLeft} style={{ fontSize: "1px" }} />
+      </div>
+    );
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
   return (
     <div className="container-fluid py-5">
       <div className="container">
@@ -51,60 +108,120 @@ const Blog: React.FC = () => {
           <h5 className="d-inline-block text-primary about">Latest</h5>
           <h1 className="display-4">News From the Blog</h1>
         </div>
-        <div className="row g-5">
-          {articles.map((article) => (
-            <div className="col-xl-4 col-lg-6" key={article?.id}>
-              <div className=" rounded overflow-hidden">
-                <img
-                  className="img-fluid rounded w-100"
-                  src={article.blogImage}
-                  alt="img"
-                />
-                <div className="pt-4 pb-4">
-                  <a className="h3 d-block mb-3" href="/">
-                    {article.title}
-                  </a>
-                  <p className="m-0">{article.description}</p>
-                </div>
-                {/* <div className="d-flex justify-content-between border-top p-4">
-                  <div className="d-flex align-items-center">
+
+        {windowWidth <= 991 ? (
+          <div className="row g-5">
+            <Slider {...settings}>
+              {articles.map((article) => (
+                <div className="col-xl-4 col-lg-6" key={article?.id}>
+                  <div className=" rounded overflow-hidden">
                     <img
-                      className="rounded-circle me-2"
-                      src={article.authorImage}
-                      width={25}
-                      height={25}
+                      className="img-fluid rounded w-100"
+                      src={article.blogImage}
                       alt="img"
                     />
-                    <small>{article.author}</small>
-                  </div>
-                  <div className="d-flex align-items-center">
-                    <small className="ms-3">
-                      <FontAwesomeIcon
-                        icon={faEye}
-                        className="text-primary me-1"
-                      />
-                      {article.views}
-                    </small>
-                    <small className="ms-3">
-                      <FontAwesomeIcon
-                        icon={faComment}
-                        className="text-primary me-1"
-                      />
-                      {article.comments}
-                    </small>
-                  </div>
-                </div> */}
+                    <div className="pt-4 pb-4">
+                      <a className="h3 d-block mb-3" href="/">
+                        {article.title}
+                      </a>
+                      <p className="m-0">{article.description}</p>
+                    </div>
+                    {/* <div className="d-flex justify-content-between border-top p-4">
+          <div className="d-flex align-items-center">
+            <img
+              className="rounded-circle me-2"
+              src={article.authorImage}
+              width={25}
+              height={25}
+              alt="img"
+            />
+            <small>{article.author}</small>
+          </div>
+          <div className="d-flex align-items-center">
+            <small className="ms-3">
+              <FontAwesomeIcon
+                icon={faEye}
+                className="text-primary me-1"
+              />
+              {article.views}
+            </small>
+            <small className="ms-3">
+              <FontAwesomeIcon
+                icon={faComment}
+                className="text-primary me-1"
+              />
+              {article.comments}
+            </small>
+          </div>
+        </div> */}
 
-                <button
-                  className="btn btn-outline-dark rounded-pill py-3 px-5"
-                  type="submit"
-                >
-                  Read More
-                </button>
+                    <button
+                      className="btn btn-outline-dark rounded-pill py-3 px-5"
+                      type="submit"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        ) : (
+          <div className="row g-5">
+            {articles.map((article) => (
+              <div className="col-xl-4 col-lg-6" key={article?.id}>
+                <div className=" rounded overflow-hidden">
+                  <img
+                    className="img-fluid rounded w-100"
+                    src={article.blogImage}
+                    alt="img"
+                  />
+                  <div className="pt-4 pb-4">
+                    <a className="h3 d-block mb-3" href="/">
+                      {article.title}
+                    </a>
+                    <p className="m-0">{article.description}</p>
+                  </div>
+                  {/* <div className="d-flex justify-content-between border-top p-4">
+          <div className="d-flex align-items-center">
+            <img
+              className="rounded-circle me-2"
+              src={article.authorImage}
+              width={25}
+              height={25}
+              alt="img"
+            />
+            <small>{article.author}</small>
+          </div>
+          <div className="d-flex align-items-center">
+            <small className="ms-3">
+              <FontAwesomeIcon
+                icon={faEye}
+                className="text-primary me-1"
+              />
+              {article.views}
+            </small>
+            <small className="ms-3">
+              <FontAwesomeIcon
+                icon={faComment}
+                className="text-primary me-1"
+              />
+              {article.comments}
+            </small>
+          </div>
+        </div> */}
+
+                  <button
+                    className="btn btn-outline-dark rounded-pill py-3 px-5"
+                    type="submit"
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

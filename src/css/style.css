@@ -55,6 +55,9 @@ a,
   bottom: 0;
   border-radius: 50% 50% 0 0;
   z-index: 99;
+  background-color: #fe9b8e !important;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar-wrap {
@@ -76,8 +79,8 @@ a,
 }
 
 .logo {
-  height: 80px;
-  width: 100px;
+  height: 90px;
+  width: 120px;
 }
 
 .hero-text {
@@ -92,14 +95,38 @@ a,
 .navbar-light .navbar-nav .nav-link {
   font-family: "Jost", sans-serif;
   position: relative;
-  margin-left: 30px;
+  margin-left: 10px;
   padding: 30px 0;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--dark);
   outline: none;
   transition: 0.5s;
   text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    height: 50px;
+    width: 100px;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+  opacity: 1;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -354,4 +381,79 @@ a,
   justify-content: flex-start !important;
   align-items: flex-start !important;
   gap: 10px !important;
+}
+
+@media (max-width: 992px) {
+  .drpdwn-wrap {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .dropdown-item {
+    white-space: break-spaces !important;
+  }
+}
+
+.contact-button {
+  background-color: #fe9b8e !important;
+  padding: 12px 12px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.8; */
+  position: fixed !important;
+  bottom: 23px;
+  left: 28px;
+  width: 180px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 9999 !important;
+  bottom: -25px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #fe9b8e !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  top: 105% !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 34px !important;
+  color: white !important;
+  margin-bottom: -5px !important;
+}
+
+.slick-prev {
+  left: 44% !important;
+}
+
+.slick-next {
+  right: 44% !important;
+}
+
+@media (max-width: 992px) {
+  .slick-prev,
+  .slick-next {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 22px !important;
+    margin-top: -2.5px !important;
+  }
+
+  .slick-prev {
+    left: 40% !important;
+  }
+
+  .slick-next {
+    right: 40% !important;
+  }
 }
