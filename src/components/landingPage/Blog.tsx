@@ -11,6 +11,7 @@ import {
   faCircleArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
+import { useInView } from "react-intersection-observer";
 
 const articles = [
   {
@@ -51,6 +52,11 @@ const articles = [
 
 const Blog: React.FC = () => {
   const windowWidth = useWindowWidth();
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
 
   const NextArrow = (props: any) => {
     const { className, style, onClick } = props;
@@ -102,87 +108,43 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid py-5" ref={ref}>
       <div className="container">
         <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
-          <h5 className="d-inline-block text-primary about">Latest</h5>
-          <h1 className="display-4">News From the Blog</h1>
+          <h5 className="d-inline-block text-primary about animate__animated animate__bounceInLeft animate__delay-1s">
+            Latest
+          </h5>
+          <h1 className="display-4 animate__animated animate__bounceInRight animate__delay-1s">
+            News From the Blog
+          </h1>
         </div>
 
-        {windowWidth <= 991 ? (
-          <div className="row g-5">
-            <Slider {...settings}>
-              {articles.map((article) => (
-                <div className="col-xl-4 col-lg-6" key={article?.id}>
-                  <div className=" rounded overflow-hidden">
-                    <img
-                      className="img-fluid rounded w-100"
-                      src={article.blogImage}
-                      alt="img"
-                    />
-                    <div className="pt-4 pb-4">
-                      <a className="h3 d-block mb-3" href="/">
-                        {article.title}
-                      </a>
-                      <p className="m-0">{article.description}</p>
-                    </div>
-                    {/* <div className="d-flex justify-content-between border-top p-4">
-          <div className="d-flex align-items-center">
-            <img
-              className="rounded-circle me-2"
-              src={article.authorImage}
-              width={25}
-              height={25}
-              alt="img"
-            />
-            <small>{article.author}</small>
-          </div>
-          <div className="d-flex align-items-center">
-            <small className="ms-3">
-              <FontAwesomeIcon
-                icon={faEye}
-                className="text-primary me-1"
-              />
-              {article.views}
-            </small>
-            <small className="ms-3">
-              <FontAwesomeIcon
-                icon={faComment}
-                className="text-primary me-1"
-              />
-              {article.comments}
-            </small>
-          </div>
-        </div> */}
-
-                    <button
-                      className="btn btn-outline-dark rounded-pill py-3 px-5"
-                      type="submit"
+        {windowWidth <= 991
+          ? inView && (
+              <div className="row g-5">
+                <Slider {...settings}>
+                  {articles.map((article, i) => (
+                    <div
+                      className={`col-xl-4 col-lg-6 animate__animated  animate__delay-1s ${
+                        i % 2 === 0
+                          ? "animate__bounceInUp"
+                          : "animate__bounceInDown"
+                      }`}
+                      key={article?.id}
                     >
-                      Read More
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        ) : (
-          <div className="row g-5">
-            {articles.map((article) => (
-              <div className="col-xl-4 col-lg-6" key={article?.id}>
-                <div className=" rounded overflow-hidden">
-                  <img
-                    className="img-fluid rounded w-100"
-                    src={article.blogImage}
-                    alt="img"
-                  />
-                  <div className="pt-4 pb-4">
-                    <a className="h3 d-block mb-3" href="/">
-                      {article.title}
-                    </a>
-                    <p className="m-0">{article.description}</p>
-                  </div>
-                  {/* <div className="d-flex justify-content-between border-top p-4">
+                      <div className=" rounded overflow-hidden">
+                        <img
+                          className="img-fluid rounded w-100"
+                          src={article.blogImage}
+                          alt="img"
+                        />
+                        <div className="pt-4 pb-4">
+                          <a className="h3 d-block mb-3" href="/">
+                            {article.title}
+                          </a>
+                          <p className="m-0">{article.description}</p>
+                        </div>
+                        {/* <div className="d-flex justify-content-between border-top p-4">
           <div className="d-flex align-items-center">
             <img
               className="rounded-circle me-2"
@@ -211,17 +173,81 @@ const Blog: React.FC = () => {
           </div>
         </div> */}
 
-                  <button
-                    className="btn btn-outline-dark rounded-pill py-3 px-5"
-                    type="submit"
-                  >
-                    Read More
-                  </button>
-                </div>
+                        <button
+                          className="btn btn-outline-dark rounded-pill py-3 px-5"
+                          type="submit"
+                        >
+                          Read More
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
               </div>
-            ))}
+            )
+          : inView && (
+              <div className="row g-5">
+                {articles.map((article, i) => (
+                  <div
+                    className={`col-xl-4 col-lg-6 animate__animated  animate__delay-1s ${
+                      i % 2 === 0
+                        ? "animate__bounceInUp"
+                        : "animate__bounceInDown"
+                    }`}
+                    key={article?.id}
+                  >
+                    <div className=" rounded overflow-hidden">
+                      <img
+                        className="img-fluid rounded w-100"
+                        src={article.blogImage}
+                        alt="img"
+                      />
+                      <div className="pt-4 pb-4">
+                        <a className="h3 d-block mb-3" href="/">
+                          {article.title}
+                        </a>
+                        <p className="m-0">{article.description}</p>
+                      </div>
+                      {/* <div className="d-flex justify-content-between border-top p-4">
+          <div className="d-flex align-items-center">
+            <img
+              className="rounded-circle me-2"
+              src={article.authorImage}
+              width={25}
+              height={25}
+              alt="img"
+            />
+            <small>{article.author}</small>
           </div>
-        )}
+          <div className="d-flex align-items-center">
+            <small className="ms-3">
+              <FontAwesomeIcon
+                icon={faEye}
+                className="text-primary me-1"
+              />
+              {article.views}
+            </small>
+            <small className="ms-3">
+              <FontAwesomeIcon
+                icon={faComment}
+                className="text-primary me-1"
+              />
+              {article.comments}
+            </small>
+          </div>
+        </div> */}
+
+                      <button
+                        className="btn btn-outline-dark rounded-pill py-3 px-5"
+                        type="submit"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
       </div>
     </div>
   );

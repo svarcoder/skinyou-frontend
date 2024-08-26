@@ -11,7 +11,7 @@ import {
   faCircleArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
-
+import { useInView } from "react-intersection-observer";
 const services = [
   {
     id: 1,
@@ -90,6 +90,11 @@ const services = [
 const Services2: React.FC = () => {
   const windowWidth = useWindowWidth();
 
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
+
   const NextArrow = (props: any) => {
     const { className, style, onClick } = props;
     return (
@@ -140,134 +145,150 @@ const Services2: React.FC = () => {
   };
 
   return (
-    <div className="container-fluid">
-      {windowWidth <= 991 ? (
-        <div className="row g-0">
-          <Slider {...settings}>
-            {services.map((service, i) => (
-              <div className="col " key={service?.id}>
-                <div
-                  className="service-item rounded d-flex flex-column align-items-center justify-content-around g-5 text-center services-wrap"
-                  style={{
-                    backgroundColor:
-                      i === 0
-                        ? "#f6fbef"
-                        : i === 2
-                        ? "#fcf8ec"
-                        : i === 4
-                        ? "#F2FCFC"
-                        : "white",
-                  }}
-                >
+    <div className="container-fluid" ref={ref}>
+      {windowWidth <= 991
+        ? inView && (
+            <div className="row g-0">
+              <Slider {...settings}>
+                {services.map((service, i) => (
                   <div
-                    className="service-icon mb-4"
-                    style={{
-                      backgroundColor:
-                        i === 1 ? "#FFF9FD" : i === 3 ? "#FFF7F7" : "",
-                    }}
+                    className={`col animate__animated  animate__delay-1s ${
+                      i % 2 === 0
+                        ? "animate__bounceInDown"
+                        : "animate__bounceInUp"
+                    }`}
+                    key={service?.id}
                   >
-                    <img src={service?.icon} alt="Icon" />
-                  </div>
-                  <div>
-                    <h4 className="mb-3">{service.title}</h4>
-                    <p className="m-0 description">{service.description}</p>
-
-                    <button
-                      className="btn rounded-pill py-3 px-5 mt-4"
-                      type="submit"
+                    <div
+                      className="service-item rounded d-flex flex-column align-items-center justify-content-around g-5 text-center services-wrap"
                       style={{
                         backgroundColor:
                           i === 0
-                            ? "#BCD69B"
-                            : i === 1
-                            ? "#E4AED1"
+                            ? "#f6fbef"
                             : i === 2
-                            ? "#EFDBA2"
-                            : i === 3
-                            ? "#F7B1B0"
+                            ? "#fcf8ec"
                             : i === 4
-                            ? "#A8D9D8"
+                            ? "#F2FCFC"
                             : "white",
                       }}
                     >
-                      Know More
-                    </button>
-                  </div>
+                      <div
+                        className="service-icon mb-4"
+                        style={{
+                          backgroundColor:
+                            i === 1 ? "#FFF9FD" : i === 3 ? "#FFF7F7" : "",
+                        }}
+                      >
+                        <img src={service?.icon} alt="Icon" />
+                      </div>
+                      <div>
+                        <h4 className="mb-3">{service.title}</h4>
+                        <p className="m-0 description">{service.description}</p>
 
-                  {/* <a
+                        <button
+                          className="btn rounded-pill py-3 px-5 mt-4"
+                          type="submit"
+                          style={{
+                            backgroundColor:
+                              i === 0
+                                ? "#BCD69B"
+                                : i === 1
+                                ? "#E4AED1"
+                                : i === 2
+                                ? "#EFDBA2"
+                                : i === 3
+                                ? "#F7B1B0"
+                                : i === 4
+                                ? "#A8D9D8"
+                                : "white",
+                          }}
+                        >
+                          Know More
+                        </button>
+                      </div>
+
+                      {/* <a
                  className="btn btn-lg btn-primary rounded-pill"
                  href={service.link}
                >
                  <i className="bi bi-arrow-right" />
                </a> */}
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      ) : (
-        <div className="row g-0">
-          {services.map((service, i) => (
-            <div className="col " key={service?.id}>
-              <div
-                className="service-item rounded d-flex flex-column align-items-center justify-content-around g-5 text-center services-wrap"
-                style={{
-                  backgroundColor:
-                    i === 0
-                      ? "#f6fbef"
-                      : i === 2
-                      ? "#fcf8ec"
-                      : i === 4
-                      ? "#F2FCFC"
-                      : "white",
-                }}
-              >
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          )
+        : inView && (
+            <div className="row g-0">
+              {services.map((service, i) => (
                 <div
-                  className="service-icon mb-4"
-                  style={{
-                    backgroundColor:
-                      i === 1 ? "#FFF9FD" : i === 3 ? "#FFF7F7" : "",
-                  }}
+                  className={`col animate__animated  animate__delay-1s ${
+                    i % 2 === 0
+                      ? "animate__bounceInDown"
+                      : "animate__bounceInUp"
+                  }`}
+                  key={service?.id}
                 >
-                  <img src={service?.icon} alt="Icon" />
-                </div>
-                <div>
-                  <h4 className="mb-3">{service.title}</h4>
-                  <p className="m-0 description">{service.description}</p>
-
-                  <button
-                    className="btn rounded-pill py-3 px-5 mt-4"
-                    type="submit"
+                  <div
+                    className="service-item rounded d-flex flex-column align-items-center justify-content-around g-5 text-center services-wrap"
                     style={{
                       backgroundColor:
                         i === 0
-                          ? "#BCD69B"
-                          : i === 1
-                          ? "#E4AED1"
+                          ? "#f6fbef"
                           : i === 2
-                          ? "#EFDBA2"
-                          : i === 3
-                          ? "#F7B1B0"
+                          ? "#fcf8ec"
                           : i === 4
-                          ? "#A8D9D8"
+                          ? "#F2FCFC"
                           : "white",
                     }}
                   >
-                    Know More
-                  </button>
-                </div>
+                    <div
+                      className="service-icon mb-4"
+                      style={{
+                        backgroundColor:
+                          i === 1 ? "#FFF9FD" : i === 3 ? "#FFF7F7" : "",
+                      }}
+                    >
+                      <img src={service?.icon} alt="Icon" />
+                    </div>
+                    <div>
+                      <h4 className="mb-3">{service.title}</h4>
+                      <p className="m-0 description">{service.description}</p>
 
-                {/* <a
+                      <button
+                        className="btn rounded-pill py-3 px-5 mt-4"
+                        type="submit"
+                        style={{
+                          backgroundColor:
+                            i === 0
+                              ? "#BCD69B"
+                              : i === 1
+                              ? "#E4AED1"
+                              : i === 2
+                              ? "#EFDBA2"
+                              : i === 3
+                              ? "#F7B1B0"
+                              : i === 4
+                              ? "#A8D9D8"
+                              : "white",
+                        }}
+                      >
+                        Know More
+                      </button>
+                    </div>
+
+                    {/* <a
                  className="btn btn-lg btn-primary rounded-pill"
                  href={service.link}
                >
                  <i className="bi bi-arrow-right" />
                </a> */}
-              </div>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      )}
+          )}
     </div>
   );
 };

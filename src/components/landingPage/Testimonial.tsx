@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import useWindowWidth from "../../hook/useWindowWidth";
+import { useInView } from "react-intersection-observer";
 
 const testimonials = [
   {
@@ -37,6 +38,11 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
   const windowWidth = useWindowWidth();
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
 
   const NextArrow = (props: any) => {
     const { className, style, onClick } = props;
@@ -87,10 +93,8 @@ const Testimonials: React.FC = () => {
     prevArrow: <PrevArrow />,
   };
 
-  console.log(windowWidth);
-
   return (
-    <div className="container-fluid p-0 testimonial-wrap">
+    <div className="container-fluid p-0 testimonial-wrap" ref={ref}>
       <div className="container">
         <div className="text-center mx-auto  mb-5" style={{ maxWidth: 500 }}>
           <h5 className="d-inline-block mt-2 text-primary about">
@@ -100,38 +104,44 @@ const Testimonials: React.FC = () => {
 
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <div className="testimonial-carousel">
-              <Slider {...settings}>
-                {testimonials &&
-                  testimonials.map((item, i) => (
-                    <div className="testimonial-item text-center" key={i}>
-                      <div className="position-relative mb-2">
-                        <img
-                          className="img-fluid rounded-circle mx-auto"
-                          src={item?.image}
-                          alt="img"
-                        />
-                        <div
-                          className="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
-                          style={{ width: 60, height: 60 }}
-                        >
-                          <FontAwesomeIcon
-                            icon={faQuoteLeft}
-                            size="2x"
-                            className="text-primary"
+            {inView && (
+              <div className="testimonial-carousel">
+                <Slider {...settings}>
+                  {testimonials &&
+                    testimonials.map((item, i) => (
+                      <div className="testimonial-item text-center" key={i}>
+                        <div className="position-relative mb-2">
+                          <img
+                            className="img-fluid rounded-circle mx-auto animate__animated animate__bounceInLeft animate__delay-1s"
+                            src={item?.image}
+                            alt="img"
                           />
+                          <div
+                            className="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                            style={{ width: 60, height: 60 }}
+                          >
+                            <FontAwesomeIcon
+                              icon={faQuoteLeft}
+                              size="2x"
+                              className="text-primary"
+                            />
+                          </div>
                         </div>
+                        <p className="fs-4 fw-normal animate__animated animate__bounceInRight animate__delay-1s">
+                          {item?.feedback}
+                        </p>
+                        <hr className="w-25 mx-auto" />
+                        <h3 className="animate__animated animate__bounceInUp animate__delay-1s">
+                          {item?.name}
+                        </h3>
+                        <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__delay-1s">
+                          {item?.date}
+                        </h6>
                       </div>
-                      <p className="fs-4 fw-normal">{item?.feedback}</p>
-                      <hr className="w-25 mx-auto" />
-                      <h3>{item?.name}</h3>
-                      <h6 className="fw-normal text-primary mb-3">
-                        {item?.date}
-                      </h6>
-                    </div>
-                  ))}
-              </Slider>
-            </div>
+                    ))}
+                </Slider>
+              </div>
+            )}
           </div>
         </div>
       </div>

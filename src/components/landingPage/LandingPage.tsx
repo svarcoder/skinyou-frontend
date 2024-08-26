@@ -25,15 +25,11 @@ const LandingPage: React.FC = () => {
   useEffect(() => {
     const getPosts = async () => {
       const fetchedPosts = await fetchInstagramPosts();
-      console.log(fetchedPosts, "gggggggg");
-
       setPosts(fetchedPosts);
     };
 
     getPosts();
   }, []);
-
-  console.log(posts, "hhhhh");
 
   return (
     <>
