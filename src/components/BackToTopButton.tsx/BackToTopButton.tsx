@@ -28,7 +28,10 @@ const BackToTopButton: React.FC = () => {
   return (
     <>
       {showButton && (
-        <button className="back-to-top" onClick={scrollToTop}>
+        <button
+          className={`back-to-top animate__animated animate__delay-0.5s animate__backInRight`}
+          onClick={scrollToTop}
+        >
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
       )}

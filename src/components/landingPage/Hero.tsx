@@ -31,11 +31,15 @@ const Hero: React.FC = () => {
         <div className="container wide">
           <div className="row justify-content-left">
             <div className="col-lg-5">
-              <h1 data-caption-animate="fadeInUp" data-caption-delay={100}>
+              <h1
+                data-caption-animate="fadeInUp"
+                data-caption-delay={100}
+                className="animate__animated animate__bounceInLeft animate__delay-1s"
+              >
                 Instant <br className="br-none" /> Solution
               </h1>
               <p
-                className="lead text-custom-blue"
+                className="lead text-custom-blue animate__animated animate__bounceInRight animate__delay-1s"
                 data-caption-animate="fadeInUp"
                 data-caption-delay={250}
               >
@@ -54,7 +58,7 @@ const Hero: React.FC = () => {
                     Book Now
                   </a> */}
                   <Link
-                    className="button button-white button-md button-round-2"
+                    className="button button-white button-md button-round-2 animate__animated animate__bounceInUp animate__delay-1s"
                     to="/"
                     data-caption-animate="fadeInUp"
                     data-caption-delay={450}
