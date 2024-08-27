@@ -8,8 +8,10 @@ import {
   faAmbulance,
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
+import useWindowWidth from "../../hook/useWindowWidth";
 
 const About: React.FC = () => {
+  const windowWidth = useWindowWidth();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.4,
@@ -48,7 +50,7 @@ const About: React.FC = () => {
                 treatment clinic. Dr. Geeta Mehra Fazalbhoy was 1st to introduce
                 Micro Current Non Invasive Technology and Worlds leading RF Skin
               </p>
-              <div className="col-4 mt-4">
+              <div className={`${windowWidth >= 991 ? "col-3" : "col-6"} mt-4`}>
                 <button
                   className="btn btn-primary w-100 py-3 animate__animated animate__bounceInUp animate__delay-1s"
                   type="submit"
