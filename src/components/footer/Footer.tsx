@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           style={{ backgroundColor: "#FFFFFF" }}
         >
           <div className="container py-5">
-            <div className="row g-5">
+            <div className="row g-5 d-flex justify-content-between align-items-start">
               <div className="col-lg-3 col-md-6">
                 <h4 className="d-inline-block text-uppercase  mb-4 ">
                   Get In Touch
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
                     ))}
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+              {/* <div className="col-lg-3 col-md-6">
                 <h4 className="d-inline-block  text-uppercase  mb-4">
                   Popular Links
                 </h4>
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
                       </Link>
                     ))}
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-3 col-md-6">
                 <h4 className="d-inline-block  text-uppercase  mb-4">
                   Newsletter

@@ -11,6 +11,7 @@ import Blog from "./Blog";
 import Services2 from "./Services2";
 import Message from "./Message";
 import { fetchInstagramPosts } from "../../services/instagramService";
+import Instagram from "./Instagram";
 interface InstagramPost {
   id: string;
   caption: string;
@@ -41,6 +42,7 @@ const LandingPage: React.FC = () => {
       {/* <Pricing /> */}
       {/* <Team /> */}
       {/* <Search /> */}
+      <Instagram />
       <Blog />
       <Testimonials />
       {/* <Message /> */}

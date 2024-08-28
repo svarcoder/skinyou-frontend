@@ -19,6 +19,7 @@ import OxygenTreatment from "../pages/treatments/OxygenTreatment";
 import HydrationFacialTreatment from "../pages/treatments/HydrationFacialTreatment";
 import InstantTalkButton from "../apointmentButton/InstantTalkButton";
 import BackToTopButton from "../BackToTopButton.tsx/BackToTopButton";
+import InstaGramPost from "../Instagram/InstaMain";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const HomeRoute: React.FC = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/article" element={<Blog />} />
         <Route path="/article/:id" element={<SingleBlog />} />
+        <Route path="/instapost" element={<InstaGramPost />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/treatments/bridal-packages" element={<BridalPackage />} />
         <Route

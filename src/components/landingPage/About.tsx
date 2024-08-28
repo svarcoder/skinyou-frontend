@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMeImg from "../../assets/woman-spa-mask-half-face-beauty-concept-healthy-po-XSNKXZR.png";
+import AboutMeImg from "../../assets/Dr geeta Transparent.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserMd,
@@ -9,9 +9,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import useWindowWidth from "../../hook/useWindowWidth";
+import { useNavigate } from "react-router-dom";
 
 const About: React.FC = () => {
   const windowWidth = useWindowWidth();
+  const navigate = useNavigate();
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.4,
@@ -27,7 +30,7 @@ const About: React.FC = () => {
                 <img
                   className="position-absolute w-100 h-100 rounded animate__animated animate__bounceInLeft animate__delay-1s"
                   src={AboutMeImg}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain" }}
                   alt="Img"
                 />
               )}
@@ -54,6 +57,7 @@ const About: React.FC = () => {
                 <button
                   className="btn btn-primary w-100 py-3 animate__animated animate__bounceInUp animate__delay-1s"
                   type="submit"
+                  onClick={() => navigate("/about")}
                 >
                   Know More
                 </button>
