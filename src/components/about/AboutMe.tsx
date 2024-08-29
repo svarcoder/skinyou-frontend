@@ -44,11 +44,11 @@ const AboutMe: React.FC = () => {
                 treatment clinic. Dr. Geeta Mehra Fazalbhoy was 1st to introduce
                 Micro Current Non Invasive Technology and Worlds leading RF Skin
               </p>
-              <div className="col-4 mt-4">
+              {/* <div className="col-4 mt-4">
                 <button className="btn btn-primary w-100 py-3" type="submit">
                   Know More
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

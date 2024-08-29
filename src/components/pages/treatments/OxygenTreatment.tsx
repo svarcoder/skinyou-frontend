@@ -261,18 +261,6 @@ const OxygenTreatment: React.FC = () => {
             </div>
 
             <div className="col-lg-3">
-              <div className="mb-5">
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="form-control p-3"
-                    placeholder="Keyword"
-                  />
-                  <button className="btn btn-primary px-3">
-                    <FontAwesomeIcon icon={faSearch} />
-                  </button>
-                </div>
-              </div>
               {/* <div className="mb-5">
             <h4 className="d-inline-block text-primary text-uppercase border-bottom border-5 mb-4">
               Categories

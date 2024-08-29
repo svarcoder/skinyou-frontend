@@ -400,8 +400,8 @@ a,
 .contact-button {
   background-color: #f7b1b0 !important;
   padding: 12px 12px;
-  border: none;
   cursor: pointer;
+  border: none;
   /* opacity: 0.8; */
   position: fixed !important;
   bottom: 23px;
@@ -426,7 +426,7 @@ a,
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  top: 105% !important;
+  top: 100% !important;
 }
 
 .slick-prev:before,
@@ -463,5 +463,19 @@ a,
 
   .slick-next {
     right: 40% !important;
+  }
+}
+
+.blink-border {
+  animation: zoom-animation 1s infinite;
+}
+
+@keyframes zoom-animation {
+  0%,
+  100% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.1); /* Zoomed-in size */
   }
 }

@@ -164,9 +164,19 @@ const navItems = [
     label: "Skin & FAQ",
     dropdown: true,
     subItems: [
-      { path: "/about", label: "About Us" },
-      { path: "/team", label: "Our Team" },
-      { path: "/history", label: "Our History" },
+      { path: "/", label: "Sun & Skin Care" },
+      { path: "/", label: "X-Ray of Skin (Skin Analysis)" },
+      { path: "/", label: "Oily Skin Care" },
+      { path: "/", label: "Dry Skin Care" },
+      { path: "/", label: "Normal / Combination Skin Care" },
+      { path: "/", label: "Pigmented Skin Care" },
+      { path: "/", label: "Sensitive Skin Care" },
+      { path: "/", label: "Nutrition & Skin Care" },
+      { path: "/", label: "Skin Care Through the Ages" },
+      { path: "/", label: "Skin Care & Smoking" },
+      { path: "/", label: "Causes of facial wrinkles" },
+      { path: "/", label: "Facial volume loss Treatment" },
+      { path: "/", label: "Skin rejuvenation Treatment" },
     ],
   },
   {
@@ -180,23 +190,37 @@ const navItems = [
     ],
   },
   { path: "/photogallery", label: "Photogallery" },
-  { path: "/media", label: "Media" },
   {
-    path: "/",
-    label: "Blog",
+    path: "/media",
+    label: "Media",
     dropdown: true,
     subItems: [
-      { path: "/article", label: "Blog Grid" },
-      { path: "/article/1", label: "Blog Detail" },
-      { path: "/testimonial", label: "Testimonial" },
-      { path: "/appointment", label: "Appointment" },
-      { path: "/search", label: "Search" },
+      { path: "/", label: "What's New" },
+      { path: "/", label: "Articles" },
+      { path: "/", label: "Events" },
+      { path: "/", label: "Newsletters" },
+      { path: "/", label: "Blog" },
+      { path: "/", label: " CLINIC VIDEOS" },
     ],
   },
-  { path: "/contact", label: "Contact" },
   {
     path: "/about",
     label: "About Us",
+    dropdown: true,
+    subItems: [
+      { path: "/", label: "Dr. Geeta Mehra Fazalbhoy" },
+      { path: "/", label: "Why Us" },
+      { path: "/", label: " How to Prepare for an appointment" },
+    ],
+  },
+  {
+    path: "/contact",
+    label: "Contact",
+    dropdown: true,
+    subItems: [
+      { path: "/", label: "FRANCHISE" },
+      { path: "/", label: "CAREER" },
+    ],
   },
 ];
 
@@ -242,20 +266,54 @@ const NavBar: React.FC = () => {
                       <div className="dropdown-menu m-0">
                         <div className="drpdwn-wrap">
                           <div className="drpdwn-element">
-                            {item.subItems
-                              .slice(0, 13)
-                              .map((subItem, subIndex) => (
-                                <Link
-                                  key={subIndex}
-                                  to={subItem.path}
-                                  className="dropdown-item"
-                                  onClick={() =>
-                                    handleNavLinkClick(subItem.path)
-                                  }
-                                >
-                                  {subItem.label}
-                                </Link>
-                              ))}
+                            {index === 2 ? (
+                              <>
+                                {item.subItems
+                                  .slice(0, 2)
+                                  .map((subItem, subIndex) => (
+                                    <Link
+                                      key={subIndex}
+                                      to={subItem.path}
+                                      className="dropdown-item"
+                                      onClick={() =>
+                                        handleNavLinkClick(subItem.path)
+                                      }
+                                    >
+                                      {subItem.label}
+                                    </Link>
+                                  ))}
+                                <h4 className="dropdown-item"> Skin Types</h4>
+                                {item.subItems
+                                  .slice(2, 13)
+                                  .map((subItem, subIndex) => (
+                                    <Link
+                                      key={subIndex}
+                                      to={subItem.path}
+                                      className="dropdown-item"
+                                      onClick={() =>
+                                        handleNavLinkClick(subItem.path)
+                                      }
+                                    >
+                                      {subItem.label}
+                                    </Link>
+                                  ))}
+                              </>
+                            ) : (
+                              item.subItems
+                                .slice(0, 13)
+                                .map((subItem, subIndex) => (
+                                  <Link
+                                    key={subIndex}
+                                    to={subItem.path}
+                                    className="dropdown-item"
+                                    onClick={() =>
+                                      handleNavLinkClick(subItem.path)
+                                    }
+                                  >
+                                    {subItem.label}
+                                  </Link>
+                                ))
+                            )}
                           </div>
                           <div className="drpdwn-element">
                             {item.subItems

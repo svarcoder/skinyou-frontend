@@ -740,11 +740,11 @@ html [class*="section-"].section-bottom-0 {
 }
 
 @media (max-width: 990px) {
-  .section-main-bunner .main-bunner-inner {
-    margin-top: 82px;
-  }
   .section-main-bunner {
     height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 

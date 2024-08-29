@@ -109,7 +109,10 @@ const Testimonials: React.FC = () => {
                 <Slider {...settings}>
                   {testimonials &&
                     testimonials.map((item, i) => (
-                      <div className="testimonial-item text-center" key={i}>
+                      <div
+                        className="testimonial-item text-center mb-4"
+                        key={i}
+                      >
                         <div className="position-relative mb-2">
                           <img
                             className="img-fluid rounded-circle mx-auto animate__animated animate__bounceInLeft animate__slow"
