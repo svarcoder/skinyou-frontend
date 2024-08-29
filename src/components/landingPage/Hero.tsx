@@ -6,6 +6,12 @@ import Slider from "react-slick";
 import Img from "../../assets/slide-01.jpg";
 import { Link } from "react-router-dom";
 import BackgroundVideo from "../../assets/Website Video.mp4";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Hero: React.FC = () => {
   const settings = {
@@ -53,15 +59,14 @@ const Hero: React.FC = () => {
                 data-caption-delay={100}
                 className="animate__animated animate__bounceInLeft animate__slow"
               >
-                Instant <br className="br-none" /> Solution
+                Look Better <br className="br-none" /> Feel Better
               </h1>
               <p
                 className="lead text-custom-blue animate__animated animate__bounceInRight animate__slow"
                 data-caption-animate="fadeInUp"
                 data-caption-delay={250}
               >
-                Are you tired and exhausted? Do you need to relax and tidy up
-                your body and health? Try our massage today!
+                Instant Solutions to Lines, Wrinkles, Folds & Scars
               </p>
               <div className="btn-wrap">
                 <div className="group-xxl group-middle">
@@ -82,7 +87,17 @@ const Hero: React.FC = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
-                    Book Appointment
+                    Book Now
+                  </Link>
+                  <Link
+                    className="button button-white button-md button-round-2 animate__animated animate__bounceInUp animate__slow"
+                    to="/"
+                    data-caption-animate="fadeInUp"
+                    data-caption-delay={450}
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                  >
+                    Call Now
                   </Link>
                 </div>
               </div>
@@ -176,6 +191,77 @@ const Hero: React.FC = () => {
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="modal fade"
+        id="exampleModal2"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel2"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel2">
+                Call Now
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body">
+              <h4 className="d-inline-block text-uppercase  mb-4 ">
+                Get In Touch
+              </h4>
+              <p className="mb-4 text-dark">
+                Let's Connect and Make Your Vision a Reality. Reach Out Today!
+              </p>
+              <p className="mb-2">
+                <Link
+                  className="text-dark pe-3"
+                  to="https://maps.app.goo.gl/GvQUuDyFdPguhykk6"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    className="text-primary me-3"
+                  />
+                  {`115 B, Mittal Court, Nariman Point, Mumbai, Maharashtra 400021`}
+                </Link>
+              </p>
+              <p className="mb-2">
+                <Link
+                  className="text-dark pe-3"
+                  to="mailto:helpdesk@skinandyou.in"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="text-primary me-3"
+                  />
+                  helpdesk@skinandyou.in
+                </Link>
+              </p>
+              <p className="mb-0">
+                <Link
+                  className="text-dark pe-3"
+                  to="tel:+919920033331"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faPhoneAlt}
+                    className="text-primary me-3"
+                  />
+                  +91 99200 33331
+                </Link>
+              </p>
             </div>
           </div>
         </div>

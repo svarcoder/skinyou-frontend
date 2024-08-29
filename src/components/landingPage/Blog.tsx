@@ -125,7 +125,7 @@ const Blog: React.FC = () => {
                 <Slider {...settings}>
                   {articles.map((article, i) => (
                     <div
-                      className={`col-xl-4 col-lg-6 animate__animated  animate__slow ${
+                      className={`col-xl-4 col-lg-6 mb-4 animate__animated  animate__slow ${
                         i % 2 === 0
                           ? "animate__bounceInUp"
                           : "animate__bounceInDown"

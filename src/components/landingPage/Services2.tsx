@@ -148,11 +148,11 @@ const Services2: React.FC = () => {
     <div className="container-fluid" ref={ref}>
       {windowWidth <= 991
         ? inView && (
-            <div className="row g-0">
+            <div className="row g-0 ">
               <Slider {...settings}>
                 {services.map((service, i) => (
                   <div
-                    className={`col animate__animated  animate__slow ${
+                    className={`col mb-4 animate__animated  animate__slow ${
                       i % 2 === 0
                         ? "animate__bounceInDown"
                         : "animate__bounceInUp"

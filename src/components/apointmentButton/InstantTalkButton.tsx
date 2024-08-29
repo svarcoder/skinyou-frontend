@@ -20,13 +20,13 @@ const InstantTalkButton: React.FC = () => {
     <>
       {showButton && (
         <button
-          className={`contact-button animate__animated animate__delay-0.5s animate__backInLeft`}
+          className={`contact-button  animate__animated animate__delay-0.5s animate__backInLeft`}
           data-caption-animate="fadeInUp"
           data-caption-delay={450}
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Book Appointment
+          <div className="blink-border">Book Appointment</div>
         </button>
       )}
 

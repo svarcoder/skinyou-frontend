@@ -236,7 +236,12 @@ const InstaGramPost: React.FC = () => {
       <div className="section section-lg bg-primary">
         <div className="container container-top">
           <div className="text-center mt-4">
-            <h1>Instagram Post</h1>
+            <h5 className="isplay-4 about animate__animated animate__bounceInLeft animate__slow">
+              Latest
+            </h5>
+            <h1 className="display-4 animate__animated animate__bounceInRight animate__slow">
+              Instagram Post
+            </h1>
           </div>
         </div>
       </div>

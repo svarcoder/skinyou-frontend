@@ -40,20 +40,25 @@ const InstagramReel: React.FC<InstagramReelProps> = ({
         ></video>
 
         <div className="pt-4 pb-4">
-          <a className="h3 d-block mb-3" href="/">
+          <a
+            className="h3 d-block mb-3"
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
             {title}
           </a>
           <p className="m-0">{description}</p>
         </div>
 
-        <Link
+        {/* <Link
           className="btn btn-outline-dark rounded-pill py-3 px-5"
           type="submit"
           to={link}
           target="_blank"
         >
           Read More
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
