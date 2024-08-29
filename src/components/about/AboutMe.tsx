@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMeImg from "../../assets/woman-spa-mask-half-face-beauty-concept-healthy-po-XSNKXZR.png";
+import AboutMeImg from "../../assets/Dr geeta Transparent.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserMd,
@@ -27,7 +27,8 @@ const AboutMe: React.FC = () => {
                 <img
                   className="position-absolute w-100 h-100 rounded"
                   src={AboutMeImg}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain" }}
+                  alt="Img"
                 />
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/Logo.png";
 
 const navItems = [
   { path: "/", label: "Home" },
@@ -212,8 +212,11 @@ const NavBar: React.FC = () => {
     <div className="container-fluid navbar-wrap">
       <div className="container">
         <nav className="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-          <a href="/" className="navbar-brand">
-            <img src={Logo} alt="Logo" className="m-0 logo" />
+          <a
+            href="/"
+            className="navbar-brand d-flex justify-content-between align-items-center"
+          >
+            <img src={Logo} alt="Logo" className="m-0 logo w-100" />
           </a>
           <button
             className="navbar-toggler"

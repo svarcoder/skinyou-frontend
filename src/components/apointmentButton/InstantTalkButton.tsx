@@ -26,7 +26,7 @@ const InstantTalkButton: React.FC = () => {
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          Book Apointment
+          Book Appointment
         </button>
       )}
 

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMeImg from "../../assets/woman-spa-mask-half-face-beauty-concept-healthy-po-XSNKXZR.png";
+import AboutMeImg from "../../assets/Dr geeta Transparent.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserMd,
@@ -9,9 +9,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import useWindowWidth from "../../hook/useWindowWidth";
+import { useNavigate } from "react-router-dom";
 
 const About: React.FC = () => {
   const windowWidth = useWindowWidth();
+  const navigate = useNavigate();
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.4,
@@ -25,9 +28,9 @@ const About: React.FC = () => {
             <div className="position-relative h-100">
               {inView && (
                 <img
-                  className="position-absolute w-100 h-100 rounded animate__animated animate__bounceInLeft animate__delay-1s"
+                  className="position-absolute w-100 h-100 rounded animate__animated animate__bounceInLeft animate__slow"
                   src={AboutMeImg}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain" }}
                   alt="Img"
                 />
               )}
@@ -36,14 +39,14 @@ const About: React.FC = () => {
           {inView && (
             <div className="col-lg-7 mt-4">
               <div className="mb-4">
-                <h5 className="d-inline-block text-primary about animate__animated animate__bounceInRight animate__delay-1s">
+                <h5 className="d-inline-block text-primary about animate__animated animate__bounceInRight animate__slow">
                   About Us
                 </h5>
-                <h1 className="display-4 animate__animated animate__bounceInRight animate__delay-1s">
+                <h1 className="display-4 animate__animated animate__bounceInRight animate__slow">
                   DR. GEETA MEHRA FAZALBHOY
                 </h1>
               </div>
-              <p className="animate__animated animate__bounceInLeft animate__delay-1s">
+              <p className="animate__animated animate__bounceInLeft animate__slow">
                 Managing Director & Founder Member of Skin & You Clinic &
                 CapitalG Healthcare Multiventures Private Limited, Nariman
                 Point, Mumbai. A leading South Mumbai Skin Lasers & Aesthetic
@@ -52,8 +55,9 @@ const About: React.FC = () => {
               </p>
               <div className={`${windowWidth >= 991 ? "col-3" : "col-6"} mt-4`}>
                 <button
-                  className="btn btn-primary w-100 py-3 animate__animated animate__bounceInUp animate__delay-1s"
+                  className="btn btn-primary w-100 py-3 animate__animated animate__bounceInUp animate__slow"
                   type="submit"
+                  onClick={() => navigate("/about")}
                 >
                   Know More
                 </button>

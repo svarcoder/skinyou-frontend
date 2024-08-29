@@ -111,10 +111,10 @@ const Blog: React.FC = () => {
     <div className="container-fluid py-5" ref={ref}>
       <div className="container">
         <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
-          <h5 className="d-inline-block text-primary about animate__animated animate__bounceInLeft animate__delay-1s">
+          <h5 className="d-inline-block text-primary about animate__animated animate__bounceInLeft animate__slow">
             Latest
           </h5>
-          <h1 className="display-4 animate__animated animate__bounceInRight animate__delay-1s">
+          <h1 className="display-4 animate__animated animate__bounceInRight animate__slow">
             News From the Blog
           </h1>
         </div>
@@ -125,7 +125,7 @@ const Blog: React.FC = () => {
                 <Slider {...settings}>
                   {articles.map((article, i) => (
                     <div
-                      className={`col-xl-4 col-lg-6 animate__animated  animate__delay-1s ${
+                      className={`col-xl-4 col-lg-6 animate__animated  animate__slow ${
                         i % 2 === 0
                           ? "animate__bounceInUp"
                           : "animate__bounceInDown"
@@ -189,7 +189,7 @@ const Blog: React.FC = () => {
               <div className="row g-5">
                 {articles.map((article, i) => (
                   <div
-                    className={`col-xl-4 col-lg-6 animate__animated  animate__delay-1s ${
+                    className={`col-xl-4 col-lg-6 animate__animated  animate__slow ${
                       i % 2 === 0
                         ? "animate__bounceInUp"
                         : "animate__bounceInDown"
