@@ -107,10 +107,10 @@ const Instagram: React.FC = () => {
     <div className="container-fluid py-5" ref={ref}>
       <div className="container">
         <div className="text-center mx-auto mb-5" style={{ maxWidth: 500 }}>
-          <h5 className="d-inline-block text-primary about animate__animated animate__bounceInLeft animate__delay-1s">
+          <h5 className="d-inline-block text-primary about animate__animated animate__bounceInLeft animate__slow">
             Latest
           </h5>
-          <h1 className="display-4 animate__animated animate__bounceInRight animate__delay-1s">
+          <h1 className="display-4 animate__animated animate__bounceInRight animate__slow">
             Instagram Post
           </h1>
         </div>

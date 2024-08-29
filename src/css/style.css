@@ -83,7 +83,7 @@ a,
 }
 
 .logo {
-  height: 90px;
+  height: 60px;
   width: 120px;
 }
 
@@ -111,7 +111,7 @@ a,
 
 @media (max-width: 992px) {
   .logo {
-    height: 60px;
+    height: 40px;
     width: 60px;
   }
 }

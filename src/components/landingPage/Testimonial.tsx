@@ -112,7 +112,7 @@ const Testimonials: React.FC = () => {
                       <div className="testimonial-item text-center" key={i}>
                         <div className="position-relative mb-2">
                           <img
-                            className="img-fluid rounded-circle mx-auto animate__animated animate__bounceInLeft animate__delay-1s"
+                            className="img-fluid rounded-circle mx-auto animate__animated animate__bounceInLeft animate__slow"
                             src={item?.image}
                             alt="img"
                           />
@@ -127,14 +127,14 @@ const Testimonials: React.FC = () => {
                             />
                           </div>
                         </div>
-                        <p className="fs-4 fw-normal animate__animated animate__bounceInRight animate__delay-1s">
+                        <p className="fs-4 fw-normal animate__animated animate__bounceInRight animate__slow">
                           {item?.feedback}
                         </p>
                         <hr className="w-25 mx-auto" />
-                        <h3 className="animate__animated animate__bounceInUp animate__delay-1s">
+                        <h3 className="animate__animated animate__bounceInUp animate__slow">
                           {item?.name}
                         </h3>
-                        <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__delay-1s">
+                        <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__slow">
                           {item?.date}
                         </h6>
                       </div>

@@ -152,7 +152,7 @@ const Services2: React.FC = () => {
               <Slider {...settings}>
                 {services.map((service, i) => (
                   <div
-                    className={`col animate__animated  animate__delay-1s ${
+                    className={`col animate__animated  animate__slow ${
                       i % 2 === 0
                         ? "animate__bounceInDown"
                         : "animate__bounceInUp"
@@ -223,7 +223,7 @@ const Services2: React.FC = () => {
             <div className="row g-0">
               {services.map((service, i) => (
                 <div
-                  className={`col animate__animated  animate__delay-1s ${
+                  className={`col animate__animated  animate__slow ${
                     i % 2 === 0
                       ? "animate__bounceInDown"
                       : "animate__bounceInUp"

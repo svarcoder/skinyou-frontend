@@ -217,9 +217,6 @@ const NavBar: React.FC = () => {
             className="navbar-brand d-flex justify-content-between align-items-center"
           >
             <img src={Logo} alt="Logo" className="m-0 logo w-100" />
-            <h4>
-              Look Feel <br /> Better Feel
-            </h4>
           </a>
           <button
             className="navbar-toggler"

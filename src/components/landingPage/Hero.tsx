@@ -51,12 +51,12 @@ const Hero: React.FC = () => {
               <h1
                 data-caption-animate="fadeInUp"
                 data-caption-delay={100}
-                className="animate__animated animate__bounceInLeft animate__delay-1s"
+                className="animate__animated animate__bounceInLeft animate__slow"
               >
                 Instant <br className="br-none" /> Solution
               </h1>
               <p
-                className="lead text-custom-blue animate__animated animate__bounceInRight animate__delay-1s"
+                className="lead text-custom-blue animate__animated animate__bounceInRight animate__slow"
                 data-caption-animate="fadeInUp"
                 data-caption-delay={250}
               >
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
                     Book Now
                   </a> */}
                   <Link
-                    className="button button-white button-md button-round-2 animate__animated animate__bounceInUp animate__delay-1s"
+                    className="button button-white button-md button-round-2 animate__animated animate__bounceInUp animate__slow"
                     to="/"
                     data-caption-animate="fadeInUp"
                     data-caption-delay={450}
