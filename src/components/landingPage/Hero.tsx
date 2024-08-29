@@ -57,14 +57,15 @@ const Hero: React.FC = () => {
               <h1
                 data-caption-animate="fadeInUp"
                 data-caption-delay={100}
-                className="animate__animated animate__bounceInLeft animate__slow"
+                className="animate__animated text-primary animate__bounceInLeft animate__slow"
               >
                 Look Better <br className="br-none" /> Feel Better
               </h1>
               <p
-                className="lead text-custom-blue animate__animated animate__bounceInRight animate__slow"
+                className="lead animate__animated animate__bounceInRight animate__slow"
                 data-caption-animate="fadeInUp"
                 data-caption-delay={250}
+                style={{ color: "black" }}
               >
                 Instant Solutions to Lines, Wrinkles, Folds & Scars
               </p>

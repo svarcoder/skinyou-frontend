@@ -1,8 +1,161 @@
 import React from "react";
-import BlogImg1 from "../../../assets/massage-2-390x344.jpg";
-import BlogImg2 from "../../../assets/massage-1-390x344.jpg";
-import BlogImg3 from "../../../assets/massage-3-390x344.jpg";
-import { Link } from "react-router-dom";
+import RandomLinks from "./RandomLinks";
+
+interface SubItem {
+  path: string;
+  label: string;
+}
+
+const itemData: SubItem[] = [
+  {
+    path: "/treatments/bridal-packages",
+    label: "Bridal Package Treatment",
+  },
+  {
+    path: "/treatments/gel-peels-chemical-peels-treatment",
+    label: "Gel Peels / Chemical Peels Treatment",
+  },
+  { path: "/treatments/caci-treatment", label: "Caci Treatment" },
+  {
+    path: "/treatments/skin-polishing-microdermabrasion",
+    label: "Skin Polishing (Microdermabrasion)",
+  },
+  {
+    path: "/treatments/oxygen-facial-treatment",
+    label: "Oxygen Facial Treatment",
+  },
+  {
+    path: "/treatments/whitening-facial-treatment",
+    label: "Whitening Facial Treatment",
+  },
+  {
+    path: "/treatments/tightening-facial-treatment",
+    label: "Tightening Facial Treatment",
+  },
+  {
+    path: "/treatments/clean-up-facial-treatment-pore-cleansing",
+    label: "Clean Up Treatment (Pore Cleansing)",
+  },
+  { path: "/treatments/oxygen-treatment", label: "Oxygen Treatment" },
+  {
+    path: "/treatments/hydration-facial-treatment",
+    label: "Hydration Facial Treatment",
+  },
+  {
+    path: "/treatments/glutathione-whitening-treatment",
+    label: "Glutathione Whitening Treatment",
+  },
+  {
+    path: "/treatments/cosmelan-depigmentation-treatment",
+    label: "Cosmelan Depigmentation Treatment",
+  },
+  {
+    path: "/treatments/low-level-light-laser-for-hair-loss",
+    label: "Low Level Light Laser for Hair Loss",
+  },
+  {
+    path: "/treatments/botox-treatment",
+    label: "Botox Treatment",
+  },
+  {
+    path: "/treatments/dermal-filler-treatment",
+    label: "Dermal Filler Treatment",
+  },
+  {
+    path: "/treatments/clear-lift-photo-facial",
+    label: "Clear Lift Photo Facial",
+  },
+  {
+    path: "/treatments/pore-tightening-treatment",
+    label: "Pore Tighting Treatment",
+  },
+  {
+    path: "/treatments/derma-roller-treatment",
+    label: "Derma Roller Treatment",
+  },
+  {
+    path: "/treatments/mesotheraphy-treatment",
+    label: "Mesotheraphy Treatment",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Placenta Extract Treatment",
+  },
+  //hdjhdjjd
+
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Prp Vampire Facelift",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Liquid Facelift Treatment",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Stretch Marks Treatment",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Non Surgical Skin Tightening",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Hair Loss Treatment",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Semi Permanent Make Up",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Medical Tattooing",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Painless Laser Hair Removal",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Ndyag/ Hair Removal Treatment",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Accent Ultra Skin Body Contouring",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Accent Ultra RF Pixel",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "RF Growth Removal",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Harmony XL Birth Mark Removal",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Harmony XL Spider Vein Removal",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "PRP for Hair Loss Treatment",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Stem Cells for Hair Loss",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Painless Tattoo Removal",
+  },
+  {
+    path: "/treatments/placenta-extract-treatment",
+    label: "Body Slimming Treatment",
+  },
+];
 
 const SideBar: React.FC = () => {
   return (
@@ -11,320 +164,7 @@ const SideBar: React.FC = () => {
         <h4 className="d-inline-block text-primary text-uppercase mb-4">
           Recent Post
         </h4>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          {/* <img
-          className="img-fluid"
-          src={BlogImg1}
-          style={{ width: 100, height: 100, objectFit: "cover" }}
-          alt="img"
-        /> */}
-          <Link
-            to="/treatments/bridal-packages"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Bridal Package Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/gel-peels-chemical-peels-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Gel Peels / Chemical Peels Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/caci-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Caci Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/skin-polishing-microdermabrasion"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Skin Polishing (Microdermabrasion)
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/oxygen-facial-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Oxygen Facial Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/whitening-facial-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Whitening Facial Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/tightening-facial-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Tightening Facial Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/clean-up-facial-treatment-pore-cleansing"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Clean Up Treatment (Pore Cleansing)
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/oxygen-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Oxygen Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/hydration-facial-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Hydration Facial Treatment
-          </Link>
-        </div>
-
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/glutathione-whitening-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Glutathione Whitening Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/cosmelan-depigmentation-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Cosmelan Depigmentation Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/low-level-light-laser-for-hair-loss"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Low Level Light Laser for Hair Loss
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/botox-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Botox Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/dermal-filler-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Dermal Filler Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/clear-lift-photo-facial"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Clear Lift Photo Facial
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/pore-tightening-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Pore Tighting Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/derma-roller-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Derma Roller Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/mesotheraphy-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Mesotheraphy Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Placenta Extract Treatment
-          </Link>
-        </div>
-
-        {/* //jfjfjfjjfjf */}
-
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Prp Vampire Facelift
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Liquid Facelift Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Stretch Marks Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Non Surgical Skin Tightening
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Hair Loss Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Semi Permanent Make Up
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Medical Tattooing
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Painless Laser Hair Removal
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Ndyag/ Hair Removal Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Accent Ultra Skin Body Contouring
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Accent Ultra RF Pixel
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            RF Growth Removal
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Harmony XL Birth Mark Removal
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Harmony XL Spider Vein Removal
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            PRP for Hair Loss Treatment
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Stem Cells for Hair Loss
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Painless Tattoo Removal
-          </Link>
-        </div>
-        <div className="d-flex rounded overflow-hidden mb-3">
-          <Link
-            to="/treatments/placenta-extract-treatment"
-            className="h5 d-flex align-items-center px-3 mb-0"
-          >
-            Body Slimming Treatment
-          </Link>
-        </div>
+        <RandomLinks subItems={itemData} />
       </div>
 
       {/* <div className="mb-5">
