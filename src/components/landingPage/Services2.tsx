@@ -16,75 +16,42 @@ const services = [
   {
     id: 1,
     icon: Img1,
-    title: "ACNE / ACNE SCAR REDUCTION",
-    description:
-      "Zap the zits with a good skin care regimen and early intervention; prevent scarring and other acne damage through our effective treatments.",
+    title: "Body & face laser hair removal",
+    description: "Body & face laser hair removal.",
     link: "/",
   },
   {
     id: 2,
     icon: Img2,
-    title: "LASER HAIR REMOVAL TREATMENT",
+    title: "Tattoo removal",
     description:
-      "An alternative to threading, waxing, bleaching & electrolysis.",
+      "Safely erase unwanted tattoos with precision laser treatments, leaving your skin clear.",
     link: "/",
   },
   {
     id: 3,
     icon: Img3,
-    title: "BODY SLIMMING TREATMENT",
+    title: "Fat Loss & Inch loss",
     description:
-      "A comfortable, relaxing treatment with a typical sensation of warmth.",
+      "Achieve your body goals with non-invasive, targeted fat reduction and contouring.",
     link: "/",
   },
   {
     id: 4,
     icon: Img4,
-    title: "BOTOX AND FILLERS TREATMENT",
+    title: "Body and Face Tightening ",
     description:
-      "These wrinkles are a result of the underlying muscle movement used for facial expression.",
+      "Lift and tighten sagging skin with our cutting-edge, non-surgical radiofrequency treatments.",
     link: "/",
   },
   {
     id: 5,
     icon: Img5,
-    title: "PIGMENTATION & DE TANNING TREATMENT",
+    title: "Body and Face Tightening",
     description:
-      "Skin pigmentation results from the body producing either too much or too little melanin pigment.",
+      "Lift and tighten sagging skin with our cutting-edge, non-surgical radiofrequency treatments.",
     link: "/",
   },
-  // {
-  //   id: 6,
-  //   icon: faUserMd,
-  //   title: "FACE AND BODY TIGHTENING",
-  //   description:
-  //     "These are effective in reducing the downward pulling action of muscles in the face and thus lifting the skin upward.",
-  //   link: "/",
-  // },
-  // {
-  //   id: 7,
-  //   icon: faUserMd,
-  //   title: "DERMATOLOGY CLINIC",
-  //   description:
-  //     "Rosacea is a common condition characterized by symptoms of facial flushing and a spectrum of other signs, including redness, coarseness of skin, papules and pimples an eruption resembling acne. It affects approximately 1 in 20 people.",
-  //   link: "/",
-  // },
-  // {
-  //   id: 8,
-  //   icon: faUserMd,
-  //   title: "WEDDING / BRIDAL TREATMENT",
-  //   description:
-  //     "It's that once-in-a-lifetime moment when you have to look your radiant and most gorgeous best. And no bride wants to take chances with that. And since weddings mean several days of heavy make-up, non-stop food, alcohol and late nights, it's best to start a skin regimen as soon as possible.",
-  //   link: "/",
-  // },
-  // {
-  //   id: 9,
-  //   icon: faUserMd,
-  //   title: "SEMI PERMANENT MAKE UP/MEDICAL TATTOO",
-  //   description:
-  //     "Semi permanent make up will enhance your natural beauty and give your features shape and definition without ever having to visit your make up bag.",
-  //   link: "/",
-  // },
 ];
 
 const Services2: React.FC = () => {

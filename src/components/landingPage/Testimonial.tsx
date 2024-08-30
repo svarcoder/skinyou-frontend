@@ -14,24 +14,24 @@ import { useInView } from "react-intersection-observer";
 
 const testimonials = [
   {
-    name: "Kavitanjali Prasad",
+    name: "Aditi S",
     image: Testimonials1,
     feedback:
-      "For me Dr. Geeta was god sent. After having so many doctors treating me like a guinea pig it was her confidence and medication which helped me to recover. Very polite staff and a patient is in good and capable hand.",
+      "I was struggling with hair thinning for years, and it took a toll on my confidence. After visiting Dr. Geeta at the Skin & You Clinic, I started a customized treatment plan. Within a few months, I noticed a significant improvement in my hair density and overall health. The staff was incredibly supportive throughout the process, and I felt cared for every step of the way. I couldn't be happier with the results!",
     date: "June 25, 2024",
   },
   {
-    name: "Jane Smith",
+    name: "Neha R",
     image: Testimonials2,
     feedback:
-      "I highly recommend Dr. Geeta. The entire process was smooth and professional. My skin condition has improved dramatically.",
+      "I was nervous about trying Botox for the first time, but Dr. Geeta made me feel completely at ease. She took the time to explain the entire process and what I could expect. The results were fantastic! My forehead lines have softened significantly, giving me a more youthful appearance without looking overdone. I'm thrilled with the outcome and would highly recommend her to anyone considering Botox.",
     date: "July 5, 2024",
   },
   {
-    name: "Robert Brown",
+    name: "Sonal P",
     image: Testimonials3,
     feedback:
-      "Excellent care! Dr. Geeta is very knowledgeable and kind. I always leave the clinic feeling well taken care of.",
+      "I had been contemplating getting fillers to address some volume loss in my cheeks and under-eye area. Dr. Geeta's approach was so natural and precise that I look refreshed without any obvious signs of treatment. The subtle enhancement has made such a difference in my confidence. Her expertise and eye for detail are unmatched. I’m so happy with my experience at the Skin & You Clinic!",
     date: "August 2, 2024 ",
   },
 ];

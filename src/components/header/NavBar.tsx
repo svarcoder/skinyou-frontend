@@ -184,9 +184,86 @@ const navItems = [
     label: "MEDICAL CLINIC",
     dropdown: true,
     subItems: [
-      { path: "/about", label: "About Us" },
-      { path: "/team", label: "Our Team" },
-      { path: "/history", label: "Our History" },
+      {
+        path: "/",
+        label: "Dermatology Treatment",
+        dropdown: true,
+        subElements: [
+          { path: "/", label: "Acne" },
+          { path: "/", label: "Acne Scars" },
+          { path: "/", label: "Rosacea / Pink Face" },
+          { path: "/", label: "Eczema" },
+          { path: "/", label: "Allergy / Itching" },
+          { path: "/", label: "Warts / Corns" },
+          { path: "/", label: "Unwanted Skin Growths" },
+          { path: "/", label: "Keloid / Hypertrophic Scars" },
+          { path: "/", label: "Dry Skin / Xerosis" },
+          { path: "/", label: "Bacterial Infection" },
+          { path: "/", label: "Fungal Infection" },
+          { path: "/", label: "Viral Infection" },
+          { path: "/", label: "Candid Infection" },
+          { path: "/", label: "Psoriasis" },
+          { path: "/", label: "Lichen Planus" },
+          { path: "/", label: "Vitiligo / White Patches" },
+          { path: "/", label: "Xanthelasma Palpebrarum" },
+          { path: "/", label: "Pigmentation (Melasma / Freckles)" },
+          { path: "/", label: "Lice & Bites" },
+          { path: "/", label: "Drug Reaction" },
+          { path: "/", label: "Mouth Ulcers" },
+          { path: "/", label: "Excessive Sweating" },
+          { path: "/", label: "Seborrheic Dermatitis" },
+          { path: "/", label: "Nail Infections" },
+          { path: "/", label: "Nail Changes" },
+          { path: "/", label: "Splitting / Peeling / Brittle Nails" },
+          { path: "/", label: "Hair Problem" },
+          { path: "/", label: "Patchy Hair Loss / Alopecia Areata" },
+          { path: "/", label: "Hair Loss" },
+          { path: "/", label: "Dandruff" },
+          { path: "/", label: "Excess Hair" },
+          { path: "/", label: "Hair Infection" },
+        ],
+      },
+      {
+        path: "/",
+        label: "Laser Treatment",
+        dropdown: true,
+        subElements: [
+          { path: "/", label: "Painless Laser Hair Removal" },
+          { path: "/", label: "Stretch Marks Treatment" },
+          { path: "/", label: "Scars Treatment" },
+          { path: "/", label: "Burn Scars Treatment" },
+          { path: "/", label: "Keloid Treatment" },
+          { path: "/", label: "Photo Facial" },
+          { path: "/", label: "Birth Mark Treatment" },
+          { path: "/", label: "Acne Scar Treatment" },
+          { path: "/", label: "Laser Skin Whitening" },
+          { path: "/", label: "Pigmentation Removal Treatment" },
+        ],
+      },
+      {
+        path: "/",
+        label: "Anti Ageing Treatment",
+        dropdown: true,
+        subElements: [
+          { path: "/", label: "Frown Line / Worry Line Treatment" },
+          { path: "/", label: "Eyebrow Shaping / Lifting Treatment" },
+          { path: "/", label: "Periorbital Dark Circle / Crows Feet" },
+          { path: "/", label: "Cheek Enhancement Treatment" },
+          { path: "/", label: "Lip Enhancement Treatment" },
+          { path: "/", label: "Smile Line" },
+          { path: "/", label: "Chin / Jaw Line Skin Tightening Treatment" },
+          { path: "/", label: "Inch Loss" },
+          { path: "/", label: "Cellulite" },
+          { path: "/", label: "Fat dissolve Injection" },
+          { path: "/", label: "Accent Ultra Body Shaping" },
+          {
+            path: "/",
+            label: "Alma Double Chin Radio Frequency Skin Tightening",
+          },
+          { path: "/", label: "Vampire Face lift" },
+          { path: "/", label: "V Shaped Face Tightening" },
+        ],
+      },
     ],
   },
   { path: "/photogallery", label: "Photogallery" },
@@ -266,7 +343,186 @@ const NavBar: React.FC = () => {
                       <div className="dropdown-menu m-0">
                         <div className="drpdwn-wrap">
                           <div className="drpdwn-element">
-                            {index === 2 ? (
+                            {index === 3 ? (
+                              <>
+                                <div className="medical-clinic p-0">
+                                  {item.subItems.map(
+                                    (subItem: any, subIndex) => (
+                                      <div
+                                        key={index}
+                                        className="nav-item dropdown"
+                                      >
+                                        <a
+                                          href="#"
+                                          className="nav-link dropdown-toggle py-2"
+                                          data-bs-toggle="dropdown"
+                                          key={subIndex}
+                                          onClick={(e) => e.stopPropagation()}
+                                        >
+                                          {subItem.label}
+                                        </a>
+                                        {subItem.dropdown && (
+                                          <div className="dropdown-menu m-0 m-dropdown">
+                                            <div className="drpdwn-wrap">
+                                              <div className="drpdwn-element d-flex justify-content-between">
+                                                {subIndex === 0 ? (
+                                                  <>
+                                                    <div>
+                                                      {subItem?.subElements
+                                                        .slice(0, 12)
+                                                        .map(
+                                                          (
+                                                            subElem: any,
+                                                            i: number
+                                                          ) => (
+                                                            <Link
+                                                              key={i}
+                                                              to={subElem.path}
+                                                              className="dropdown-item"
+                                                              onClick={() =>
+                                                                handleNavLinkClick(
+                                                                  subElem.path
+                                                                )
+                                                              }
+                                                            >
+                                                              {subElem.label}
+                                                            </Link>
+                                                          )
+                                                        )}
+                                                    </div>
+                                                    <div>
+                                                      {subItem?.subElements
+                                                        .slice(12, 24)
+                                                        .map(
+                                                          (
+                                                            subElem: any,
+                                                            i: number
+                                                          ) => (
+                                                            <Link
+                                                              key={i}
+                                                              to={subElem.path}
+                                                              className="dropdown-item"
+                                                              onClick={() =>
+                                                                handleNavLinkClick(
+                                                                  subElem.path
+                                                                )
+                                                              }
+                                                            >
+                                                              {subElem.label}
+                                                            </Link>
+                                                          )
+                                                        )}
+                                                    </div>
+                                                  </>
+                                                ) : subIndex === 1 ? (
+                                                  <>
+                                                    <div>
+                                                      {subItem?.subElements
+                                                        .slice(1, 5)
+                                                        .map(
+                                                          (
+                                                            subElem: any,
+                                                            i: number
+                                                          ) => (
+                                                            <Link
+                                                              key={i}
+                                                              to={subElem.path}
+                                                              className="dropdown-item"
+                                                              onClick={() =>
+                                                                handleNavLinkClick(
+                                                                  subElem.path
+                                                                )
+                                                              }
+                                                            >
+                                                              {subElem.label}
+                                                            </Link>
+                                                          )
+                                                        )}
+                                                    </div>
+                                                    <div>
+                                                      {subItem?.subElements
+                                                        .slice(5, 10)
+                                                        .map(
+                                                          (
+                                                            subElem: any,
+                                                            i: number
+                                                          ) => (
+                                                            <Link
+                                                              key={i}
+                                                              to={subElem.path}
+                                                              className="dropdown-item"
+                                                              onClick={() =>
+                                                                handleNavLinkClick(
+                                                                  subElem.path
+                                                                )
+                                                              }
+                                                            >
+                                                              {subElem.label}
+                                                            </Link>
+                                                          )
+                                                        )}
+                                                    </div>
+                                                  </>
+                                                ) : (
+                                                  <>
+                                                    <div>
+                                                      {subItem?.subElements
+                                                        .slice(0, 10)
+                                                        .map(
+                                                          (
+                                                            subElem: any,
+                                                            i: number
+                                                          ) => (
+                                                            <Link
+                                                              key={i}
+                                                              to={subElem.path}
+                                                              className="dropdown-item"
+                                                              onClick={() =>
+                                                                handleNavLinkClick(
+                                                                  subElem.path
+                                                                )
+                                                              }
+                                                            >
+                                                              {subElem.label}
+                                                            </Link>
+                                                          )
+                                                        )}
+                                                    </div>
+                                                    <div>
+                                                      {subItem?.subElements
+                                                        .slice(10, 20)
+                                                        .map(
+                                                          (
+                                                            subElem: any,
+                                                            i: number
+                                                          ) => (
+                                                            <Link
+                                                              key={i}
+                                                              to={subElem.path}
+                                                              className="dropdown-item"
+                                                              onClick={() =>
+                                                                handleNavLinkClick(
+                                                                  subElem.path
+                                                                )
+                                                              }
+                                                            >
+                                                              {subElem.label}
+                                                            </Link>
+                                                          )
+                                                        )}
+                                                    </div>
+                                                  </>
+                                                )}
+                                              </div>
+                                            </div>
+                                          </div>
+                                        )}
+                                      </div>
+                                    )
+                                  )}
+                                </div>
+                              </>
+                            ) : index === 2 ? (
                               <>
                                 {item.subItems
                                   .slice(0, 2)

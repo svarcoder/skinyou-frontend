@@ -13,7 +13,7 @@ import {
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
 import InstagramReel from "../Instagram/InstagramReel";
-import BotoxVideo from "../../assets/video/Botox.mp4";
+import BotoxVideo from "../../assets/video/MNRF.mp4";
 import BotoxVideo2 from "../../assets/video/Deep Peel.mp4";
 import BotoxVideo3 from "../../assets/video/Dermal Fillers.mp4";
 import { useNavigate } from "react-router-dom";
@@ -21,27 +21,27 @@ import { useNavigate } from "react-router-dom";
 const articles = [
   {
     id: 1,
-    title: "Dr. Geeta’s article on “How to treat hyperpigmentation",
+    title:
+      "Ever wished for a skincare saviour to save your skin from all its troubles?",
     blogImage: BotoxVideo,
     author: "Dr. Geeta",
-    link: "https://www.instagram.com/reel/C_C2SbHShZY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    link: "https://www.instagram.com/reel/C5QYIByovcK/?igsh=ejhwbnZiaG9sdGE0",
   },
   {
     id: 2,
-    title: "Dr. Geeta’s article on How technology has changed beauty",
+    title: "Dr. Geeta's guide to get rid of dark circles and wrinkles",
     blogImage: BotoxVideo2,
     author: "Dr. Geeta",
-    link: "https://www.instagram.com/reel/C_Al5vSSt_n/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    link: "https://www.instagram.com/reel/C4X22IMSFiH/?igsh=OWhleG1jdGpsNmxk",
   },
   {
     id: 3,
-    title:
-      "Dr. Geeta’s article on Everything you wanted to know about threadlift",
+    title: "Time to spill the beans on tear trough fillers",
     blogImage: BotoxVideo3,
     author: "Dr. Geeta",
     views: 12345,
     comments: 123,
-    link: "https://www.instagram.com/reel/C_ARVn2oddB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    link: "https://www.instagram.com/reel/C2mQiXKSgmS/?igsh=OXp2aTJ6NGZudzdr",
   },
 ];
 

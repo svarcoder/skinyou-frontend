@@ -16,37 +16,38 @@ import { useInView } from "react-intersection-observer";
 const articles = [
   {
     id: 1,
-    title: "Dr. Geeta’s article on “How to treat hyperpigmentation",
+    title: "SKIN CARE DURING MONSOON",
     description:
-      "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
+      "After bearing that extreme heat of sun in summer days monsoon comes as sing of relief , little changes in the way you take care of your skin could have positive effects during monsoons.",
     blogImage: BlogImg1,
     authorImage: UserImg,
     author: "Dr. Geeta",
     views: 12345,
     comments: 123,
+    link: "/skin-care-during-monsoon",
   },
   {
     id: 2,
-    title: "Dr. Geeta’s article on How technology has changed beauty",
+    title: "Myth About Sunscreen And Skin",
     description:
-      "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
+      "UVA rays are present whenever it’s light outside, even in the morning or late afternoon, during the winter or on cloudy days. So a sunscreen is always required. ",
     blogImage: BlogImg2,
     authorImage: UserImg,
     author: "Dr. Geeta",
     views: 12345,
     comments: 123,
+    link: "/myth-about-sunscreen-and-skin",
   },
   {
     id: 1,
-    title:
-      "Dr. Geeta’s article on Everything you wanted to know about threadlift",
-    description:
-      "Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita rebum dolor stet amet justo",
+    title: "Get Detanned at Skin & You Clinic",
+    description: "How can one avoid sun tanning?",
     blogImage: BlogImg3,
     authorImage: UserImg,
     author: "Dr. Geeta",
     views: 12345,
     comments: 123,
+    link: "/get-detanned-at-skin-you-clinc",
   },
 ];
 
@@ -139,7 +140,12 @@ const Blog: React.FC = () => {
                           alt="img"
                         />
                         <div className="pt-4 pb-4">
-                          <a className="h3 d-block mb-3" href="/">
+                          <a
+                            className="h3 d-block mb-3"
+                            href={article?.link}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             {article.title}
                           </a>
                           <p className="m-0">{article.description}</p>
@@ -173,12 +179,12 @@ const Blog: React.FC = () => {
           </div>
         </div> */}
 
-                        <button
+                        {/* <button
                           className="btn btn-outline-dark rounded-pill py-3 px-5"
                           type="submit"
                         >
                           Read More
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   ))}
@@ -203,7 +209,12 @@ const Blog: React.FC = () => {
                         alt="img"
                       />
                       <div className="pt-4 pb-4">
-                        <a className="h3 d-block mb-3" href="/">
+                        <a
+                          className="h3 d-block mb-3"
+                          href={article?.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           {article.title}
                         </a>
                         <p className="m-0">{article.description}</p>
@@ -237,12 +248,12 @@ const Blog: React.FC = () => {
           </div>
         </div> */}
 
-                      <button
+                      {/* <button
                         className="btn btn-outline-dark rounded-pill py-3 px-5"
                         type="submit"
                       >
                         Read More
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 ))}

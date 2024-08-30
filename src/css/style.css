@@ -479,3 +479,23 @@ a,
     transform: scale(1.1); /* Zoomed-in size */
   }
 }
+
+.medical-clinic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.m-dropdown {
+  margin-left: -75% !important;
+}
+
+.dropdown-item {
+  font-size: 12px !important;
+}
+
+/* @media (max-width: 1610px) {
+  .drpdwn-element {
+    flex-wrap: wrap !important;
+  }
+} */
