@@ -21,6 +21,7 @@ const footerItems = [
   { path: "/", label: "Photogallery" },
   { path: "/", label: "Blogs" },
   { path: "/", label: "About us" },
+  { path: "/", label: "How to Prepare for an appointment" },
 ];
 
 const Footer: React.FC = () => {
@@ -50,10 +51,7 @@ const Footer: React.FC = () => {
                       icon={faMapMarkerAlt}
                       className="text-primary me-3"
                     />
-                    {`Skin & You Clinic
-115 B Mittal Court,
-Nariman Point,
-Mumbai – 21.`}
+                    {`Skin & You Clinic, 115 B Mittal Court, Nariman Point, Mumbai – 21.`}
                   </Link>
                 </p>
                 <p className="mb-2">

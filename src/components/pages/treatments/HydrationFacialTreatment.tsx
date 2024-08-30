@@ -28,8 +28,8 @@ const HydrationFacialTreatment: React.FC = () => {
         </div>
       </div>
 
-      <div className="container-fluid py-5">
-        <div className="container py-5">
+      <div className="container-fluid pt-5">
+        <div className="container">
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">

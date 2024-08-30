@@ -14,24 +14,24 @@ import { useInView } from "react-intersection-observer";
 
 const testimonials = [
   {
-    name: "Aditi S",
+    name: "Aditi S, 34",
     image: Testimonials1,
     feedback:
-      "I was struggling with hair thinning for years, and it took a toll on my confidence. After visiting Dr. Geeta at the Skin & You Clinic, I started a customized treatment plan. Within a few months, I noticed a significant improvement in my hair density and overall health. The staff was incredibly supportive throughout the process, and I felt cared for every step of the way. I couldn't be happier with the results!",
+      "I was struggling with hair thinning, but after starting treatment with Dr. Geeta, my hair looks fuller and healthier. The care and support I received were amazing. I'm so happy with the results!",
     date: "June 25, 2024",
   },
   {
-    name: "Neha R",
+    name: "Neha R, 45",
     image: Testimonials2,
     feedback:
-      "I was nervous about trying Botox for the first time, but Dr. Geeta made me feel completely at ease. She took the time to explain the entire process and what I could expect. The results were fantastic! My forehead lines have softened significantly, giving me a more youthful appearance without looking overdone. I'm thrilled with the outcome and would highly recommend her to anyone considering Botox.",
+      "I was nervous about Botox, but Dr. Geeta explained everything and made me comfortable. My forehead lines have softened, and I look refreshed. Highly recommend!",
     date: "July 5, 2024",
   },
   {
-    name: "Sonal P",
+    name: "Sonal P, 38",
     image: Testimonials3,
     feedback:
-      "I had been contemplating getting fillers to address some volume loss in my cheeks and under-eye area. Dr. Geeta's approach was so natural and precise that I look refreshed without any obvious signs of treatment. The subtle enhancement has made such a difference in my confidence. Her expertise and eye for detail are unmatched. I’m so happy with my experience at the Skin & You Clinic!",
+      "I wanted fillers for a more youthful look, and Dr. Geeta's work was perfect. The results are natural, and I feel more confident. Great experience at Skin & You Clinic!",
     date: "August 2, 2024 ",
   },
 ];
@@ -113,7 +113,7 @@ const Testimonials: React.FC = () => {
                         className="testimonial-item text-center mb-4"
                         key={i}
                       >
-                        <div className="position-relative mb-2">
+                        {/* <div className="position-relative mb-2">
                           <img
                             className="img-fluid rounded-circle mx-auto animate__animated animate__bounceInLeft animate__slow"
                             src={item?.image}
@@ -129,7 +129,7 @@ const Testimonials: React.FC = () => {
                               className="text-primary"
                             />
                           </div>
-                        </div>
+                        </div> */}
                         <p className="fs-4 fw-normal animate__animated animate__bounceInRight animate__slow">
                           {item?.feedback}
                         </p>
@@ -137,9 +137,9 @@ const Testimonials: React.FC = () => {
                         <h3 className="animate__animated animate__bounceInUp animate__slow">
                           {item?.name}
                         </h3>
-                        <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__slow">
+                        {/* <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__slow">
                           {item?.date}
-                        </h6>
+                        </h6> */}
                       </div>
                     ))}
                 </Slider>

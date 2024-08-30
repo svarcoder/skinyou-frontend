@@ -83,105 +83,83 @@ const navItems = [
         path: "/treatments/placenta-extract-treatment",
         label: "Placenta Extract Treatment",
       },
-      //hdjhdjjd
-
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/prp-vampire-facelift",
         label: "Prp Vampire Facelift",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/liquid-facelift-treatment",
         label: "Liquid Facelift Treatment",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/stretch-marks-treatment",
         label: "Stretch Marks Treatment",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/non-surgicalskin-tightening",
         label: "Non Surgical Skin Tightening",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/hair-loss-treatment",
         label: "Hair Loss Treatment",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/semi-permanent-make-up",
         label: "Semi Permanent Make Up",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/medical-tattooing",
         label: "Medical Tattooing",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/painless-laser-hair-removal",
         label: "Painless Laser Hair Removal",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/ndyag-hair-removal-treatment",
         label: "Ndyag/ Hair Removal Treatment",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/accent-ultra-skin-body-contouring",
         label: "Accent Ultra Skin Body Contouring",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/accent-ultra-rf-pixel",
         label: "Accent Ultra RF Pixel",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/rf-growth-removal-cautery",
         label: "RF Growth Removal",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/harmony-xl-birthmark-removal-nevus-of-otaito",
         label: "Harmony XL Birth Mark Removal",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/harmony-xl-spider-vein-removal",
         label: "Harmony XL Spider Vein Removal",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/prp-for-hair-loss-treatment",
         label: "PRP for Hair Loss Treatment",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/stem-cells-for-hair-loss",
         label: "Stem Cells for Hair Loss",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/painless-tattoo-removal",
         label: "Painless Tattoo Removal",
       },
       {
-        path: "/treatments/placenta-extract-treatment",
+        path: "/treatments/body-slimming-treatment",
         label: "Body Slimming Treatment",
       },
     ],
   },
   {
     path: "/",
-    label: "Skin & FAQ",
-    dropdown: true,
-    subItems: [
-      { path: "/", label: "Sun & Skin Care" },
-      { path: "/", label: "X-Ray of Skin (Skin Analysis)" },
-      { path: "/", label: "Oily Skin Care" },
-      { path: "/", label: "Dry Skin Care" },
-      { path: "/", label: "Normal / Combination Skin Care" },
-      { path: "/", label: "Pigmented Skin Care" },
-      { path: "/", label: "Sensitive Skin Care" },
-      { path: "/", label: "Nutrition & Skin Care" },
-      { path: "/", label: "Skin Care Through the Ages" },
-      { path: "/", label: "Skin Care & Smoking" },
-      { path: "/", label: "Causes of facial wrinkles" },
-      { path: "/", label: "Facial volume loss Treatment" },
-      { path: "/", label: "Skin rejuvenation Treatment" },
-    ],
-  },
-  {
-    path: "/",
-    label: "MEDICAL CLINIC",
+    label: "Treatment by Concern",
     dropdown: true,
     subItems: [
       {
@@ -189,16 +167,46 @@ const navItems = [
         label: "Dermatology Treatment",
         dropdown: true,
         subElements: [
-          { path: "/", label: "Acne" },
-          { path: "/", label: "Acne Scars" },
-          { path: "/", label: "Rosacea / Pink Face" },
-          { path: "/", label: "Eczema" },
-          { path: "/", label: "Allergy / Itching" },
-          { path: "/", label: "Warts / Corns" },
-          { path: "/", label: "Unwanted Skin Growths" },
-          { path: "/", label: "Keloid / Hypertrophic Scars" },
-          { path: "/", label: "Dry Skin / Xerosis" },
-          { path: "/", label: "Bacterial Infection" },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/acne",
+            label: "Acne",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/acne-scars",
+            label: "Acne Scars",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/rosacea-pink-face",
+            label: "Rosacea / Pink Face",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/eczema",
+            label: "Eczema",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/allergy-itching",
+            label: "Allergy / Itching",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/warts-corns",
+            label: "Warts / Corns",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/skin-growths",
+            label: "Unwanted Skin Growths",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/keloid-hypertrophic-scars",
+            label: "Keloid / Hypertrophic Scars",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/dry-skin-xerosis",
+            label: "Dry Skin / Xerosis",
+          },
+          {
+            path: "/medical-clinic/dermatology-treatment/skin-problem/bacterial-infection",
+            label: "Bacterial Infection",
+          },
           { path: "/", label: "Fungal Infection" },
           { path: "/", label: "Viral Infection" },
           { path: "/", label: "Candid Infection" },
@@ -228,16 +236,46 @@ const navItems = [
         label: "Laser Treatment",
         dropdown: true,
         subElements: [
-          { path: "/", label: "Painless Laser Hair Removal" },
-          { path: "/", label: "Stretch Marks Treatment" },
-          { path: "/", label: "Scars Treatment" },
-          { path: "/", label: "Burn Scars Treatment" },
-          { path: "/", label: "Keloid Treatment" },
-          { path: "/", label: "Photo Facial" },
-          { path: "/", label: "Birth Mark Treatment" },
-          { path: "/", label: "Acne Scar Treatment" },
-          { path: "/", label: "Laser Skin Whitening" },
-          { path: "/", label: "Pigmentation Removal Treatment" },
+          {
+            path: "/medical-clinic/laser-treatment/painless-laser-hair-removal",
+            label: "Painless Laser Hair Removal",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/stretch-marks-treatment",
+            label: "Stretch Marks Treatment",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/scars-treatment",
+            label: "Scars Treatment",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/burn-scars-treatment",
+            label: "Burn Scars Treatment",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/keloid-treatment",
+            label: "Keloid Treatment",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/photo-facial",
+            label: "Photo Facial",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/birth-mark-treatment",
+            label: "Birth Mark Treatment",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/acne-scar-treatment",
+            label: "Acne Scar Treatment",
+          },
+          {
+            path: "/medical-clinic/laser-treatment/laser-skin-whitening",
+            label: "Laser Skin Whitening",
+          },
+          {
+            path: "/medical-clinic/pigmentation-removal-treatment",
+            label: "Pigmentation Removal Treatment",
+          },
         ],
       },
       {
@@ -264,20 +302,67 @@ const navItems = [
           { path: "/", label: "V Shaped Face Tightening" },
         ],
       },
+      {
+        path: "/",
+        label: "Skin Treatment",
+        dropdown: true,
+        subElements: [
+          { path: "/skin-education/sun-skin", label: "Sun & Skin Care" },
+          {
+            path: "/skin-education/x-ray-of-skin-skin-analysis",
+            label: "X-Ray of Skin (Skin Analysis)",
+          },
+          { path: "/skin-education/oily-skin", label: "Oily Skin Care" },
+          { path: "/skin-education/dry-skin", label: "Dry Skin Care" },
+          {
+            path: "/skin-education/normal-skincombination-skin",
+            label: "Normal / Combination Skin Care",
+          },
+          {
+            path: "/skin-education/pigmented-skin",
+            label: "Pigmented Skin Care",
+          },
+          {
+            path: "/skin-education/sensitive-skin",
+            label: "Sensitive Skin Care",
+          },
+          {
+            path: "/skin-education/nutrition-skin",
+            label: "Nutrition & Skin Care",
+          },
+          {
+            path: "/skin-education/skin-through-the-ages",
+            label: "Skin Care Through the Ages",
+          },
+          {
+            path: "/skin-education/skin-smoking",
+            label: "Skin Care & Smoking",
+          },
+          {
+            path: "/skin-education/causes-of-facial-wrinkles",
+            label: "Causes of facial wrinkles",
+          },
+          {
+            path: "/skin-education/facial-volume-loss",
+            label: "Facial volume loss Treatment",
+          },
+          {
+            path: "/skin-education/total-skin-rejuvenation",
+            label: "Skin rejuvenation Treatment",
+          },
+        ],
+      },
     ],
   },
-  { path: "/photogallery", label: "Photogallery" },
   {
     path: "/media",
     label: "Media",
     dropdown: true,
     subItems: [
-      { path: "/", label: "What's New" },
-      { path: "/", label: "Articles" },
-      { path: "/", label: "Events" },
-      { path: "/", label: "Newsletters" },
-      { path: "/", label: "Blog" },
-      { path: "/", label: " CLINIC VIDEOS" },
+      { path: "/category/whats-new", label: "What's New" },
+      { path: "/category/media/articles", label: "Articles" },
+      { path: "/category/media/blog", label: "Blog" },
+      { path: "/category/photogallery", label: "Photogallery" },
     ],
   },
   {
@@ -285,19 +370,20 @@ const navItems = [
     label: "About Us",
     dropdown: true,
     subItems: [
-      { path: "/", label: "Dr. Geeta Mehra Fazalbhoy" },
-      { path: "/", label: "Why Us" },
-      { path: "/", label: " How to Prepare for an appointment" },
+      {
+        path: "/about-us/dr-geeta-mehra-fazalbhoy",
+        label: "Dr. Geeta Mehra Fazalbhoy",
+      },
+      { path: "/about-us/why-us", label: "Why Us" },
+      {
+        path: "/about-us/how-to-prepare-for-an-appointment",
+        label: "How to Prepare for an appointment",
+      },
     ],
   },
   {
     path: "/contact",
     label: "Contact",
-    dropdown: true,
-    subItems: [
-      { path: "/", label: "FRANCHISE" },
-      { path: "/", label: "CAREER" },
-    ],
   },
 ];
 
@@ -343,7 +429,7 @@ const NavBar: React.FC = () => {
                       <div className="dropdown-menu m-0">
                         <div className="drpdwn-wrap">
                           <div className="drpdwn-element">
-                            {index === 3 ? (
+                            {index === 2 ? (
                               <>
                                 <div className="medical-clinic p-0">
                                   {item.subItems.map(
@@ -521,38 +607,6 @@ const NavBar: React.FC = () => {
                                     )
                                   )}
                                 </div>
-                              </>
-                            ) : index === 2 ? (
-                              <>
-                                {item.subItems
-                                  .slice(0, 2)
-                                  .map((subItem, subIndex) => (
-                                    <Link
-                                      key={subIndex}
-                                      to={subItem.path}
-                                      className="dropdown-item"
-                                      onClick={() =>
-                                        handleNavLinkClick(subItem.path)
-                                      }
-                                    >
-                                      {subItem.label}
-                                    </Link>
-                                  ))}
-                                <h4 className="dropdown-item"> Skin Types</h4>
-                                {item.subItems
-                                  .slice(2, 13)
-                                  .map((subItem, subIndex) => (
-                                    <Link
-                                      key={subIndex}
-                                      to={subItem.path}
-                                      className="dropdown-item"
-                                      onClick={() =>
-                                        handleNavLinkClick(subItem.path)
-                                      }
-                                    >
-                                      {subItem.label}
-                                    </Link>
-                                  ))}
                               </>
                             ) : (
                               item.subItems

@@ -12,12 +12,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
+
 const services = [
   {
     id: 1,
     icon: Img1,
     title: "Body & face laser hair removal",
-    description: "Body & face laser hair removal.",
+    description:
+      "Experience smooth, hair-free skin with our advanced, pain-free laser technology.",
     link: "/",
   },
   {
@@ -39,9 +41,9 @@ const services = [
   {
     id: 4,
     icon: Img4,
-    title: "Body and Face Tightening ",
+    title: "Botox",
     description:
-      "Lift and tighten sagging skin with our cutting-edge, non-surgical radiofrequency treatments.",
+      "Effortlessly smooth wrinkles and rejuvenate your skin with our expert Botox treatment.",
     link: "/",
   },
   {
