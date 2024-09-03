@@ -1751,6 +1751,8 @@ a[href*="mailto"] {
   transform: none;
   will-change: transform;
   transition: all 0.25s ease;
+  max-height: 300px;
+  height: 300px;
 }
 
 .box-info-modern-title {

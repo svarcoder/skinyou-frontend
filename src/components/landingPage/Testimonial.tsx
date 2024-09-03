@@ -14,24 +14,24 @@ import { useInView } from "react-intersection-observer";
 
 const testimonials = [
   {
-    name: "Kavitanjali Prasad",
+    name: "Aditi S, 34",
     image: Testimonials1,
     feedback:
-      "For me Dr. Geeta was god sent. After having so many doctors treating me like a guinea pig it was her confidence and medication which helped me to recover. Very polite staff and a patient is in good and capable hand.",
+      "I was struggling with hair thinning, but after starting treatment with Dr. Geeta, my hair looks fuller and healthier. The care and support I received were amazing. I'm so happy with the results!",
     date: "June 25, 2024",
   },
   {
-    name: "Jane Smith",
+    name: "Neha R, 45",
     image: Testimonials2,
     feedback:
-      "I highly recommend Dr. Geeta. The entire process was smooth and professional. My skin condition has improved dramatically.",
+      "I was nervous about Botox, but Dr. Geeta explained everything and made me comfortable. My forehead lines have softened, and I look refreshed. Highly recommend!",
     date: "July 5, 2024",
   },
   {
-    name: "Robert Brown",
+    name: "Sonal P, 38",
     image: Testimonials3,
     feedback:
-      "Excellent care! Dr. Geeta is very knowledgeable and kind. I always leave the clinic feeling well taken care of.",
+      "I wanted fillers for a more youthful look, and Dr. Geeta's work was perfect. The results are natural, and I feel more confident. Great experience at Skin & You Clinic!",
     date: "August 2, 2024 ",
   },
 ];
@@ -113,7 +113,7 @@ const Testimonials: React.FC = () => {
                         className="testimonial-item text-center mb-4"
                         key={i}
                       >
-                        <div className="position-relative mb-2">
+                        {/* <div className="position-relative mb-2">
                           <img
                             className="img-fluid rounded-circle mx-auto animate__animated animate__bounceInLeft animate__slow"
                             src={item?.image}
@@ -129,7 +129,7 @@ const Testimonials: React.FC = () => {
                               className="text-primary"
                             />
                           </div>
-                        </div>
+                        </div> */}
                         <p className="fs-4 fw-normal animate__animated animate__bounceInRight animate__slow">
                           {item?.feedback}
                         </p>
@@ -137,9 +137,9 @@ const Testimonials: React.FC = () => {
                         <h3 className="animate__animated animate__bounceInUp animate__slow">
                           {item?.name}
                         </h3>
-                        <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__slow">
+                        {/* <h6 className="fw-normal text-primary mb-3 animate__animated animate__bounceInUp animate__slow">
                           {item?.date}
-                        </h6>
+                        </h6> */}
                       </div>
                     ))}
                 </Slider>

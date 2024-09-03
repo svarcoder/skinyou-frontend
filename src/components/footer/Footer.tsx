@@ -16,18 +16,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const footerItems = [
-  { path: "/", label: "Acne" },
-  { path: "/", label: "Acne Scars" },
-  { path: "/", label: "Rosacea / Pink Face" },
-  { path: "/", label: "Eczema" },
-  { path: "/", label: "Allergy / Itching" },
-  { path: "/", label: "Warts / Corns" },
-  { path: "/", label: "Candid Infection" },
-  { path: "/", label: "Pigmentation (Melasma / Freckles)" },
-  { path: "/", label: "Nail Infections" },
-  { path: "/", label: "Nail Changes" },
-  { path: "/", label: "Patchy Hair Loss / Alopecia Areata" },
-  { path: "/", label: "Hair Loss" },
+  { path: "/", label: "Treatments" },
+  { path: "/", label: "Skin & Faq" },
+  { path: "/", label: "Photogallery" },
+  { path: "/", label: "Blogs" },
+  { path: "/", label: "About us" },
+  { path: "/", label: "How to Prepare for an appointment" },
 ];
 
 const Footer: React.FC = () => {
@@ -57,7 +51,7 @@ const Footer: React.FC = () => {
                       icon={faMapMarkerAlt}
                       className="text-primary me-3"
                     />
-                    {`115 B, Mittal Court, Nariman Point, Mumbai, Maharashtra 400021`}
+                    {`Skin & You Clinic, 115 B Mittal Court, Nariman Point, Mumbai – 21.`}
                   </Link>
                 </p>
                 <p className="mb-2">
@@ -192,7 +186,7 @@ const Footer: React.FC = () => {
                     to="https://Wizarding.com"
                     target="_blank"
                   >
-                    Wizarding
+                    Wizarding Media
                   </Link>
                 </p>
               </div>

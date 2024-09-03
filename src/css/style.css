@@ -109,6 +109,15 @@ a,
   text-transform: uppercase;
 }
 
+.nav-elem {
+  font-family: "Jost", sans-serif;
+  position: relative;
+  color: var(--dark);
+  outline: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
 @media (max-width: 992px) {
   .logo {
     height: 40px;
@@ -135,6 +144,11 @@ a,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+.nav-elem:hover,
+.nav-elem.active {
   color: var(--primary);
 }
 
@@ -216,7 +230,7 @@ a,
   content: "";
   position: absolute;
   width: 100%;
-  height: 60%;
+  height: 40%;
   background-image: url("../assets/spa-background-with-a-space-for-a-text-MM3Z8HQ.jpg");
   background-position: 0px -450px;
   background-repeat: no-repeat;
@@ -477,5 +491,90 @@ a,
   }
   50% {
     transform: scale(1.1); /* Zoomed-in size */
+  }
+}
+
+.medical-clinic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.m-dropdown {
+  margin-left: -75% !important;
+}
+
+.dropdown-item {
+  font-size: 12px !important;
+}
+
+h5 {
+  span {
+    color: #848e9e;
+  }
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+
+.multi-level {
+  margin-left: -20px !important;
+}
+
+.multi-level li {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.multi-level-wrap {
+  display: flex;
+}
+
+.menu-section {
+  flex: 1;
+  padding: 5px;
+  width: 200px;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    height: 45px;
   }
 }

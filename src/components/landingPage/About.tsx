@@ -47,11 +47,13 @@ const About: React.FC = () => {
                 </h1>
               </div>
               <p className="animate__animated animate__bounceInLeft animate__slow">
-                Managing Director & Founder Member of Skin & You Clinic &
-                CapitalG Healthcare Multiventures Private Limited, Nariman
-                Point, Mumbai. A leading South Mumbai Skin Lasers & Aesthetic
-                treatment clinic. Dr. Geeta Mehra Fazalbhoy was 1st to introduce
-                Micro Current Non Invasive Technology and Worlds leading RF Skin
+                Dr. Geeta Mehra Fazalbhoy, MD & Founder of Skin & You Clinic,
+                Mumbai, is a globally recognized expert in dermatology and
+                aesthetic medicine. With advanced international training and
+                certifications, she specializes in cutting-edge, pain-free
+                treatments for skin tightening, pigmentation, and body
+                contouring. Her clinic is ranked among the top in India,
+                attracting patients worldwide.
               </p>
               <div className={`${windowWidth >= 991 ? "col-3" : "col-6"} mt-4`}>
                 <button

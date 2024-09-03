@@ -67,7 +67,8 @@ const Hero: React.FC = () => {
                 data-caption-delay={250}
                 style={{ color: "black" }}
               >
-                Instant Solutions to Lines, Wrinkles, Folds & Scars
+                Instantly Smooth Away Wrinkles and Scars for a Fresh, Youthful
+                Glow
               </p>
               <div className="btn-wrap">
                 <div className="group-xxl group-middle">
@@ -86,9 +87,9 @@ const Hero: React.FC = () => {
                     data-caption-animate="fadeInUp"
                     data-caption-delay={450}
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#exampleModal2"
                   >
-                    Book Now
+                    Call Now
                   </Link>
                   <Link
                     className="button button-white button-md button-round-2 animate__animated animate__bounceInUp animate__slow"
@@ -96,9 +97,9 @@ const Hero: React.FC = () => {
                     data-caption-animate="fadeInUp"
                     data-caption-delay={450}
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
+                    data-bs-target="#exampleModal"
                   >
-                    Call Now
+                    Book Now
                   </Link>
                 </div>
               </div>
