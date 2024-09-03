@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
                     to="https://Wizarding.com"
                     target="_blank"
                   >
-                    Wizarding
+                    Wizarding Media
                   </Link>
                 </p>
               </div>
