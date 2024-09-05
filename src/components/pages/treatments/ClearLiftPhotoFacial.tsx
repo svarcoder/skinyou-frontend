@@ -12,7 +12,7 @@ const ClearLiftPhotoFacial: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Clear Lift Photo Facial</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const ClearLiftPhotoFacial: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <p>
                   {" "}

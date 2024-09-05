@@ -12,7 +12,7 @@ const WhiteningFacialTreatment: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Whitening Facial</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const WhiteningFacialTreatment: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">Whitening Facial Treatment</h3>
 
                 <p>
                   This is perfect for lightening the skin before a special

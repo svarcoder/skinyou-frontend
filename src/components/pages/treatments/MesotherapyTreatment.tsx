@@ -12,7 +12,7 @@ const MesotherapyTreatment: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Mesotherapy Treatment</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const MesotherapyTreatment: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <p>
                   This medical technique was invented in 1952 by Michel Pistor

@@ -12,7 +12,7 @@ const LiquidFaceliftTreatment: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Liquid Facelift Treatment</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const LiquidFaceliftTreatment: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <h5>LIQUID FACE LIFT /COLLAGEN INJECTIONS</h5>
                 <p>Turn the clock back with this revolutionary procedure</p>

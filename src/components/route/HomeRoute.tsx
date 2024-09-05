@@ -55,6 +55,11 @@ import Melasma from "../pages/treatments/Melasma";
 import Hyperpigmentation from "../pages/treatments/Hyperpigmentation";
 import PigmentedLesion from "../pages/treatments/PigmentedLesion";
 import CrystalSkinPolishing from "../pages/treatments/CrystalSkinPolishing";
+import AcneScars from "../pages/treatments/AcneScars";
+import ActiveAcne from "../pages/treatments/ActiveAcne";
+import GelPeelsTreatment from "../pages/treatments/GelPeelsTreatment";
+import ChemicalPeels from "../pages/treatments/ChemicalPeels";
+import DeepPeel from "../pages/treatments/DeepPeel";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -187,6 +192,14 @@ const HomeRoute: React.FC = () => {
           path="/treatments/crystal-skin-polishing"
           element={<CrystalSkinPolishing />}
         />
+        <Route path="/treatments/acne-scars" element={<AcneScars />} />
+        <Route path="/treatments/active-acne" element={<ActiveAcne />} />
+        <Route
+          path="/treatments/gel-peels-treatment"
+          element={<GelPeelsTreatment />}
+        />
+        <Route path="/treatments/chemical-peels" element={<ChemicalPeels />} />
+        <Route path="/treatments/deep-peel" element={<DeepPeel />} />
       </Routes>
       <Footer />
     </Router>

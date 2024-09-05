@@ -12,7 +12,7 @@ const CaciTreatment: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>CACI Treatment</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const CaciTreatment: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <h5>Which Of These Are You Most Worried About?</h5>
 

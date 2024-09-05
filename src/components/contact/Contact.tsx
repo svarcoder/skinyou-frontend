@@ -232,7 +232,7 @@ const Contact: React.FC = () => {
                   </Link>
                   <Link
                     className="btn btn-lg-square btn-primary rounded-circle mx-2 d-flex justify-content-center align-items-center"
-                    to="https://www.youtube.com/skinandyou"
+                    to="https://www.youtube.com/@DoctorGeetaMehraFazalbhoy"
                     target="_blank"
                     rel="noreferrer"
                   >

@@ -206,19 +206,19 @@ a,
 }
 
 .service-item .service-icon {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: #fff; */
+  background: #fff;
   border-radius: 50%;
   /* transform: rotate(-14deg); */
 }
 
 .service-item .service-icon img {
   /* transform: rotate(15deg); */
-  height: 100px;
+  height: 80px;
 }
 
 .text-wrap {
@@ -240,10 +240,14 @@ a,
 }
 
 .container-top {
-  height: 400px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container-top h1 {
+  margin-top: 135px;
 }
 
 .background-image-div {

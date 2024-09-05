@@ -12,7 +12,7 @@ const NonSurgicalSkinTightening: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Non-Surgical Skin Tightening</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const NonSurgicalSkinTightening: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">Non-Surgical Skin Tightening</h3>
 
                 <p>
                   At Skin & You Clinic, we offer cutting-edge skin tightening

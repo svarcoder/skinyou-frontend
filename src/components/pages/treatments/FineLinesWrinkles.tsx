@@ -12,7 +12,7 @@ const FineLinesWrinkles: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Fine Lines & Wrinkles</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const FineLinesWrinkles: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">Fine Lines & Wrinkles</h3>
 
                 <p>
                   Age gracefully with our Fine Lines & Wrinkles treatment,

@@ -12,7 +12,7 @@ const SkinPolishing: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Skin Polishing</h1>
           </div>
         </div>
       </div>

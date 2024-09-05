@@ -124,7 +124,10 @@ const Footer: React.FC = () => {
                   </div>
                 </form>
                 <h6 className=" text-uppercase mt-4 mb-3">Follow Us</h6>
-                <div className="d-flex">
+                <div
+                  className="d-flex"
+                  style={{ position: "relative", zIndex: "9999999" }}
+                >
                   <Link
                     className="footer-icon btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
                     to="https://www.facebook.com/SkinandYouClinic"
@@ -143,7 +146,7 @@ const Footer: React.FC = () => {
                   </Link>
                   <Link
                     className="footer-icon btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
-                    to="https://www.youtube.com/skinandyou"
+                    to="https://www.youtube.com/@DoctorGeetaMehraFazalbhoy"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -171,7 +174,11 @@ const Footer: React.FC = () => {
               <div className="col-md-6 text-center text-md-start">
                 <p className="mb-md-0">
                   © 2024{" "}
-                  <Link className="text-dark" to="/">
+                  <Link
+                    className="text-dark"
+                    to="https://www.skinandyou.in"
+                    target="_blank"
+                  >
                     {" "}
                     Skin & You
                   </Link>

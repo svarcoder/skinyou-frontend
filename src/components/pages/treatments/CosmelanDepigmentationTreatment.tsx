@@ -12,7 +12,7 @@ const CosmelanDepigmentationTreatment: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Cosmelan Depigmentation Treatment</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const CosmelanDepigmentationTreatment: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
                 <h5>WHAT DOES COSMELAN DEPIGMENTATION TREAT?</h5>
                 <p>
                   Skin ageing caused by sun exposure, facial blemishes due to

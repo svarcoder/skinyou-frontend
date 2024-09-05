@@ -12,7 +12,7 @@ const RadiofrequencyGrowthRemoval: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Radiofrequency Growth Removal (RF Growth Removal)</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const RadiofrequencyGrowthRemoval: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <p>
                   Youthful skin is smooth, firm, evenly coloured with no growth.
@@ -49,7 +48,7 @@ const RadiofrequencyGrowthRemoval: React.FC = () => {
                     Age spots
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />A
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
                     Moles and raised lesions
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
@@ -87,7 +86,7 @@ const RadiofrequencyGrowthRemoval: React.FC = () => {
                     superficial level
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />A
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
                     Better and faster healing
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">

@@ -12,7 +12,7 @@ const UltracelQHIFU: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Ultracel Q+ HIFU</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const UltracelQHIFU: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <h5>
                   Ultracel Q+ HIFU: High-Intensity Focused Ultrasound for Face

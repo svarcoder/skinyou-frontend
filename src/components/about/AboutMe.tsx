@@ -31,123 +31,50 @@ const AboutMe: React.FC = () => {
                 />
 
                 <h2 className="mb-4">
-                  Dr. Geeta Mehra Fazalbhoy (MBBS, DPD UK, AAAM USA)
+                  Dr. Geeta Sajid Fazalbhoy (MBBS, DPD UK, AAAM USA)
                 </h2>
 
                 <p>
-                  Managing Director & Founder Member of Skin & You Clinic,
-                  Nariman Point, Mumbai. She is also a consultant at St.
-                  Elizabeth Hospital Malabar Hill.
+                  Managing Director & Founder of Skin & You Clinic, Nariman
+                  Point, Mumbai. She is also a consultant at St. Elizabeth
+                  Hospital, Malabar Hill. Dr. Geeta Sajid Fazalbhoy has
+                  participated in numerous medical conferences and has served on
+                  the jury panel for several beauty pageants across India.
                 </p>
 
                 <p>
-                  Dr. Geeta Mehra Fazalbhoy has been a part of various medical
-                  conferences and events. She has been a Jury Panel for Skin
-                  Care at a number of Beauty Pageants across the country.
+                  Skin & You Clinic was ranked 3rd in dermatology, laser, and
+                  anti-aging treatments in the 2015 All India Lifestyle Hospital
+                  & Clinic Ranking Survey by the Times of India. Known for its
+                  advanced dermatology treatments, Skin & You Clinic offers
+                  state-of-the-art procedures such as painless laser hair
+                  removal, skin tightening for sagging skin, and non-surgical
+                  radiofrequency treatments for acne scars and stretch marks.
                 </p>
 
                 <p>
-                  Skin & You Clinic has been ranked by Times of India in All
-                  India Lifestyle Hospital & Clinic Ranking Survey 2015, As 5th
-                  Best Clinic in Dermatology, Laser and Anti Ageing.
-                </p>
-
-                <p>
-                  Skin & You is a leading South Mumbai Skin Lasers & Non
-                  invasive dermatology treatment clinic. The World Class Clinic
-                  set in pristine setting is a one stop specialty skin clinic to
-                  handle all types of dermatology and aesthetic treatments.
-                  State of the Art Pain Free Laser Hair Removal, Pain Free Skin
-                  Tightening for Removal of Double Chin and Sagging skin, Non
-                  Surgical Radio frequency for removal of Acne Scars & Stretch
-                  Marks, Painless clear lift treatment for pigmentation and skin
-                  whitening. The Clinic has attracted hundreds of overseas
-                  patients worldwide, where most visit us in Mumbai, India,
-                  exclusively for Laser Hair removal and Skin Tightening RF,
-                  <Link to="/treatments-at-clinic/rf-pixel">RF Pixel</Link>. The
-                  Skin Clinic specializes in the laser treatments to remove
-                  pigmentation and{" "}
-                  <Link to="/treatments-at-clinic/gel-peels-and-chemical-peels">
-                    Chemical Peels
-                  </Link>
-                  from UK & Australia / New Zealand.
+                  The clinic attracts patients from all over the world, many
+                  traveling to Mumbai for renowned laser treatments and
+                  skin-tightening procedures. Additionally, the clinic
+                  specializes in chemical peels and pigmentation treatments,
+                  using techniques from the UK, Australia, and New Zealand.
                 </p>
                 <p>
-                  Dr. Geeta Mehra Fazalbhoy was 1st to introduce Micro Current
-                  Non Invasive Technology for instant results and the 1st to
-                  introduce World’s leading Technology Pain Free Radio Frequency
-                  skin tightening for removal of Sagging Skin and Double Chin &
-                  Pain free RF Pixel technology for Stretch Mark removal and
-                  acne scars removal.
+                  Dr. Geeta introduced several cutting-edge technologies,
+                  including Micro Current Non-Invasive Technology for instant
+                  results and Pain-Free Radio Frequency Skin Tightening for
+                  double chin and sagging skin. She was also a pioneer in RF
+                  Pixel technology for stretch mark and acne scar removal, as
+                  well as I-Lipo and Accent Ultra for body contouring, shaping,
+                  and cellulite removal—non-invasive, pain-free treatments with
+                  visible results in just a few sessions.
                 </p>
                 <p>
-                  Dr. Geeta Mehra Fazalbhoy has also introduced the
-                  revolutionary I-Lipo and accent ultra for Body Contouring,
-                  Body -Shaping & Cellulite removal which is pain free & Non
-                  invasive. Results are visible in few sessions.
-                </p>
-                <p>
-                  At Dr. Geeta Mehra Fazalbhoy’s Skin & You Clinic also
-                  specializes in dermatology skin conditions like
-                  <Link to="/medical-services-for/dermatology-clinic/skin-facial-redness-rosacea">
-                    Skin & Facial Redness (Rosacea)
-                  </Link>
-                  ,
-                  <Link to="/medical-services-for/dermatology-clinic/eczema-dermatitis">
-                    Eczema/Dermatitis
-                  </Link>{" "}
-                  ,{" "}
-                  <Link to="/medical-services-for/dermatology-clinic/psoriasis">
-                    Psoriasis
-                  </Link>
-                  ,
-                  <Link to="/medical-services-for/dermatology-clinic/itching">
-                    Itching
-                  </Link>{" "}
-                  ,
-                  <Link to="//medical-services-for/dermatology-clinic/hypertrophic-scars-keloids">
-                    Hypertrophic Scars/ Keloids
-                  </Link>
-                  ,
-                  <Link to="/medical-services-for/dermatology-clinic/seborrheic-dermatitis">
-                    Seborrheic Dermatitis
-                  </Link>{" "}
-                  ,
-                  <Link to="/medical-services-for/dermatology-clinic/fungal-infections">
-                    Fungal Infections
-                  </Link>{" "}
-                  ,
-                  <Link to="/medical-services-for/dermatology-clinic/nail-problems">
-                    Nail Problems
-                  </Link>{" "}
-                  ,{" "}
-                  <Link to="/medical-services-for/dermatology-clinic/hair-problems">
-                    Hair Problems
-                  </Link>{" "}
-                  ,{" "}
-                  <Link
-                    to="/
-                   medical-services-for/dermatology-clinic/excessive-sweating"
-                  >
-                    Excessive Sweating
-                  </Link>{" "}
-                  ,
-                  <Link to="/medical-services-for/pigmentation/pigmentary-changes">
-                    Pigmentation changes
-                  </Link>{" "}
-                  ,{" "}
-                  <Link to="/medical-services-for/pigmentation/melasma-chloasma">
-                    Melasma/ Chloasma
-                  </Link>
-                  ,
-                  <Link to="/medical-services-for/acne/acne-treatment">
-                    Acne
-                  </Link>{" "}
-                  ,
-                  <Link to="/medical-services-for/acne/acne-scarring">
-                    Acne Scarring
-                  </Link>{" "}
-                  .
+                  At Skin & You Clinic, Dr. Geeta also specializes in treating
+                  various dermatological conditions such as rosacea, eczema,
+                  psoriasis, keloids, seborrheic dermatitis, fungal infections,
+                  nail and hair problems, excessive sweating, melasma, acne, and
+                  acne scarring.
                 </p>
 
                 <h5>Academic Qualifications & Certifications</h5>
@@ -225,6 +152,39 @@ const AboutMe: React.FC = () => {
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
                     Indian Association of Cosmetic Laser Surgeons.
+                  </p>
+                </p>
+
+                <h5>Awards & Achievements</h5>
+
+                <p className="d-flex flex-column justify-content-start">
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    ⁠India’s Most Trusted Brand 2015 (Best Laser & Aesthetic
+                    Treatment Clinic Category)
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    ⁠Praxis Media National Business & Service Excellence Award
+                    2016 (Winner)
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    ⁠Vogue Beauty Award 2017 for Best of Industry Skin Expert
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    ⁠Speaker and Medical Trainer for ALMA Lasers and Glenmark
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    ⁠Conducted Medical Camp at Elizabeth Hospital for skin,
+                    hair, and nails
+                  </p>
+                  <p className="rounded mb-0 d-flex align-items-center">
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
+                    Speaker and Trainer at various medical conferences,
+                    including Cosmolasercon and ASCISON
                   </p>
                 </p>
               </div>

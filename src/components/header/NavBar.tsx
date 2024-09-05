@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 
 const navItems = [
@@ -165,16 +165,12 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/acne-scars",
                 label: "Acne Scars",
               },
               {
-                path: "/",
+                path: "/treatments/active-acne",
                 label: "Active Acne",
-              },
-              {
-                path: "/",
-                label: "Acne Treatment",
               },
             ],
           },
@@ -184,20 +180,16 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/gel-peels-treatment",
                 label: "Gel Peels",
               },
               {
-                path: "/",
+                path: "/treatments/chemical-peels",
                 label: "Chemical Peels",
               },
               {
-                path: "/",
+                path: "/treatments/deep-peel",
                 label: "Deep Peel",
-              },
-              {
-                path: "/",
-                label: "Crystal Exfoliation",
               },
             ],
           },

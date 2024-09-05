@@ -10,7 +10,7 @@ const AccentUltraRFPixel: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Accent Ultra RF Pixel</h1>
           </div>
         </div>
       </div>
@@ -26,7 +26,6 @@ const AccentUltraRFPixel: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <p>
                   With today’s emphasis on an active, healthy lifestyle, most
@@ -78,7 +77,7 @@ const AccentUltraRFPixel: React.FC = () => {
                     Stretch Marks Reduction of up to 60% in 5 Sessions
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />A
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
                     Scar/ Acne Scar Reduction of 60%
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">

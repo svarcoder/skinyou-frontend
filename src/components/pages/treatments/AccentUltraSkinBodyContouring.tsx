@@ -12,7 +12,7 @@ const AccentUltraSkinBodyContouring: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Blog Post</h1>
+            <h1>Accent Ultra Skin Body Contouring</h1>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ const AccentUltraSkinBodyContouring: React.FC = () => {
                   alt="img"
                   style={{ height: "600px" }}
                 />
-                <h3 className="mb-4">CACI TREATMENT</h3>
 
                 <h5>
                   An alternative to Liposuction and other invasive surgeries
@@ -48,7 +47,7 @@ const AccentUltraSkinBodyContouring: React.FC = () => {
                     Tightens and lifts skin, reduces inches
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />A
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
                     Pain-free
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
@@ -72,7 +71,7 @@ const AccentUltraSkinBodyContouring: React.FC = () => {
                     Body Contouring
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />A
+                    <FontAwesomeIcon icon={faAngleRight} className="me-2" />
                     Skin Tightening – on body
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
