@@ -22,9 +22,9 @@ import {
 const Contact: React.FC = () => {
   return (
     <>
-      <div className="section section-lg bg-primary">
-        <div className="container container-top">
-          <div className="text-center mt-4">
+      <div className="section section-lg bg-primary container-top">
+        <div className="container">
+          <div className="text-center">
             <h1>Contact Us</h1>
           </div>
         </div>

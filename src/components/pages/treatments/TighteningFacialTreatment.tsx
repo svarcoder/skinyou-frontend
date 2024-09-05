@@ -20,9 +20,9 @@ const TighteningFacialTreatment: React.FC = () => {
 
   return (
     <>
-      <div className="section section-lg bg-primary">
-        <div className="container container-top">
-          <div className="text-center mt-4">
+      <div className="section section-lg bg-primary container-top">
+        <div className="container ">
+          <div className="text-center ">
             <h1>Blog Post</h1>
           </div>
         </div>
@@ -99,35 +99,6 @@ const TighteningFacialTreatment: React.FC = () => {
                   expertise to lift and tighten the skin. The procedure is
                   simple with no downtime and lasting result.{" "}
                 </p>
-
-                <div className="d-flex justify-content-between bg-light rounded p-4 mt-4 mb-4">
-                  <div className="d-flex align-items-center">
-                    <img
-                      className="rounded-circle me-2"
-                      src={UserImg}
-                      width={40}
-                      height={40}
-                      alt="img"
-                    />
-                    <span>John Doe</span>
-                  </div>
-                  <div className="d-flex align-items-center">
-                    <span className="ms-3">
-                      <FontAwesomeIcon
-                        icon={faEye}
-                        className="text-primary me-1"
-                      />
-                      12345
-                    </span>
-                    <span className="ms-3">
-                      <FontAwesomeIcon
-                        icon={faComment}
-                        className="text-primary me-1"
-                      />
-                      123
-                    </span>
-                  </div>
-                </div>
               </div>
 
               {/* <div className="mb-5">

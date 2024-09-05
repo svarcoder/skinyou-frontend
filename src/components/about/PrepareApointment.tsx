@@ -8,9 +8,9 @@ import BackgroundVideo from "../../assets/About us_2.mp4";
 const PrepareApointment: React.FC = () => {
   return (
     <>
-      <div className="section section-lg bg-primary">
-        <div className="container container-top">
-          <div className="text-center mt-4">
+      <div className="section section-lg bg-primarycontainer-top">
+        <div className="container">
+          <div className="text-center">
             <h1>About Us</h1>
           </div>
         </div>

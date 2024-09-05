@@ -4,16 +4,9 @@ import LandingPage from "../landingPage/LandingPage";
 import NavBar from "../header/NavBar";
 import Footer from "../footer/Footer";
 import AboutMe from "../about/AboutMe";
-import SingleBlog from "../media/SingleBlog1";
-import BridalPackage from "../pages/treatments/BridalPackage";
-import PeelsTreatment from "../pages/treatments/PeelsTreatment";
 import CaciTreatment from "../pages/treatments/CaciTreatment";
 import SkinPolishing from "../pages/treatments/SkinPolishing";
 import OxygenFacialTreatment from "../pages/treatments/OxygenFacialTreatment";
-import WhiteningFacialTreatment from "../pages/treatments/WhiteningFacialTreatment";
-import TighteningFacialTreatment from "../pages/treatments/TighteningFacialTreatment";
-import CleanUpTreatment from "../pages/treatments/CleanUpTreatment";
-import OxygenTreatment from "../pages/treatments/OxygenTreatment";
 import HydrationFacialTreatment from "../pages/treatments/HydrationFacialTreatment";
 import InstantTalkButton from "../apointmentButton/InstantTalkButton";
 import BackToTopButton from "../BackToTopButton.tsx/BackToTopButton";
@@ -36,6 +29,32 @@ import SingleBlog8 from "../media/SingleBlog8";
 import SingleBlog9 from "../media/SingleBlog9";
 import SingleBlog10 from "../media/SingleBlog10";
 import SingleBlog11 from "../media/SingleBlog11";
+import SilkPeelDermalInfusion from "../pages/treatments/SilkPeelDermalInfusion";
+import CrystalExfoliation from "../pages/treatments/CrystalExfoliation";
+import NCTF from "../pages/treatments/NCTF";
+import Viscoderm from "../pages/treatments/Viscoderm";
+import DiamondTip from "../pages/treatments/DiamondTip";
+import GlutathioneWhiteningTreatment from "../pages/treatments/GlutathioneWhiteningTreatment";
+import BodyFaceTightening from "../pages/treatments/BodyFaceTightening";
+import NonSurgicalSkinTightening from "../pages/treatments/NonSurgicalSkinTightening";
+import FineLinesWrinkles from "../pages/treatments/FineLinesWrinkles";
+import WrinkleReduction from "../pages/treatments/WrinkleReduction";
+import CleanUp from "../pages/treatments/CleanUp";
+import ClearLiftPhotoFacial from "../pages/treatments/ClearLiftPhotoFacial";
+import RadiofrequencyGrowthRemoval from "../pages/treatments/RadiofrequencyGrowthRemoval";
+import AccentUltraRFPixel from "../pages/treatments/AccentUltraRFPixel";
+import AccentUltraSkinBodyContouring from "../pages/treatments/AccentUltraSkinBodyContouring";
+import UltracelQHIFU from "../pages/treatments/UltracelQHIFU";
+import FaceThreadLift from "../pages/treatments/FaceThreadLift";
+import BodyThreadLift from "../pages/treatments/BodyThreadLift";
+import LiquidFaceliftTreatment from "../pages/treatments/LiquidFaceliftTreatment";
+import MesotherapyTreatment from "../pages/treatments/MesotherapyTreatment";
+import WhiteningFacialTreatment from "../pages/treatments/WhiteningFacialTreatment";
+import CosmelanDepigmentationTreatment from "../pages/treatments/CosmelanDepigmentationTreatment";
+import Melasma from "../pages/treatments/Melasma";
+import Hyperpigmentation from "../pages/treatments/Hyperpigmentation";
+import PigmentedLesion from "../pages/treatments/PigmentedLesion";
+import CrystalSkinPolishing from "../pages/treatments/CrystalSkinPolishing";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -71,39 +90,102 @@ const HomeRoute: React.FC = () => {
           path="/about-us/dr-geeta-mehra-fazalbhoy"
           element={<AboutMe />}
         />
-        <Route path="/treatments/bridal-packages" element={<BridalPackage />} />
-        <Route
-          path="/treatments/gel-peels-chemical-peels-treatment"
-          element={<PeelsTreatment />}
-        />
-        <Route path="/treatments/caci-treatment" element={<CaciTreatment />} />
-        <Route
-          path="/treatments/skin-polishing-microdermabrasion"
-          element={<SkinPolishing />}
-        />
         <Route
           path="/treatments/oxygen-facial-treatment"
           element={<OxygenFacialTreatment />}
+        />
+        <Route
+          path="/treatments/hydration-facial-treatment"
+          element={<HydrationFacialTreatment />}
+        />
+        <Route
+          path="/treatments/silk-peel-dermalInfusion"
+          element={<SilkPeelDermalInfusion />}
+        />
+        <Route
+          path="/treatments/crystal-exfoliation"
+          element={<CrystalExfoliation />}
+        />
+        <Route path="/treatments/nctf" element={<NCTF />} />
+        <Route path="/treatments/viscoderm" element={<Viscoderm />} />
+        <Route path="/treatments/diamond-tip" element={<DiamondTip />} />
+        <Route
+          path="/treatments/glutathione-whitening-treatment"
+          element={<GlutathioneWhiteningTreatment />}
+        />
+        <Route path="/treatments/clean-up" element={<CleanUp />} />
+        <Route path="/treatments/caci-treatment" element={<CaciTreatment />} />
+        <Route path="/treatments/skin-polishing" element={<SkinPolishing />} />
+        <Route
+          path="/treatments/body-face-tightening"
+          element={<BodyFaceTightening />}
+        />
+        <Route
+          path="/treatments/non-surgical-skin-tightening"
+          element={<NonSurgicalSkinTightening />}
+        />
+        <Route
+          path="/treatments/fine-lines-wrinkles"
+          element={<FineLinesWrinkles />}
+        />
+        <Route
+          path="/treatments/wrinkle-reduction"
+          element={<WrinkleReduction />}
+        />
+
+        <Route
+          path="/treatments/clear-lift-photo-facial"
+          element={<ClearLiftPhotoFacial />}
+        />
+        <Route
+          path="/treatments/radiofrequency-growth-removal"
+          element={<RadiofrequencyGrowthRemoval />}
+        />
+        <Route
+          path="/treatments/accent-ultra-rf-pixel"
+          element={<AccentUltraRFPixel />}
+        />
+        <Route
+          path="/treatments/accent-ultra-skin-body-contouring"
+          element={<AccentUltraSkinBodyContouring />}
+        />
+        <Route path="/treatments/ultracel-q-hifu" element={<UltracelQHIFU />} />
+        <Route
+          path="/treatments/face-thread-lift"
+          element={<FaceThreadLift />}
+        />
+        <Route
+          path="/treatments/body-thread-lift"
+          element={<BodyThreadLift />}
+        />
+        <Route
+          path="/treatments/liquid-facelift-treatment"
+          element={<LiquidFaceliftTreatment />}
+        />
+        <Route
+          path="/treatments/mesotherapy-treatment"
+          element={<MesotherapyTreatment />}
         />
         <Route
           path="/treatments/whitening-facial-treatment"
           element={<WhiteningFacialTreatment />}
         />
         <Route
-          path="/treatments/tightening-facial-treatment"
-          element={<TighteningFacialTreatment />}
+          path="/treatments/cosmelan-depigmentation-treatment"
+          element={<CosmelanDepigmentationTreatment />}
+        />
+        <Route path="/treatments/melasma" element={<Melasma />} />
+        <Route
+          path="/treatments/hyperpigmentation"
+          element={<Hyperpigmentation />}
         />
         <Route
-          path="/treatments/clean-up-facial-treatment-pore-cleansing"
-          element={<CleanUpTreatment />}
+          path="/treatments/pigmented-lesion"
+          element={<PigmentedLesion />}
         />
         <Route
-          path="/treatments/oxygen-treatment"
-          element={<OxygenTreatment />}
-        />
-        <Route
-          path="/treatments/hydration-facial-treatment"
-          element={<HydrationFacialTreatment />}
+          path="/treatments/crystal-skin-polishing"
+          element={<CrystalSkinPolishing />}
         />
       </Routes>
       <Footer />

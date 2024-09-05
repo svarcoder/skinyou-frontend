@@ -78,17 +78,17 @@ const articles = [
 ];
 
 const Article: React.FC = () => {
-  const [visibleItems, setVisibleItems] = useState(3);
+  // const [visibleItems, setVisibleItems] = useState(3);
 
-  const loadMore = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
-  };
+  // const loadMore = () => {
+  //   setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
+  // };
 
   return (
     <>
-      <div className="section section-lg bg-primary">
-        <div className="container container-top">
-          <div className="text-center mt-4">
+      <div className="section section-lg bg-primary container-top">
+        <div className="container">
+          <div className="text-center">
             <h1>Articles</h1>
           </div>
         </div>
@@ -98,7 +98,7 @@ const Article: React.FC = () => {
         <div className="section section section-xl">
           <div className="container wide">
             <div className="row row-md-80 row-sm-50">
-              {articles.slice(0, visibleItems).map((article, i) => (
+              {articles.map((article, i) => (
                 <div className="col-xs-10 col-md-6 col-lg-4" key={i}>
                   <div className="box-info-modern box-md">
                     <div className="box-info-modern-figure">
@@ -116,13 +116,13 @@ const Article: React.FC = () => {
                 </div>
               ))}
 
-              {visibleItems < articles.length && (
+              {/* {visibleItems < articles.length && (
                 <div className="col-12 text-center" onClick={loadMore}>
                   <button className="btn btn-primary py-3 px-5">
                     Load More
                   </button>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

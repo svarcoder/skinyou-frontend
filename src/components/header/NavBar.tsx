@@ -20,39 +20,35 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/oxygen-facial-treatment",
                 label: "Oxygen Facial Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/hydration-facial-treatment",
                 label: "Hydration Facial Treatment",
               },
               {
-                path: "/",
-                label: "Oxygen Facial Treatment",
-              },
-              {
-                path: "/",
+                path: "/treatments/silk-peel-dermalInfusion",
                 label: "Silk Peel Dermal Infusion",
               },
               {
-                path: "/",
+                path: "/treatments/crystal-exfoliation",
                 label: "Crystal Exfoliation",
               },
               {
-                path: "/",
+                path: "/treatments/nctf",
                 label: "NCTF",
               },
               {
-                path: "/",
+                path: "/treatments/viscoderm",
                 label: "Viscoderm",
               },
               {
-                path: "/",
+                path: "/treatments/diamond-tip",
                 label: "Diamond Tip",
               },
               {
-                path: "/",
+                path: "/treatments/glutathione-whitening-treatment",
                 label: "Glutathione Whitening Treatment",
               },
             ],
@@ -63,71 +59,71 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/clean-up",
+                label: "Clean Up (Pore cleansing)",
+              },
+              {
+                path: "/treatments/caci-treatment",
                 label: "CACI Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/skin-polishing",
                 label: "Skin Polishing",
               },
               {
-                path: "/",
+                path: "/treatments/body-face-tightening",
                 label: "Body & Face Tightening",
               },
               {
-                path: "/",
+                path: "/treatments/non-surgical-skin-tightening",
                 label: "Non-Surgical Skin Tightening",
               },
               {
-                path: "/",
+                path: "/treatments/fine-lines-wrinkles",
                 label: "Fine Lines & Wrinkles",
               },
               {
-                path: "/",
+                path: "/treatments/wrinkle-reduction",
                 label: "Wrinkle Reduction",
               },
               {
-                path: "/",
+                path: "/treatments/clear-lift-photo-facial",
                 label: "Clear Lift Photo Facial",
               },
               {
-                path: "/",
+                path: "/treatments/radiofrequency-growth-removal",
                 label: "Radiofrequency Growth Removal (RF Growth Removal)",
               },
               {
-                path: "/",
+                path: "/treatments/accent-ultra-rf-pixel",
                 label: "Accent Ultra RF Pixel",
               },
               {
-                path: "/",
+                path: "/treatments/accent-ultra-skin-body-contouring",
                 label: "Accent Ultra Skin Body Contouring",
               },
               {
-                path: "/",
+                path: "/treatments/ultracel-q-hifu",
                 label: "Ultracel Q+ HIFU",
               },
               {
-                path: "/",
+                path: "/treatments/face-thread-lift",
                 label: "Face Thread Lift",
               },
               {
-                path: "/",
+                path: "/treatments/body-thread-lift",
                 label: "Body Thread Lift",
               },
               {
-                path: "/",
+                path: "/treatments/liquid-facelift-treatment",
                 label: "Liquid Facelift Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/mesotherapy-treatment",
                 label: "PRP Vampire Facelift",
               },
               {
-                path: "/",
-                label: "PRP",
-              },
-              {
-                path: "/",
+                path: "/treatments/mesotherapy-treatment",
                 label: "Mesotherapy Treatment",
               },
             ],
@@ -138,27 +134,27 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/whitening-facial-treatment",
                 label: "Whitening Facial",
               },
               {
-                path: "/",
+                path: "/treatments/cosmelan-depigmentation-treatment",
                 label: "Cosmelan Depigmentation Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/melasma",
                 label: "Melasma",
               },
               {
-                path: "/",
+                path: "/treatments/hyperpigmentation",
                 label: "Hyperpigmentation",
               },
               {
-                path: "/",
+                path: "/treatments/pigmented-lesion",
                 label: "Pigmented Lesion",
               },
               {
-                path: "/",
+                path: "/treatments/crystal-skin-polishing",
                 label: "Crystal Skin Polishing",
               },
             ],

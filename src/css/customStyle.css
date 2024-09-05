@@ -1752,7 +1752,7 @@ a[href*="mailto"] {
   will-change: transform;
   transition: all 0.25s ease;
   max-height: 300px;
-  height: 300px;
+  border: 2px solid #fe9b8e;
 }
 
 .box-info-modern-title {

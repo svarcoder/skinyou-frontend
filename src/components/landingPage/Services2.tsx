@@ -145,10 +145,47 @@ const Services2: React.FC = () => {
                         className="service-icon mb-4"
                         style={{
                           backgroundColor:
-                            i === 1 ? "#FFF9FD" : i === 3 ? "#FFF7F7" : "",
+                            i === 2 ? "#FFF9FD" : i === 4 ? "#FFF7F7" : "",
+                          height:
+                            i === 0
+                              ? "126px"
+                              : i === 1
+                              ? "126px"
+                              : i === 3
+                              ? "126px"
+                              : "",
+                          width:
+                            i === 0
+                              ? "155px"
+                              : i === 1
+                              ? "155px"
+                              : i === 3
+                              ? "155px"
+                              : "",
                         }}
                       >
-                        <img src={service?.icon} alt="Icon" />
+                        <img
+                          src={service?.icon}
+                          alt="Icon"
+                          style={{
+                            height:
+                              i === 0
+                                ? "150px"
+                                : i === 1
+                                ? "150px"
+                                : i === 3
+                                ? "150px"
+                                : "",
+                            width:
+                              i === 0
+                                ? "374px"
+                                : i === 1
+                                ? "374px"
+                                : i === 3
+                                ? "374px"
+                                : "",
+                          }}
+                        />
                       </div>
                       <div>
                         <h4 className="mb-3">{service.title}</h4>
@@ -216,10 +253,47 @@ const Services2: React.FC = () => {
                       className="service-icon mb-4"
                       style={{
                         backgroundColor:
-                          i === 1 ? "#FFF9FD" : i === 3 ? "#FFF7F7" : "",
+                          i === 2 ? "#FFF9FD" : i === 4 ? "#FFF7F7" : "",
+                        height:
+                          i === 0
+                            ? "126px"
+                            : i === 1
+                            ? "126px"
+                            : i === 3
+                            ? "126px"
+                            : "",
+                        width:
+                          i === 0
+                            ? "155px"
+                            : i === 1
+                            ? "155px"
+                            : i === 3
+                            ? "155px"
+                            : "",
                       }}
                     >
-                      <img src={service?.icon} alt="Icon" />
+                      <img
+                        src={service?.icon}
+                        alt="Icon"
+                        style={{
+                          height:
+                            i === 0
+                              ? "150px"
+                              : i === 1
+                              ? "150px"
+                              : i === 3
+                              ? "150px"
+                              : "",
+                          width:
+                            i === 0
+                              ? "374px"
+                              : i === 1
+                              ? "374px"
+                              : i === 3
+                              ? "374px"
+                              : "",
+                        }}
+                      />
                     </div>
                     <div>
                       <h4 className="mb-3">{service.title}</h4>

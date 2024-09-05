@@ -54,12 +54,12 @@ const RandomLinks: React.FC<RandomLinksProps> = ({ subItems }) => {
       <>
         {randomLinks.map((item, index) => (
           <div className="d-flex rounded overflow-hidden mb-3" key={index}>
-            <img
+            {/* <img
               className="img-fluid"
               src={BlogImg1}
               style={{ width: 100, height: 100, objectFit: "cover" }}
               alt="img"
-            />
+            /> */}
             <Link
               to={item.path}
               className="h5 d-flex align-items-center px-3 mb-0"
