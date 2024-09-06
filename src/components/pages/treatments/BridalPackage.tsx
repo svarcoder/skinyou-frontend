@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import BlogImg1 from "../../../assets/massage-2-390x344.jpg";
 import BlogImg2 from "../../../assets/massage-1-390x344.jpg";
 import BlogImg3 from "../../../assets/massage-3-390x344.jpg";
@@ -10,6 +10,9 @@ import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
 const BridalPackage: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const services = [
     "Web Design",
     "Web Development",

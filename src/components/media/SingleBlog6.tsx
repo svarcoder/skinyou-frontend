@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import BlogImg6 from "../../assets/blog/this-rakshabandhan.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./SideBar";
 
 const SingleBlog6: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">

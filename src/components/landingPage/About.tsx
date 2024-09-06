@@ -10,6 +10,7 @@ import {
 import { useInView } from "react-intersection-observer";
 import useWindowWidth from "../../hook/useWindowWidth";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   const windowWidth = useWindowWidth();
@@ -55,15 +56,28 @@ const About: React.FC = () => {
                 contouring. Her clinic is ranked among the top in India,
                 attracting patients worldwide.
               </p>
-              <div className={`${windowWidth >= 991 ? "col-3" : "col-6"} mt-4`}>
+              <div
+                className={`d-flex justify-content-center align-items-center ${
+                  windowWidth >= 991 ? "col-6" : "col-6"
+                } mt-4`}
+                style={{ gap: "10px" }}
+              >
                 <button
                   className="btn btn-primary w-100 py-3 animate__animated animate__bounceInUp animate__slow"
                   type="submit"
-                  onClick={() => navigate("/about")}
+                  onClick={() => navigate("/about-us/dr-geeta-mehra-fazalbhoy")}
                 >
                   Know More
                 </button>
+                <Link
+                  className="btn btn-primary w-100 py-3 animate__animated animate__bounceInUp animate__slow"
+                  to="https://www.instagram.com/drgeetafazalbhoy"
+                  target="_blank"
+                >
+                  Instagram
+                </Link>
               </div>
+
               {/* <div className="row g-3 pt-3">
               <div className="col-sm-3 col-6">
                 <div className="bg-light text-center rounded-circle py-4">

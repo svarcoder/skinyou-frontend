@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import BlogImg11 from "../../assets/blog/myth-about-sunscreen-and-skin.jpg";
 import SideBar from "./SideBar";
 
 const SingleBlog11: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">
@@ -13,7 +16,7 @@ const SingleBlog11: React.FC = () => {
         </div>
       </div>
 
-      <div className="container-fluid pt-5">
+      <div className="container-fluid pt-5 ">
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-9">

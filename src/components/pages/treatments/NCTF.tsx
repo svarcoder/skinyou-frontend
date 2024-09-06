@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import BlogImg1 from "../../../assets/massage-2-390x344.jpg";
 import UserImg from "../../../assets/user.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,9 @@ import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
 import SideBar from "./SideBar";
 
 const NCTF: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">

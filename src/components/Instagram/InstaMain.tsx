@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import BlogImg1 from "../../assets/massage-1-390x344.jpg";
 import BlogImg2 from "../../assets/massage-2-390x344.jpg";
 import BlogImg3 from "../../assets/massage-3-390x344.jpg";
@@ -225,20 +225,14 @@ const articles = [
 ];
 
 const InstaGramPost: React.FC = () => {
-  const [visibleItems, setVisibleItems] = useState(3);
-
-  const loadMore = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
-  };
-
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">
         <div className="container">
           <div className="text-center">
-            <h5 className="isplay-4 about animate__animated animate__bounceInLeft animate__slow">
-              Latest
-            </h5>
             <h1 className="display-4 animate__animated animate__bounceInRight animate__slow">
               Instagram Post
             </h1>
@@ -247,10 +241,10 @@ const InstaGramPost: React.FC = () => {
       </div>
 
       <div className="container-fluid py-5">
-        <div className="section section section-xl">
+        <div className="section section section-xl mt-0 pt-0">
           <div className="container wide">
             <div className="row row-md-80 row-sm-50">
-              {articles.slice(0, visibleItems).map((article, i) => (
+              {articles.map((article, i) => (
                 <div className="col-xs-10 col-md-6 col-lg-4">
                   <Link to={article?.link} target="_blank">
                     <div className="box-info-modern box-md">
@@ -258,7 +252,7 @@ const InstaGramPost: React.FC = () => {
                         <video
                           src={article?.blogImage}
                           className="img-fluid rounded w-100"
-                          // style={{ height: "200px" }}
+                          style={{ height: "200px" }}
                           width={390}
                           height={200}
                           controls
@@ -279,13 +273,13 @@ const InstaGramPost: React.FC = () => {
                 </div>
               ))}
 
-              {visibleItems < articles.length && (
+              {/* {visibleItems < articles.length && (
                 <div className="col-12 text-center" onClick={loadMore}>
                   <button className="btn btn-primary py-3 px-5">
                     Load More
                   </button>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

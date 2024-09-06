@@ -60,6 +60,21 @@ import ActiveAcne from "../pages/treatments/ActiveAcne";
 import GelPeelsTreatment from "../pages/treatments/GelPeelsTreatment";
 import ChemicalPeels from "../pages/treatments/ChemicalPeels";
 import DeepPeel from "../pages/treatments/DeepPeel";
+import BodySlimmingTreatment from "../pages/treatments/BodySlimmingTreatment";
+import LipoContrast from "../pages/treatments/LipoContrast";
+import FatLossInchLoss from "../pages/treatments/FatLossInchLoss";
+import LowLevelLightLaserHairLoss from "../pages/treatments/LowLevelLightLaserHairLoss";
+import PRPHairLossTreatment from "../pages/treatments/PRPHairLossTreatment";
+import StemCellsHairLoss from "../pages/treatments/StemCellsHairLoss";
+import QR678 from "../pages/treatments/QR678";
+import HairLossTreatment from "../pages/treatments/HairLossTreatment";
+import PainlessLaserHairRemoval from "../pages/treatments/PainlessLaserHairRemoval";
+import NDYAGHairRemovalTreatment from "../pages/treatments/NDYAGHairRemovalTreatment";
+import SopranoIce from "../pages/treatments/SopranoIce";
+import Botox from "../pages/treatments/Botox";
+import DermalFillers from "../pages/treatments/DermalFillers";
+import HydrationFiller from "../pages/treatments/HydrationFiller";
+import PRPVampireFacelift from "../pages/treatments/PRPVampireFacelift";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -200,6 +215,51 @@ const HomeRoute: React.FC = () => {
         />
         <Route path="/treatments/chemical-peels" element={<ChemicalPeels />} />
         <Route path="/treatments/deep-peel" element={<DeepPeel />} />
+        <Route
+          path="/treatments/body-slimming-treatment"
+          element={<BodySlimmingTreatment />}
+        />
+        <Route path="/treatments/lipo-contrast" element={<LipoContrast />} />
+        <Route
+          path="/treatments/fat-loss-inch-loss"
+          element={<FatLossInchLoss />}
+        />
+        <Route
+          path="/treatments/lowlevel-light-laser-hair-loss"
+          element={<LowLevelLightLaserHairLoss />}
+        />
+        <Route
+          path="/treatments/PRP-hair-loss-treatment"
+          element={<PRPHairLossTreatment />}
+        />
+        <Route
+          path="/treatments/stem-sells-hair-loss"
+          element={<StemCellsHairLoss />}
+        />
+        <Route path="/treatments/QR678" element={<QR678 />} />
+        <Route
+          path="/treatments/hair-loss-treatment"
+          element={<HairLossTreatment />}
+        />
+        <Route
+          path="/treatments/painless-laser-hair-removal"
+          element={<PainlessLaserHairRemoval />}
+        />
+        <Route
+          path="/treatments/NDYAG-hair-removal-treatment"
+          element={<NDYAGHairRemovalTreatment />}
+        />
+        <Route path="/treatments/soprano-ice" element={<SopranoIce />} />
+        <Route path="/treatments/botox" element={<Botox />} />
+        <Route path="/treatments/dermal-fillers" element={<DermalFillers />} />
+        <Route
+          path="/treatments/hydration-filler"
+          element={<HydrationFiller />}
+        />
+        <Route
+          path="/treatments/PRP-vampire-facelift"
+          element={<PRPVampireFacelift />}
+        />
       </Routes>
       <Footer />
     </Router>

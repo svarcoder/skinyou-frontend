@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import AboutMeImg from "../../assets/Dr geeta Transparent.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -6,18 +6,21 @@ import { Link } from "react-router-dom";
 import BackgroundVideo from "../../assets/About us_2.mp4";
 
 const WhyUs: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">
         <div className="container">
           <div className="text-center">
-            <h1>About Us</h1>
+            <h1>Why Us</h1>
           </div>
         </div>
       </div>
 
       <div className="container-fluid py-5">
-        <div className="container mt-4">
+        <div className="container">
           <div className="row g-5">
             <div className="col-lg-12">
               <div className="mb-5">
@@ -29,8 +32,6 @@ const WhyUs: React.FC = () => {
                   playsInline
                   className="img-fluid w-100 rounded mb-5"
                 />
-
-                <h2 className="mb-4">Why us</h2>
 
                 <p>
                   Skin & You Clinic, Mumbai, is a doctor-based skin clinic that

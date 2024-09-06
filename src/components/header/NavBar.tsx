@@ -206,19 +206,19 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/body-slimming-treatment",
                 label: "Body Slimming Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/lipo-contrast",
                 label: "Lipo Contrast (Lower Level Laser Light)",
               },
               {
-                path: "/",
+                path: "/treatments/fat-loss-inch-loss",
                 label: "Fat Loss & Inch Loss",
               },
               {
-                path: "/",
+                path: "/treatments/accent-ultra-skin-body-contouring",
                 label: "Accent Ultra Skin Body Contouring",
               },
             ],
@@ -229,7 +229,7 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/non-surgical-skin-tightening",
                 label: "Non-Surgical Skin Tightening",
               },
             ],
@@ -247,23 +247,23 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/lowlevel-light-laser-hair-loss",
                 label: "Low Level Light Laser for Hair Loss",
               },
               {
-                path: "/",
+                path: "/treatments/PRP-hair-loss-treatment",
                 label: "PRP for Hair Loss Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/stem-sells-hair-loss",
                 label: "Stem Cells for Hair Loss",
               },
               {
-                path: "/",
+                path: "/treatments/QR678",
                 label: "QR678",
               },
               {
-                path: "/",
+                path: "/treatments/hair-loss-treatment",
                 label: "Hair Loss Treatment",
               },
             ],
@@ -274,15 +274,15 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/painless-laser-hair-removal",
                 label: "Painless Laser Hair Removal",
               },
               {
-                path: "/",
+                path: "/treatments/NDYAG-hair-removal-treatment",
                 label: "NDYAG / Hair Removal Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/soprano-ice",
                 label: "Soprano Ice",
               },
             ],
@@ -300,15 +300,15 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/botox",
                 label: "Botox",
               },
               {
-                path: "/",
+                path: "/treatments/dermal-fillers",
                 label: "Dermal Fillers",
               },
               {
-                path: "/",
+                path: "/treatments/hydration-filler",
                 label: "Hydration Filler",
               },
             ],
@@ -319,7 +319,7 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/PRP-vampire-facelift",
                 label: "PRP Vampire Facelift",
               },
               {
@@ -439,7 +439,7 @@ const navItems = [
         dropdown: true,
         subElements: [
           {
-            path: "/",
+            path: "/treatment-concern/sun-skin-care",
             label: "Sun & Skin Care",
           },
           {

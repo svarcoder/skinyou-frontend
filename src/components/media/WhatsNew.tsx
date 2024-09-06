@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import Article1 from "../../assets/articles/vogue-award-collarge.jpg";
 import Article2 from "../../assets/articles/india-trusted-brand-skinandyou-clinic.jpg";
 import Article3 from "../../assets/articles/femina-style-diva-2015.jpg";
@@ -66,6 +66,9 @@ const articles = [
 ];
 
 const WhatsNew: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">
@@ -76,7 +79,7 @@ const WhatsNew: React.FC = () => {
         </div>
       </div>
 
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-5 pt-0">
         <div className="section section section-xl">
           <div className="container wide">
             <div className="row row-md-80 row-sm-50">

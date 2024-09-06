@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import BlogImg1 from "../../assets/massage-1-390x344.jpg";
 import BlogImg2 from "../../assets/massage-2-390x344.jpg";
 import BlogImg3 from "../../assets/massage-3-390x344.jpg";
@@ -20,6 +20,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact: React.FC = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="section section-lg bg-primary container-top">
@@ -29,7 +32,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid contact py-5">
+      <div className="container-fluid contact py-5 pt-0">
         <div className="container py-5">
           <div
             className="text-center mx-auto mb-5 wow fadeInUp"
@@ -37,13 +40,6 @@ const Contact: React.FC = () => {
             style={{ maxWidth: 900 }}
           >
             <h1 className="display-5 mb-4">Get In Touch With Us</h1>
-            <p className="mb-0">
-              Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae
-              maxime. Vel animi eveniet doloremque reiciendis soluta iste
-              provident non rerum illum perferendis earum est architecto dolores
-              vitae quia vero quod incidunt culpa corporis, porro doloribus.
-              Voluptates nemo doloremque cum.
-            </p>
           </div>
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">

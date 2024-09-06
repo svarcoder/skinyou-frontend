@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import GalleryImage1 from "../../assets/photoGallery/6-sessions-2.jpg";
 import GalleryImage2 from "../../assets/photoGallery/body-contouring.jpg";
 import GalleryImage3 from "../../assets/photoGallery/cosmelan-depigmentation-5.jpg";
@@ -63,6 +63,10 @@ const PhotoGallery: React.FC = () => {
   //   setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
   // };
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       <div className="section section-lg bg-primary container-top">
@@ -73,7 +77,7 @@ const PhotoGallery: React.FC = () => {
         </div>
       </div>
 
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-5 pt-0">
         <div className="section section section-xl">
           <div className="container wide">
             <div className="row row-md-80 row-sm-50">

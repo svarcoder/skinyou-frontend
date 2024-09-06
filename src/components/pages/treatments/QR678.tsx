@@ -6,7 +6,7 @@ import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./SideBar";
 
-const Hyperpigmentation: React.FC = () => {
+const QR678: React.FC = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -15,7 +15,7 @@ const Hyperpigmentation: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Hyperpigmentation</h1>
+            <h1>QR678</h1>
           </div>
         </div>
       </div>
@@ -32,64 +32,61 @@ const Hyperpigmentation: React.FC = () => {
                   style={{ height: "600px" }}
                 />
 
-                <h5>
-                  {" "}
-                  Hyperpigmentation Treatment: Effective Solutions for Uneven
-                  Skin Tone
-                </h5>
+                <h5>QR678: Advanced Hair Restoration</h5>
                 <h5>Description:</h5>
                 <p>
-                  Hyperpigmentation Treatment addresses areas of excessive
-                  pigmentation, such as age spots and sun damage, to achieve a
-                  more even and radiant complexion. We use various advanced
-                  techniques to reduce and manage hyperpigmentation.
+                  QR678 is an innovative hair restoration treatment that uses a
+                  combination of growth factors and regenerative molecules to
+                  stimulate hair growth and improve hair density. This
+                  cutting-edge therapy is designed to address hair thinning and
+                  hair loss with minimal downtime.
                 </p>
 
                 <h5>How It Works:</h5>
                 <p>
-                  Treatment options include laser therapy, chemical peels, and
-                  topical treatments that target and reduce excess melanin
-                  production in the skin.
+                  QR678 involves the injection of a specialized solution
+                  containing growth factors and biomolecules directly into the
+                  scalp. These components promote hair follicle activation and
+                  regeneration, leading to improved hair growth and density.
                 </p>
 
                 <h5>Benefits:</h5>
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Reduces Dark Spots: Lightens areas of excess pigmentation.
+                    Stimulates Hair Growth: Activates dormant hair follicles.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Improves Skin Tone: Enhances overall skin clarity and
-                    evenness.
+                    Improves Hair Density: Enhances the thickness of existing
+                    hair.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Customizable Treatments: Tailored to individual skin needs.
+                    Non-Surgical: Minimally invasive with minimal recovery time.
                   </p>
                 </p>
 
                 <h5>The Procedure:</h5>
                 <p>
-                  Treatment sessions last about 30-45 minutes. A series of
-                  sessions is usually recommended, with minimal discomfort and
-                  downtime.
+                  The treatment typically takes 30-45 minutes and involves a
+                  series of small injections into the scalp. A local anesthetic
+                  is applied to ensure comfort. Results begin to appear in a few
+                  months, with continued improvement over time.
                 </p>
 
                 <h5>Results:</h5>
                 <p>
-                  Improvement in skin tone and reduction in dark spots are
-                  visible after several sessions, with optimal results achieved
-                  over time.
+                  Patients can expect to see noticeable hair growth and
+                  increased density within 3-6 months. Maintenance sessions may
+                  be required to sustain results.
                 </p>
 
-                <h5>
-                  Why Choose Skin & You Clinic for Hyperpigmentation Treatment?
-                </h5>
+                <h5>Why Choose Skin & You Clinic for QR678?</h5>
                 <p>
-                  Our clinic offers effective hyperpigmentation treatments with
-                  advanced technology, providing personalized solutions for a
-                  more even and radiant complexion.
+                  At Skin & You Clinic, we utilize the latest technologies and
+                  techniques to offer effective QR678 treatments tailored to
+                  your specific hair restoration needs.
                 </p>
               </div>
             </div>
@@ -104,4 +101,4 @@ const Hyperpigmentation: React.FC = () => {
   );
 };
 
-export default Hyperpigmentation;
+export default QR678;

@@ -6,7 +6,7 @@ import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./SideBar";
 
-const Hyperpigmentation: React.FC = () => {
+const LipoContrast: React.FC = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -15,7 +15,7 @@ const Hyperpigmentation: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Hyperpigmentation</h1>
+            <h1>Lipo Contrast (Lower Level Laser Light)</h1>
           </div>
         </div>
       </div>
@@ -33,63 +33,65 @@ const Hyperpigmentation: React.FC = () => {
                 />
 
                 <h5>
-                  {" "}
-                  Hyperpigmentation Treatment: Effective Solutions for Uneven
-                  Skin Tone
+                  Lipo Contrast (Lower Level Laser Light): Targeted Fat Loss and
+                  Inch Reduction
                 </h5>
                 <h5>Description:</h5>
                 <p>
-                  Hyperpigmentation Treatment addresses areas of excessive
-                  pigmentation, such as age spots and sun damage, to achieve a
-                  more even and radiant complexion. We use various advanced
-                  techniques to reduce and manage hyperpigmentation.
+                  Lipo Contrast uses lower-level laser light technology to
+                  target and reduce localized fat deposits, promoting inch loss
+                  and body contouring without invasive surgery. This
+                  non-invasive treatment is designed to help you achieve a
+                  slimmer and more toned appearance.
                 </p>
 
                 <h5>How It Works:</h5>
                 <p>
-                  Treatment options include laser therapy, chemical peels, and
-                  topical treatments that target and reduce excess melanin
-                  production in the skin.
+                  The lower-level laser light penetrates the skin to target fat
+                  cells, causing them to release their stored fatty acids. These
+                  fatty acids are then naturally metabolized by the body. This
+                  process helps reduce fat in specific areas and improves body
+                  contours.
                 </p>
 
                 <h5>Benefits:</h5>
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Reduces Dark Spots: Lightens areas of excess pigmentation.
+                    Localized Fat Reduction: Targets stubborn fat deposits for
+                    inch loss.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Improves Skin Tone: Enhances overall skin clarity and
-                    evenness.
+                    Non-Invasive: No need for surgery or downtime.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Customizable Treatments: Tailored to individual skin needs.
+                    Quick and Convenient: Treatment sessions are relatively
+                    short and require minimal recovery.
                   </p>
                 </p>
 
                 <h5>The Procedure:</h5>
                 <p>
-                  Treatment sessions last about 30-45 minutes. A series of
-                  sessions is usually recommended, with minimal discomfort and
-                  downtime.
+                  Each session lasts around 30-45 minutes and involves the
+                  application of laser pads to targeted areas. You can resume
+                  normal activities immediately, with visible results typically
+                  appearing after a series of treatments.
                 </p>
 
                 <h5>Results:</h5>
                 <p>
-                  Improvement in skin tone and reduction in dark spots are
-                  visible after several sessions, with optimal results achieved
-                  over time.
+                  Inch loss and body contouring effects are usually noticeable
+                  after several sessions, with optimal results achieved with
+                  consistent treatments.
                 </p>
 
-                <h5>
-                  Why Choose Skin & You Clinic for Hyperpigmentation Treatment?
-                </h5>
+                <h5>Why Choose Skin & You Clinic for Lipo Contrast?</h5>
                 <p>
-                  Our clinic offers effective hyperpigmentation treatments with
-                  advanced technology, providing personalized solutions for a
-                  more even and radiant complexion.
+                  Our clinic uses advanced Lipo Contrast technology to offer
+                  effective fat reduction treatments tailored to your specific
+                  needs, helping you achieve your body contouring goals.
                 </p>
               </div>
             </div>
@@ -104,4 +106,4 @@ const Hyperpigmentation: React.FC = () => {
   );
 };
 
-export default Hyperpigmentation;
+export default LipoContrast;

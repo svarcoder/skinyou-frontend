@@ -6,7 +6,7 @@ import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./SideBar";
 
-const Hyperpigmentation: React.FC = () => {
+const FatLossInchLoss: React.FC = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -15,7 +15,7 @@ const Hyperpigmentation: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container ">
           <div className="text-center ">
-            <h1>Hyperpigmentation</h1>
+            <h1>Fat Loss & Inch Loss</h1>
           </div>
         </div>
       </div>
@@ -33,63 +33,67 @@ const Hyperpigmentation: React.FC = () => {
                 />
 
                 <h5>
-                  {" "}
-                  Hyperpigmentation Treatment: Effective Solutions for Uneven
-                  Skin Tone
+                  Fat Loss & Inch Loss: Advanced Solutions for Body Contouring
                 </h5>
                 <h5>Description:</h5>
                 <p>
-                  Hyperpigmentation Treatment addresses areas of excessive
-                  pigmentation, such as age spots and sun damage, to achieve a
-                  more even and radiant complexion. We use various advanced
-                  techniques to reduce and manage hyperpigmentation.
+                  Fat Loss & Inch Loss treatments are designed to target and
+                  reduce localized fat deposits, helping you achieve a slimmer
+                  and more contoured physique. Utilizing advanced technologies,
+                  these treatments focus on both fat reduction and inch loss,
+                  providing effective non-surgical solutions for body sculpting.
                 </p>
 
                 <h5>How It Works:</h5>
                 <p>
-                  Treatment options include laser therapy, chemical peels, and
-                  topical treatments that target and reduce excess melanin
-                  production in the skin.
+                  These treatments use a variety of technologies, such as
+                  cryolipolysis (fat freezing), radiofrequency, or laser
+                  therapy, to break down fat cells in targeted areas. The fat
+                  cells are then naturally metabolized and expelled by the body,
+                  leading to a reduction in fat volume and inch loss.
                 </p>
 
                 <h5>Benefits:</h5>
                 <p className="d-flex flex-column justify-content-start">
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Reduces Dark Spots: Lightens areas of excess pigmentation.
+                    Targeted Fat Reduction: Focuses on specific areas to reduce
+                    fat and inches.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Improves Skin Tone: Enhances overall skin clarity and
-                    evenness.
+                    Non-Invasive: No need for surgery or extensive downtime.
                   </p>
                   <p className="rounded mb-0 d-flex align-items-center">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2" />
-                    Customizable Treatments: Tailored to individual skin needs.
+                    Quick and Convenient: Sessions are relatively short and
+                    require minimal recovery time.
                   </p>
                 </p>
 
                 <h5>The Procedure:</h5>
                 <p>
-                  Treatment sessions last about 30-45 minutes. A series of
-                  sessions is usually recommended, with minimal discomfort and
-                  downtime.
+                  Depending on the chosen technology, treatment sessions
+                  typically last 30-60 minutes. The process involves the
+                  application of the technology to the targeted areas, with
+                  minimal discomfort and immediate resumption of daily
+                  activities.
                 </p>
 
                 <h5>Results:</h5>
                 <p>
-                  Improvement in skin tone and reduction in dark spots are
-                  visible after several sessions, with optimal results achieved
-                  over time.
+                  Fat loss and inch reduction are typically noticeable after a
+                  series of treatments. Optimal results are achieved with
+                  consistent sessions, with continued improvement over time.
                 </p>
 
-                <h5>
-                  Why Choose Skin & You Clinic for Hyperpigmentation Treatment?
-                </h5>
+                <h5>Why Choose Skin & You Clinic for Fat Loss & Inch Loss?</h5>
                 <p>
-                  Our clinic offers effective hyperpigmentation treatments with
-                  advanced technology, providing personalized solutions for a
-                  more even and radiant complexion.
+                  At Skin & You Clinic, we use advanced technologies and
+                  personalized treatment plans to effectively target fat
+                  deposits and help you achieve your body contouring goals. Our
+                  expert team ensures a comfortable and effective experience
+                  tailored to your needs.
                 </p>
               </div>
             </div>
@@ -104,4 +108,4 @@ const Hyperpigmentation: React.FC = () => {
   );
 };
 
-export default Hyperpigmentation;
+export default FatLossInchLoss;

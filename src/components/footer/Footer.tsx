@@ -16,12 +16,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const footerItems = [
-  { path: "/", label: "Treatments" },
-  { path: "/", label: "Skin & Faq" },
-  { path: "/", label: "Photogallery" },
-  { path: "/", label: "Blogs" },
-  { path: "/", label: "About us" },
-  { path: "/", label: "How to Prepare for an appointment" },
+  { path: "/treatments/oxygen-facial-treatment", label: "Treatments" },
+  { path: "/treatment-concern/sun-skin-care", label: "Skin & Faq" },
+  { path: "/media/photogallery", label: "Photogallery" },
+  { path: "/media/blog", label: "Blogs" },
+  { path: "/about-us/dr-geeta-mehra-fazalbhoy", label: "About us" },
+  {
+    path: "/about-us/how-to-prepare-for-an-appointment",
+    label: "How to Prepare for an appointment",
+  },
 ];
 
 const Footer: React.FC = () => {
