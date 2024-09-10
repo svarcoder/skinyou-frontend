@@ -25,13 +25,6 @@ const PRPHairLossTreatment: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
-                  style={{ height: "600px" }}
-                />
-
                 <p>
                   Most adult’s loose about 75 to 100 hair from their scalp
                   everyday where some hairs are in the falling phase (telogen),

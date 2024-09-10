@@ -14,7 +14,7 @@ interface RandomLinksProps {
 }
 
 const RandomLinks: React.FC<RandomLinksProps> = ({ subItems }) => {
-  const getRandomLinks = (subItems: SubItem[], count = 8) => {
+  const getRandomLinks = (subItems: SubItem[], count = 15) => {
     const shuffled = subItems.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   };

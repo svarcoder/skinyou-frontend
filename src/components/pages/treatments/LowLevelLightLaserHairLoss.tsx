@@ -25,13 +25,6 @@ const LowLevelLightLaserHairLoss: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
-                  style={{ height: "600px" }}
-                />
-
                 <h5>
                   SCIENCE & TECHNOLOGY UNITE TO GIVE YOU… THICKER, FULLER AND
                   HEALTHIER HAIR!

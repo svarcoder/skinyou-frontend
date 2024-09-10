@@ -23,12 +23,6 @@ const ActiveAcne: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
-                  style={{ height: "600px" }}
-                />
                 <h5>Active Acne Treatment: Comprehensive Care for Acne</h5>
 
                 <h5>Description:</h5>

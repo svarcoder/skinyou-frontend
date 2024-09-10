@@ -75,6 +75,22 @@ import Botox from "../pages/treatments/Botox";
 import DermalFillers from "../pages/treatments/DermalFillers";
 import HydrationFiller from "../pages/treatments/HydrationFiller";
 import PRPVampireFacelift from "../pages/treatments/PRPVampireFacelift";
+import PRP from "../pages/treatments/PRP";
+import DermaRollerTreatment from "../pages/treatments/DermaRollerTreatment";
+import DermapenHairFace from "../pages/treatments/DermapenHairFace";
+import DermapenExosomePolynucleotide from "../pages/treatments/DermapenExosomePolynucleotide";
+import PainlessTattooRemoval from "../pages/treatments/PainlessTattooRemoval";
+import TattooRemoval from "../pages/treatments/TattooRemoval";
+import TribeamTattoo from "../pages/treatments/TribeamTattoo";
+import HarmonyXLBirthMarkRemoval from "../pages/treatments/HarmonyXLBirthMarkRemoval";
+import HarmonyXLSpiderVeinRemoval from "../pages/treatments/HarmonyXLSpiderVeinRemoval";
+import AlmaHarmonyXL from "../pages/treatments/AlmaHarmonyXL";
+import SemiPermanentMakeup from "../pages/treatments/SemiPermanentMakeup";
+import MedicalTattooing from "../pages/treatments/MedicalTattooing";
+import WartRemoval from "../pages/treatments/WartRemoval";
+import NailInfection from "../pages/treatments/NailInfection";
+import TribeamCarbonTreatment from "../pages/treatments/TribeamCarbonTreatment";
+import LaserToning from "../pages/treatments/LaserToning";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -260,6 +276,49 @@ const HomeRoute: React.FC = () => {
           path="/treatments/PRP-vampire-facelift"
           element={<PRPVampireFacelift />}
         />
+        <Route path="/treatments/PRP" element={<PRP />} />
+        <Route
+          path="/treatments/derma-roller-treatment"
+          element={<DermaRollerTreatment />}
+        />
+        <Route
+          path="/treatments/dermapen-hair-face"
+          element={<DermapenHairFace />}
+        />
+        <Route
+          path="/treatments/dermapen-exosome-polynucleotide"
+          element={<DermapenExosomePolynucleotide />}
+        />
+        <Route
+          path="/treatments/painless-tattoo-removal"
+          element={<PainlessTattooRemoval />}
+        />
+        <Route path="/treatments/tattoo-removal" element={<TattooRemoval />} />
+        <Route path="/treatments/tribeam-tattoo" element={<TribeamTattoo />} />
+        <Route
+          path="/treatments/harmony-XL-birth-mark-removal"
+          element={<HarmonyXLBirthMarkRemoval />}
+        />
+        <Route
+          path="/treatments/harmony-XL-spider-vein-removal"
+          element={<HarmonyXLSpiderVeinRemoval />}
+        />
+        <Route path="/treatments/alma-harmony-XL" element={<AlmaHarmonyXL />} />
+        <Route
+          path="/treatments/semi-permanent-makeup"
+          element={<SemiPermanentMakeup />}
+        />
+        <Route
+          path="/treatments/medical-tattooing"
+          element={<MedicalTattooing />}
+        />
+        <Route path="/treatments/wart-removal" element={<WartRemoval />} />
+        <Route path="/treatments/nail-in-fection" element={<NailInfection />} />
+        <Route
+          path="/treatments/tribeam-carbon-treatment"
+          element={<TribeamCarbonTreatment />}
+        />
+        <Route path="/treatments/laser-toning" element={<LaserToning />} />
       </Routes>
       <Footer />
     </Router>

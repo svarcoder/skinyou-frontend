@@ -25,13 +25,6 @@ const PainlessLaserHairRemoval: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
-                  style={{ height: "600px" }}
-                />
-
                 <p>
                   How does the laser work – Hair has pigment called melanin that
                   gives it colour. Laser works on the colour of hair and on its

@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import BlogImg1 from "../../../assets/massage-2-390x344.jpg";
+import ArticleVideo from "../../../assets/Treatments/Face Thread Lift.mp4";
 import UserImg from "../../../assets/user.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
@@ -25,13 +25,15 @@ const FaceThreadLift: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
+                <video
+                  src={ArticleVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
                   style={{ height: "600px" }}
                 />
-
                 <h5>
                   Face Thread Lift: Non-Surgical Skin Lifting and Tightening
                 </h5>

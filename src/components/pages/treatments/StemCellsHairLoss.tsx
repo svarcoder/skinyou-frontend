@@ -25,13 +25,6 @@ const StemCellsHairLoss: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
-                  style={{ height: "600px" }}
-                />
-
                 <h5>WHAT IS STEM CELL?</h5>
                 <p>
                   Stem cells are progeny cells which later on differentiate and

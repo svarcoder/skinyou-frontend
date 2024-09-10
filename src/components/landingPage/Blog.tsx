@@ -1,8 +1,7 @@
 import React from "react";
-import BlogImg1 from "../../assets/cosmetician-gives-botox-injection-in-the-stomach-N3Y4WGD-1024x678.jpg";
-import BlogImg2 from "../../assets/beautiful-patient-woman-smile-lying-on-bed-in-surg-P2RWSH3-1024x678.jpg";
-import BlogImg3 from "../../assets/woman-in-cosmetology-studio-on-laser-hair-removal-8SLYCSJ-1024x678.jpg";
-import UserImg from "../../assets/user.jpg";
+import BlogImg1 from "../../assets/blog/beauty-possibilities.jpg";
+import BlogImg4 from "../../assets/blog/lipocontrast-blog.jpg";
+import BlogImg11 from "../../assets/blog/thread-lift.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faComment } from "@fortawesome/free-regular-svg-icons";
 import useWindowWidth from "../../hook/useWindowWidth";
@@ -12,47 +11,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
+import { Link, useNavigate } from "react-router-dom";
 
 const articles = [
   {
     id: 1,
-    title: "SKIN CARE DURING MONSOON",
+    title: "Thread Lift",
+    blogImage: BlogImg11,
     description:
-      "After bearing that extreme heat of sun in summer days monsoon comes as sing of relief , little changes in the way you take care of your skin could have positive effects during monsoons.",
-    blogImage: BlogImg1,
-    authorImage: UserImg,
-    author: "Dr. Geeta",
-    views: 12345,
-    comments: 123,
-    link: "/skin-care-during-monsoon",
+      "Get Healthier, Firmer & Tighter Skin in few Minutes Indications Lines and Wrinkles Folds benefits Healthier, Firmer & Tighter Skin Hepls Restoring Firmness & giving youthful appearance Skin Lifting Results Last upto 2 years but Collagen Stimulation may go on Procedure just 45 mins. procedure Therads can be done for face & neck Best suited",
+    link: "/media/blog-details/1",
   },
   {
     id: 2,
-    title: "Myth About Sunscreen And Skin",
+    title: "Beauty Possibilities",
+    blogImage: BlogImg1,
     description:
-      "UVA rays are present whenever it’s light outside, even in the morning or late afternoon, during the winter or on cloudy days. So a sunscreen is always required. ",
-    blogImage: BlogImg2,
-    authorImage: UserImg,
-    author: "Dr. Geeta",
-    views: 12345,
-    comments: 123,
-    link: "/myth-about-sunscreen-and-skin",
+      "We have a solution to your each concern Concerns Solution Hair concerns:Hair fall, Hair thinning, patches in hair, Dandruff Hair light, growth factor injections, Hair transplant Forehead concerns: Worry lines, frown lines, eye brow lift Botox, vampire lift, Threads Eye concern: Crow’s feet, Dark circles, sunken eyes, Hollow eyes Botox, fillers, vampire lift Mid face",
+    link: "/media/blog-details/2",
   },
   {
-    id: 1,
-    title: "Get Detanned at Skin & You Clinic",
-    description: "How can one avoid sun tanning?",
-    blogImage: BlogImg3,
-    authorImage: UserImg,
-    author: "Dr. Geeta",
-    views: 12345,
-    comments: 123,
-    link: "/get-detanned-at-skin-you-clinc",
+    id: 3,
+    title: "Now “LIPOCONTRAST” at skin & you clinic",
+    blogImage: BlogImg4,
+    description:
+      "LipoContrast is a new technology that results in localized fat reduction within a Selective and non-invasive procedure: thermal contrast lipolysis. Lipocontrast is the non-invasive technique for local fat reduction is on the move. DURATION OF THE TREATMENT Single session will last about 60 minutes. EFFECTS: Fat cells elimination The elimination process of exposed adipocytes to",
+    link: "/media/blog-details/3",
   },
 ];
 
 const Blog: React.FC = () => {
   const windowWidth = useWindowWidth();
+  const navigate = useNavigate();
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -108,6 +98,13 @@ const Blog: React.FC = () => {
     prevArrow: <PrevArrow />,
   };
 
+  const truncateText = (text: string, maxLength: number = 100): string => {
+    if (text.length > maxLength) {
+      return text.slice(0, maxLength) + "...";
+    }
+    return text;
+  };
+
   return (
     <div className="container-fluid py-5" ref={ref}>
       <div className="container">
@@ -140,15 +137,13 @@ const Blog: React.FC = () => {
                           alt="img"
                         />
                         <div className="pt-4 pb-4">
-                          <a
-                            className="h3 d-block mb-3"
-                            href={article?.link}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link className="h3 d-block mb-3" to={article?.link}>
                             {article.title}
-                          </a>
-                          <p className="m-0">{article.description}</p>
+                          </Link>
+                          <p className="m-0">
+                            {" "}
+                            {truncateText(article?.description)}
+                          </p>
                         </div>
                         {/* <div className="d-flex justify-content-between border-top p-4">
           <div className="d-flex align-items-center">
@@ -209,15 +204,13 @@ const Blog: React.FC = () => {
                         alt="img"
                       />
                       <div className="pt-4 pb-4">
-                        <a
-                          className="h3 d-block mb-3"
-                          href={article?.link}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                        <Link className="h3 d-block mb-3" to={article?.link}>
                           {article.title}
-                        </a>
-                        <p className="m-0">{article.description}</p>
+                        </Link>
+                        <p className="m-0">
+                          {" "}
+                          {truncateText(article?.description)}
+                        </p>
                       </div>
                       {/* <div className="d-flex justify-content-between border-top p-4">
           <div className="d-flex align-items-center">
@@ -259,6 +252,13 @@ const Blog: React.FC = () => {
                 ))}
               </div>
             )}
+      </div>
+
+      <div
+        className="col-12 text-center mt-4"
+        onClick={() => navigate("/media/blog")}
+      >
+        <button className="btn btn-primary py-3 px-5">Load More</button>
       </div>
     </div>
   );

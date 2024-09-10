@@ -252,9 +252,9 @@ const InstaGramPost: React.FC = () => {
                         <video
                           src={article?.blogImage}
                           className="img-fluid rounded w-100"
-                          style={{ height: "200px" }}
+                          // style={{ height: "200px" }}
                           width={390}
-                          height={200}
+                          // height={200}
                           controls
                           autoPlay={true}
                           muted={true}

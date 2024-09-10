@@ -323,19 +323,19 @@ const navItems = [
                 label: "PRP Vampire Facelift",
               },
               {
-                path: "/",
+                path: "/treatments/PRP",
                 label: "PRP",
               },
               {
-                path: "/",
+                path: "/treatments/derma-roller-treatment",
                 label: "Derma Roller Treatment",
               },
               {
-                path: "/",
+                path: "/treatments/dermapen-hair-face",
                 label: "Dermapen for Hair and Face",
               },
               {
-                path: "/",
+                path: "/treatments/dermapen-exosome-polynucleotide",
                 label: "Dermapen Exosome Polynucleotide",
               },
             ],
@@ -353,15 +353,15 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/painless-tattoo-removal",
                 label: "Painless Tattoo Removal",
               },
               {
-                path: "/",
+                path: "/treatments/tattoo-removal",
                 label: "Tattoo Removal",
               },
               {
-                path: "/",
+                path: "/treatments/tribeam-tattoo",
                 label: "Tribeam Tattoo",
               },
             ],
@@ -372,19 +372,19 @@ const navItems = [
             dropdown: true,
             subElements: [
               {
-                path: "/",
+                path: "/treatments/harmony-XL-birth-mark-removal",
                 label: "Harmony XL Birth Mark Removal",
               },
               {
-                path: "/",
+                path: "/treatments/harmony-XL-spider-vein-removal",
                 label: "Harmony XL Spider Vein Removal",
               },
               {
-                path: "/",
+                path: "/treatments/clear-lift-photo-facial",
                 label: "Clear Lift Photo Facial",
               },
               {
-                path: "/",
+                path: "/treatments/alma-harmony-XL",
                 label: "Alma Harmony XL",
               },
             ],
@@ -397,31 +397,27 @@ const navItems = [
         dropdown: true,
         subElements: [
           {
-            path: "/",
+            path: "/treatments/semi-permanent-makeup",
             label: "Semi-Permanent Makeup",
           },
           {
-            path: "/",
+            path: "/treatments/medical-tattooing",
             label: "Medical Tattooing",
           },
           {
-            path: "/",
+            path: "/treatments/wart-removal",
             label: "Wart Removal",
           },
           {
-            path: "/",
+            path: "/treatments/nail-in-fection",
             label: "Nail Infection",
           },
           {
-            path: "/",
-            label: "Carbon Peel",
-          },
-          {
-            path: "/",
+            path: "/treatments/tribeam-carbon-treatment",
             label: "Tribeam Carbon Treatment",
           },
           {
-            path: "/",
+            path: "/treatments/laser-toning",
             label: "Laser Toning",
           },
         ],

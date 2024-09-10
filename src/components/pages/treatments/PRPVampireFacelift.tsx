@@ -25,12 +25,6 @@ const PRPVampireFacelift: React.FC = () => {
           <div className="row g-5">
             <div className="col-lg-9">
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={BlogImg1}
-                  alt="img"
-                  style={{ height: "600px" }}
-                />
                 <h5>VAMPIRE FACE LIFT FOR FACE</h5>
                 <p>Use your own blood to look beautiful</p>
                 <h5>VAMPIRE FACELIFT</h5>

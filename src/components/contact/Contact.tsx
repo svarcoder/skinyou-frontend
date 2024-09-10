@@ -28,19 +28,12 @@ const Contact: React.FC = () => {
       <div className="section section-lg bg-primary container-top">
         <div className="container">
           <div className="text-center">
-            <h1>Contact Us</h1>
+            <h1>Get In Touch With Us</h1>
           </div>
         </div>
       </div>
       <div className="container-fluid contact py-5 pt-0">
         <div className="container py-5">
-          <div
-            className="text-center mx-auto mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-            style={{ maxWidth: 900 }}
-          >
-            <h1 className="display-5 mb-4">Get In Touch With Us</h1>
-          </div>
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
               <h2 className="display-5 mb-2">Our Contact Form</h2>
@@ -166,9 +159,8 @@ const Contact: React.FC = () => {
                     target="_blank"
                   >
                     <h4>Mobile</h4>
-                    <p className="mb-0">(+91 22) 43154000</p>
-                    <p className="mb-0">(+91 22) 22843000</p>
-                    <p className="mb-0">(+91 22) 22825555</p>
+                    <p className="mb-0">(+91) 99200 33331</p>
+                    <p className="mb-0">(+91) 22431 54000</p>
                   </Link>
                 </div>
               </div>
