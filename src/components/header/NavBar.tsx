@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
+import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 const navItems = [
   { path: "/", label: "Home" },
@@ -439,44 +441,53 @@ const navItems = [
             label: "Sun & Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/acne-scars",
+            path: "/treatment-concern/x-ray-skin",
             label: "X-Ray of Skin (Skin Analysis)",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/rosacea-pink-face",
+            path: "/treatment-concern/oily-skin-care",
             label: "Oily Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/eczema",
+            path: "/treatment-concern/dry-skin-care",
             label: "Dry Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/allergy-itching",
+            path: "/treatment-concern/normal-combination-skin-care",
             label: "Normal / Combination Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/warts-corns",
+            path: "/treatment-concern/pigmented-skin-care",
             label: "Pigmented Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/skin-growths",
+            path: "/treatment-concern/sensitive-skin-care",
             label: "Sensitive Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/keloid-hypertrophic-scars",
+            path: "/treatment-concern/nutrition-skin-care",
             label: "Nutrition & Skin Care",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/dry-skin-xerosis",
+            path: "/treatment-concern/skin-care-through-ages",
             label: "Skin Care Through the Ages",
           },
           {
-            path: "/medical-clinic/dermatology-treatment/skin-problem/bacterial-infection",
+            path: "/treatment-concern/skin-care-smoking",
             label: "Skin Care & Smoking",
           },
-          { path: "/", label: "Causes of facial wrinkles" },
-          { path: "/", label: "Facial volume loss Treatment" },
-          { path: "/", label: "Skin rejuvenation Treatment" },
+          {
+            path: "/treatment-concern/causes-facial-wrinkles",
+            label: "Causes of facial wrinkles",
+          },
+          {
+            path: "/treatment-concern/facial-volume-loss-treatment",
+            label: "Facial volume loss Treatment",
+          },
+          {
+            path: "/treatment-concern/skin-rejuvenation-treatment",
+            label: "Skin rejuvenation Treatment",
+          },
         ],
       },
       {
@@ -485,11 +496,11 @@ const navItems = [
         dropdown: true,
         subElements: [
           {
-            path: "/medical-clinic/laser-treatment/painless-laser-hair-removal",
+            path: "/treatment-concern/acne",
             label: "Acne",
           },
           {
-            path: "/medical-clinic/laser-treatment/stretch-marks-treatment",
+            path: "/treatment-concern/acne-scars",
             label: "Acne Scars",
           },
           {
@@ -651,6 +662,294 @@ const navItems = [
   },
 ];
 
+interface SubItem {
+  path: string;
+  label: string;
+}
+
+const itemData: SubItem[] = [
+  {
+    path: "/treatments/oxygen-facial-treatment",
+    label: "Oxygen Facial Treatment",
+  },
+  {
+    path: "/treatments/hydration-facial-treatment",
+    label: "Hydration Facial Treatment",
+  },
+  {
+    path: "/treatments/silk-peel-dermalInfusion",
+    label: "Silk Peel Dermal Infusion",
+  },
+  {
+    path: "/treatments/crystal-exfoliation",
+    label: "Crystal Exfoliation",
+  },
+  {
+    path: "/treatments/nctf",
+    label: "NCTF",
+  },
+  {
+    path: "/treatments/viscoderm",
+    label: "Viscoderm",
+  },
+  {
+    path: "/treatments/diamond-tip",
+    label: "Diamond Tip",
+  },
+  {
+    path: "/treatments/glutathione-whitening-treatment",
+    label: "Glutathione Whitening Treatment",
+  },
+  {
+    path: "/treatments/clean-up",
+    label: "Clean Up (Pore cleansing)",
+  },
+  {
+    path: "/treatments/caci-treatment",
+    label: "CACI Treatment",
+  },
+  {
+    path: "/treatments/skin-polishing",
+    label: "Skin Polishing",
+  },
+  {
+    path: "/treatments/body-face-tightening",
+    label: "Body & Face Tightening",
+  },
+  {
+    path: "/treatments/non-surgical-skin-tightening",
+    label: "Non-Surgical Skin Tightening",
+  },
+  {
+    path: "/treatments/fine-lines-wrinkles",
+    label: "Fine Lines & Wrinkles",
+  },
+  {
+    path: "/treatments/wrinkle-reduction",
+    label: "Wrinkle Reduction",
+  },
+  {
+    path: "/treatments/clear-lift-photo-facial",
+    label: "Clear Lift Photo Facial",
+  },
+  {
+    path: "/treatments/radiofrequency-growth-removal",
+    label: "Radiofrequency Growth Removal (RF Growth Removal)",
+  },
+  {
+    path: "/treatments/accent-ultra-rf-pixel",
+    label: "Accent Ultra RF Pixel",
+  },
+  {
+    path: "/treatments/accent-ultra-skin-body-contouring",
+    label: "Accent Ultra Skin Body Contouring",
+  },
+  {
+    path: "/treatments/ultracel-q-hifu",
+    label: "Ultracel Q+ HIFU",
+  },
+  {
+    path: "/treatments/face-thread-lift",
+    label: "Face Thread Lift",
+  },
+  {
+    path: "/treatments/body-thread-lift",
+    label: "Body Thread Lift",
+  },
+  {
+    path: "/treatments/liquid-facelift-treatment",
+    label: "Liquid Facelift Treatment",
+  },
+  {
+    path: "/treatments/mesotherapy-treatment",
+    label: "PRP Vampire Facelift",
+  },
+  {
+    path: "/treatments/mesotherapy-treatment",
+    label: "Mesotherapy Treatment",
+  },
+  {
+    path: "/treatments/whitening-facial-treatment",
+    label: "Whitening Facial",
+  },
+  {
+    path: "/treatments/cosmelan-depigmentation-treatment",
+    label: "Cosmelan Depigmentation Treatment",
+  },
+  {
+    path: "/treatments/melasma",
+    label: "Melasma",
+  },
+  {
+    path: "/treatments/hyperpigmentation",
+    label: "Hyperpigmentation",
+  },
+  {
+    path: "/treatments/pigmented-lesion",
+    label: "Pigmented Lesion",
+  },
+  {
+    path: "/treatments/crystal-skin-polishing",
+    label: "Crystal Skin Polishing",
+  },
+  {
+    path: "/treatments/acne-scars",
+    label: "Acne Scars",
+  },
+  {
+    path: "/treatments/active-acne",
+    label: "Active Acne",
+  },
+  {
+    path: "/treatments/gel-peels-treatment",
+    label: "Gel Peels",
+  },
+  {
+    path: "/treatments/chemical-peels",
+    label: "Chemical Peels",
+  },
+  {
+    path: "/treatments/deep-peel",
+    label: "Deep Peel",
+  },
+  {
+    path: "/treatments/body-slimming-treatment",
+    label: "Body Slimming Treatment",
+  },
+  {
+    path: "/treatments/lipo-contrast",
+    label: "Lipo Contrast (Lower Level Laser Light)",
+  },
+  {
+    path: "/treatments/fat-loss-inch-loss",
+    label: "Fat Loss & Inch Loss",
+  },
+  {
+    path: "/treatments/accent-ultra-skin-body-contouring",
+    label: "Accent Ultra Skin Body Contouring",
+  },
+  {
+    path: "/treatments/non-surgical-skin-tightening",
+    label: "Non-Surgical Skin Tightening",
+  },
+  {
+    path: "/treatments/lowlevel-light-laser-hair-loss",
+    label: "Low Level Light Laser for Hair Loss",
+  },
+  {
+    path: "/treatments/PRP-hair-loss-treatment",
+    label: "PRP for Hair Loss Treatment",
+  },
+  {
+    path: "/treatments/stem-sells-hair-loss",
+    label: "Stem Cells for Hair Loss",
+  },
+  {
+    path: "/treatments/QR678",
+    label: "QR678",
+  },
+  {
+    path: "/treatments/hair-loss-treatment",
+    label: "Hair Loss Treatment",
+  },
+  {
+    path: "/treatments/painless-laser-hair-removal",
+    label: "Painless Laser Hair Removal",
+  },
+  {
+    path: "/treatments/NDYAG-hair-removal-treatment",
+    label: "NDYAG / Hair Removal Treatment",
+  },
+  {
+    path: "/treatments/soprano-ice",
+    label: "Soprano Ice",
+  },
+  {
+    path: "/treatments/botox",
+    label: "Botox",
+  },
+  {
+    path: "/treatments/dermal-fillers",
+    label: "Dermal Fillers",
+  },
+  {
+    path: "/treatments/hydration-filler",
+    label: "Hydration Filler",
+  },
+  {
+    path: "/treatments/PRP-vampire-facelift",
+    label: "PRP Vampire Facelift",
+  },
+  {
+    path: "/treatments/PRP",
+    label: "PRP",
+  },
+  {
+    path: "/treatments/derma-roller-treatment",
+    label: "Derma Roller Treatment",
+  },
+  {
+    path: "/treatments/dermapen-hair-face",
+    label: "Dermapen for Hair and Face",
+  },
+  {
+    path: "/treatments/dermapen-exosome-polynucleotide",
+    label: "Dermapen Exosome Polynucleotide",
+  },
+  {
+    path: "/treatments/painless-tattoo-removal",
+    label: "Painless Tattoo Removal",
+  },
+  {
+    path: "/treatments/tattoo-removal",
+    label: "Tattoo Removal",
+  },
+  {
+    path: "/treatments/tribeam-tattoo",
+    label: "Tribeam Tattoo",
+  },
+  {
+    path: "/treatments/harmony-XL-birth-mark-removal",
+    label: "Harmony XL Birth Mark Removal",
+  },
+  {
+    path: "/treatments/harmony-XL-spider-vein-removal",
+    label: "Harmony XL Spider Vein Removal",
+  },
+  {
+    path: "/treatments/clear-lift-photo-facial",
+    label: "Clear Lift Photo Facial",
+  },
+  {
+    path: "/treatments/alma-harmony-XL",
+    label: "Alma Harmony XL",
+  },
+  {
+    path: "/treatments/semi-permanent-makeup",
+    label: "Semi-Permanent Makeup",
+  },
+  {
+    path: "/treatments/medical-tattooing",
+    label: "Medical Tattooing",
+  },
+  {
+    path: "/treatments/wart-removal",
+    label: "Wart Removal",
+  },
+  {
+    path: "/treatments/nail-in-fection",
+    label: "Nail Infection",
+  },
+  {
+    path: "/treatments/tribeam-carbon-treatment",
+    label: "Tribeam Carbon Treatment",
+  },
+  {
+    path: "/treatments/laser-toning",
+    label: "Laser Toning",
+  },
+];
+
 const NavBar: React.FC = () => {
   const location = useLocation();
   const [activeTab, setActiveTab] = useState<string>(location.pathname);
@@ -662,14 +961,13 @@ const NavBar: React.FC = () => {
   };
 
   const renderMenu = (items: any, index: any) => {
-    // If items are more than 13, split them into sections
     const chunkSize = 18;
     const chunks =
       items.length > chunkSize
         ? Array.from({ length: Math.ceil(items.length / chunkSize) }, (_, i) =>
             items.slice(i * chunkSize, i * chunkSize + chunkSize)
           )
-        : [items]; // No split if less than or equal to chunkSize
+        : [items];
 
     return (
       <ul className="dropdown-menu multi-level">
@@ -714,6 +1012,22 @@ const NavBar: React.FC = () => {
     );
   };
 
+  const [results, setResults] = useState<SubItem[]>([]);
+  const [query, setQuery] = useState("");
+
+  const handleSearch = (filteredResults: SubItem[]) => {
+    setResults(filteredResults);
+  };
+
+  const navigate = useNavigate();
+
+  const handleSelect = (e: any, path: string) => {
+    e.preventDefault();
+    setResults([]);
+    setQuery("");
+    navigate(`${path}`);
+  };
+
   return (
     <div className="container-fluid navbar-wrap">
       <div className="container">
@@ -756,6 +1070,25 @@ const NavBar: React.FC = () => {
                   {item.dropdown && renderMenu(item.subItems, index)}
                 </li>
               ))}
+              <SearchBar
+                data={itemData}
+                onSearch={handleSearch}
+                query={query}
+                setQuery={setQuery}
+              />
+              {results.length > 0 && (
+                <ul className="result-shown border rounded mt-2 bg-white shadow-lg w-full py-2 p-0">
+                  {results.map((item) => (
+                    <li
+                      key={item.label}
+                      className="p-2 border-b hover:bg-gray-100 "
+                      onClick={(e) => handleSelect(e, item.path)}
+                    >
+                      <strong>{item.label}</strong>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </ul>
           </div>
         </nav>

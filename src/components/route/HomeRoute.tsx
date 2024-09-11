@@ -91,6 +91,20 @@ import WartRemoval from "../pages/treatments/WartRemoval";
 import NailInfection from "../pages/treatments/NailInfection";
 import TribeamCarbonTreatment from "../pages/treatments/TribeamCarbonTreatment";
 import LaserToning from "../pages/treatments/LaserToning";
+import SunSkinCare from "../pages/concern/SunSkinCare";
+import XRaySkin from "../pages/concern/X-RaySkin";
+import OilySkinCare from "../pages/concern/OilySkinCare";
+import DrySkinCare from "../pages/concern/DrySkinCare";
+import NormalCombinationSkinCare from "../pages/concern/NormalCombinationSkinCare";
+import PigmentedSkinCare from "../pages/concern/PigmentedSkinCare";
+import SensitiveSkinCare from "../pages/concern/SensitiveSkinCare";
+import NutritionSkinCare from "../pages/concern/NutritionSkinCare";
+import SkinCareThroughAges from "../pages/concern/SkinCareThroughAges";
+import SkinCareSmoking from "../pages/concern/SkinCareSmoking";
+import CausesFacialWrinkles from "../pages/concern/CausesFacialWrinkles";
+import FacialVolumeLossTreatment from "../pages/concern/FacialVolumeLossTreatment";
+import SkinRejuvenationTreatment from "../pages/concern/SkinRejuvenationTreatment";
+import Acne from "../pages/concern/Acne";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -319,6 +333,57 @@ const HomeRoute: React.FC = () => {
           element={<TribeamCarbonTreatment />}
         />
         <Route path="/treatments/laser-toning" element={<LaserToning />} />
+        <Route
+          path="/treatment-concern/sun-skin-care"
+          element={<SunSkinCare />}
+        />
+        <Route path="/treatment-concern/x-ray-skin" element={<XRaySkin />} />
+        <Route
+          path="/treatment-concern/oily-skin-care"
+          element={<OilySkinCare />}
+        />
+        <Route
+          path="/treatment-concern/dry-skin-care"
+          element={<DrySkinCare />}
+        />
+        <Route
+          path="/treatment-concern/normal-combination-skin-care"
+          element={<NormalCombinationSkinCare />}
+        />
+        <Route
+          path="/treatment-concern/pigmented-skin-care"
+          element={<PigmentedSkinCare />}
+        />
+        <Route
+          path="/treatment-concern/sensitive-skin-care"
+          element={<SensitiveSkinCare />}
+        />
+        <Route
+          path="/treatment-concern/nutrition-skin-care"
+          element={<NutritionSkinCare />}
+        />
+        <Route
+          path="/treatment-concern/skin-care-through-ages"
+          element={<SkinCareThroughAges />}
+        />
+        <Route
+          path="/treatment-concern/skin-care-smoking"
+          element={<SkinCareSmoking />}
+        />
+        <Route
+          path="/treatment-concern/causes-facial-wrinkles"
+          element={<CausesFacialWrinkles />}
+        />
+        <Route
+          path="/treatment-concern/facial-volume-loss-treatment"
+          element={<FacialVolumeLossTreatment />}
+        />
+        <Route
+          path="/treatment-concern/skin-rejuvenation-treatment"
+          element={<SkinRejuvenationTreatment />}
+        />
+        <Route path="/treatment-concern/acne" element={<Acne />} />
+        <Route path="/treatment-concern/acne-scars" element={<AcneScars />} />
       </Routes>
       <Footer />
     </Router>
