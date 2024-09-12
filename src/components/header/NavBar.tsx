@@ -504,39 +504,45 @@ const navItems = [
             label: "Acne Scars",
           },
           {
-            path: "/medical-clinic/laser-treatment/scars-treatment",
+            path: "/treatment-concern/rosacea-pink-face",
             label: "Rosacea / Pink Face",
           },
           {
-            path: "/medical-clinic/laser-treatment/burn-scars-treatment",
+            path: "/treatment-concern/eczema",
             label: "Eczema",
           },
           {
-            path: "/medical-clinic/laser-treatment/keloid-treatment",
+            path: "/treatment-concern/allergy-itching",
             label: "Allergy / Itching",
           },
           {
-            path: "/medical-clinic/laser-treatment/photo-facial",
+            path: "/treatment-concern/warts-corns",
             label: "Warts / Corns",
           },
           {
-            path: "/medical-clinic/laser-treatment/birth-mark-treatment",
+            path: "/treatment-concern/unwanted-skin-growths",
             label: "Unwanted Skin Growths",
           },
           {
-            path: "/medical-clinic/laser-treatment/acne-scar-treatment",
+            path: "/treatment-concern/keloid-hypertrophic-scars",
             label: "Keloid / Hypertrophic Scars",
           },
           {
-            path: "/medical-clinic/laser-treatment/laser-skin-whitening",
+            path: "/treatment-concern/dry-skin-xerosis",
             label: "Dry Skin / Xerosis",
           },
           {
-            path: "/medical-clinic/pigmentation-removal-treatment",
+            path: "/treatment-concern/bacterial-infection",
             label: "Bacterial Infection",
           },
-          { path: "/", label: "Fungal Infection" },
-          { path: "/", label: "Viral Infection" },
+          {
+            path: "/treatment-concern/fungal-infection",
+            label: "Fungal Infection",
+          },
+          {
+            path: "/treatment-concern/viral-infection",
+            label: "Viral Infection",
+          },
           { path: "/", label: "Candid Infection" },
           { path: "/", label: "Psoriasis" },
           { path: "/", label: "Lichen Planus" },
@@ -1035,6 +1041,7 @@ const NavBar: React.FC = () => {
           <a
             href="/"
             className="navbar-brand d-flex justify-content-between align-items-center"
+            style={{ width: "150px", height: "60px" }}
           >
             <img src={Logo} alt="Logo" className="m-0 logo w-100" />
           </a>

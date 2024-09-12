@@ -105,6 +105,16 @@ import CausesFacialWrinkles from "../pages/concern/CausesFacialWrinkles";
 import FacialVolumeLossTreatment from "../pages/concern/FacialVolumeLossTreatment";
 import SkinRejuvenationTreatment from "../pages/concern/SkinRejuvenationTreatment";
 import Acne from "../pages/concern/Acne";
+import RosaceaPinkFace from "../pages/concern/RosaceaPinkFace";
+import Eczema from "../pages/concern/Eczema";
+import AllergyItching from "../pages/concern/AllergyItching";
+import WartsCorns from "../pages/concern/WartsCorns";
+import UnwantedSkinGrowths from "../pages/concern/UnwantedSkinGrowths";
+import KeloidHypertrophicScars from "../pages/concern/KeloidHypertrophicScars";
+import DrySkinXerosis from "../pages/concern/DrySkinXerosis";
+import BacterialInfection from "../pages/concern/BacterialInfection";
+import FungalInfection from "../pages/concern/FungalInfection";
+import ViralInfection from "../pages/concern/ViralInfection";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -384,6 +394,40 @@ const HomeRoute: React.FC = () => {
         />
         <Route path="/treatment-concern/acne" element={<Acne />} />
         <Route path="/treatment-concern/acne-scars" element={<AcneScars />} />
+        <Route
+          path="/treatment-concern/rosacea-pink-face"
+          element={<RosaceaPinkFace />}
+        />
+        <Route path="/treatment-concern/eczema" element={<Eczema />} />
+        <Route
+          path="/treatment-concern/allergy-itching"
+          element={<AllergyItching />}
+        />
+        <Route path="/treatment-concern/warts-corns" element={<WartsCorns />} />
+        <Route
+          path="/treatment-concern/unwanted-skin-growths"
+          element={<UnwantedSkinGrowths />}
+        />
+        <Route
+          path="/treatment-concern/keloid-hypertrophic-scars"
+          element={<KeloidHypertrophicScars />}
+        />
+        <Route
+          path="/treatment-concern/dry-skin-xerosis"
+          element={<DrySkinXerosis />}
+        />
+        <Route
+          path="/treatment-concern/bacterial-infection"
+          element={<BacterialInfection />}
+        />
+        <Route
+          path="/treatment-concern/fungal-infection"
+          element={<FungalInfection />}
+        />
+        <Route
+          path="/treatment-concern/viral-infection"
+          element={<ViralInfection />}
+        />
       </Routes>
       <Footer />
     </Router>
