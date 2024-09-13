@@ -543,18 +543,36 @@ const navItems = [
             path: "/treatment-concern/viral-infection",
             label: "Viral Infection",
           },
-          { path: "/", label: "Candid Infection" },
-          { path: "/", label: "Psoriasis" },
-          { path: "/", label: "Lichen Planus" },
-          { path: "/", label: "Vitiligo / White Patches" },
-          { path: "/", label: "Xanthelasma Palpebrarum" },
-          { path: "/", label: "Pigmentation (Melasma / Freckles)" },
-          { path: "/", label: "Burns" },
-          { path: "/", label: "Lice & Bites" },
-          { path: "/", label: "Drug Reaction" },
-          { path: "/", label: "Mouth Ulcers" },
-          { path: "/", label: "Excessive Sweating" },
-          { path: "/", label: "Seborrheic Dermatitis" },
+          {
+            path: "/treatment-concern/candid-infection",
+            label: "Candid Infection",
+          },
+          { path: "/treatment-concern/psoriasis", label: "Psoriasis" },
+          { path: "/treatment-concern/lichen-planus", label: "Lichen Planus" },
+          {
+            path: "/treatment-concern/vitiligo-white-patches",
+            label: "Vitiligo / White Patches",
+          },
+          {
+            path: "/treatment-concern/xanthelasma-palpebrarum",
+            label: "Xanthelasma Palpebrarum",
+          },
+          {
+            path: "/treatment-concern/pigmentation",
+            label: "Pigmentation (Melasma / Freckles)",
+          },
+          { path: "/treatment-concern/burns", label: "Burns" },
+          { path: "/treatment-concern/lice-bites", label: "Lice & Bites" },
+          { path: "/treatment-concern/drug-reaction", label: "Drug Reaction" },
+          { path: "/treatment-concern/mouth-ulcers", label: "Mouth Ulcers" },
+          {
+            path: "/treatment-concern/excessive-sweating",
+            label: "Excessive Sweating",
+          },
+          {
+            path: "/treatment-concern/seborrheic-dermatitis",
+            label: "Seborrheic Dermatitis",
+          },
         ],
       },
       {
@@ -562,8 +580,14 @@ const navItems = [
         label: "Nail problem",
         dropdown: true,
         subElements: [
-          { path: "/", label: "Nail Infections" },
-          { path: "/", label: "Splitting / Peeling / Brittle Nails" },
+          {
+            path: "/treatment-concernnail-infections",
+            label: "Nail Infections",
+          },
+          {
+            path: "/treatment-concern/splitting-peeling-brittle-nails",
+            label: "Splitting / Peeling / Brittle Nails",
+          },
         ],
       },
       {
@@ -572,10 +596,13 @@ const navItems = [
         dropdown: true,
         subElements: [
           {
-            path: "/",
+            path: "/treatment-concern/alma-double-chin-radio-frequency-skin-tightening",
             label: "Alma Double Chin Radio Frequency Skin Tightening",
           },
-          { path: "/", label: "Vampire Face lift" },
+          {
+            path: "/treatment-concern/vampire-face-lift",
+            label: "Vampire Face lift",
+          },
         ],
       },
       {
@@ -583,10 +610,22 @@ const navItems = [
         label: "Laser based",
         dropdown: true,
         subElements: [
-          { path: "/", label: "Painless Laser Hair Removal" },
-          { path: "/", label: "Stretch Marks Treatment" },
-          { path: "/", label: "Scars Treatment" },
-          { path: "/", label: "Burn Scars Treatment" },
+          {
+            path: "/treatment-concern/painless-laserHair-removal-concern",
+            label: "Painless Laser Hair Removal",
+          },
+          {
+            path: "/treatment-concern/stretch-marks-treatment",
+            label: "Stretch Marks Treatment",
+          },
+          {
+            path: "/treatment-concern/scars-treatment",
+            label: "Scars Treatment",
+          },
+          {
+            path: "/treatment-concern/burn-scars-treatment",
+            label: "Burn Scars Treatment",
+          },
           { path: "/", label: "Keloid Treatment" },
           { path: "/", label: "Photo Facial" },
           { path: "/", label: "Birth Mark Treatment" },
@@ -967,7 +1006,7 @@ const NavBar: React.FC = () => {
   };
 
   const renderMenu = (items: any, index: any) => {
-    const chunkSize = 18;
+    const chunkSize = 12;
     const chunks =
       items.length > chunkSize
         ? Array.from({ length: Math.ceil(items.length / chunkSize) }, (_, i) =>
@@ -1007,6 +1046,7 @@ const NavBar: React.FC = () => {
                       <b className="caret"></b>
                     )}
                   </a>
+
                   {(item.subItems || item.subElements) &&
                     renderMenu(item.subItems || item.subElements, index)}
                 </li>

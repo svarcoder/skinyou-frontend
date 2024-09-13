@@ -58,7 +58,7 @@ const About: React.FC = () => {
               </p>
               <div
                 className={`d-flex justify-content-center align-items-center ${
-                  windowWidth >= 991 ? "col-6" : "col-6"
+                  windowWidth >= 991 ? "col-6" : "col-10"
                 } mt-4`}
                 style={{ gap: "10px" }}
               >

@@ -115,6 +115,26 @@ import DrySkinXerosis from "../pages/concern/DrySkinXerosis";
 import BacterialInfection from "../pages/concern/BacterialInfection";
 import FungalInfection from "../pages/concern/FungalInfection";
 import ViralInfection from "../pages/concern/ViralInfection";
+import CandidInfection from "../pages/concern/CandidInfection";
+import Psoriasis from "../pages/concern/Psoriasis";
+import LichenPlanus from "../pages/concern/LichenPlanus";
+import VitiligoWhitePatches from "../pages/concern/VitiligoWhitePatches";
+import XanthelasmaPalpebrarum from "../pages/concern/XanthelasmaPalpebrarum";
+import Pigmentation from "../pages/concern/Pigmentation";
+import Burns from "../pages/concern/Burns";
+import LiceBites from "../pages/concern/LiceBites";
+import DrugReaction from "../pages/concern/DrugReaction";
+import MouthUlcers from "../pages/concern/MouthUlcers";
+import ExcessiveSweating from "../pages/concern/ExcessiveSweating";
+import SeborrheicDermatitis from "../pages/concern/SeborrheicDermatitis";
+import NailInfections from "../pages/concern/NailInfections";
+import SplittingPeelingBrittleNails from "../pages/concern/SplittingPeelingBrittleNails";
+import AlmaDoubleChinRadioFrequencySkinTightening from "../pages/concern/AlmaDoubleChinRadioFrequencySkinTightening";
+import VampireFaceLift from "../pages/concern/VampireFaceLift";
+import PainlessLaserHairRemoval2 from "../pages/concern/PainlessLaserHairRemoval2";
+import StretchMarksTreatment from "../pages/concern/StretchMarksTreatment";
+import ScarsTreatment from "../pages/concern/ScarsTreatment";
+import BurnScarsTreatment from "../pages/concern/BurnScarsTreatment";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -427,6 +447,77 @@ const HomeRoute: React.FC = () => {
         <Route
           path="/treatment-concern/viral-infection"
           element={<ViralInfection />}
+        />
+        <Route
+          path="/treatment-concern/candid-infection"
+          element={<CandidInfection />}
+        />
+        <Route path="/treatment-concern/psoriasis" element={<Psoriasis />} />
+        <Route
+          path="/treatment-concern/lichen-planus"
+          element={<LichenPlanus />}
+        />
+        <Route
+          path="/treatment-concern/vitiligo-white-patches"
+          element={<VitiligoWhitePatches />}
+        />
+        <Route
+          path="/treatment-concern/xanthelasma-palpebrarum"
+          element={<XanthelasmaPalpebrarum />}
+        />
+        <Route
+          path="/treatment-concern/pigmentation"
+          element={<Pigmentation />}
+        />
+        <Route path="/treatment-concern/burns" element={<Burns />} />
+        <Route path="/treatment-concern/lice-bites" element={<LiceBites />} />
+        <Route
+          path="/treatment-concern/drug-reaction"
+          element={<DrugReaction />}
+        />
+        <Route
+          path="/treatment-concern/mouth-ulcers"
+          element={<MouthUlcers />}
+        />
+        <Route
+          path="/treatment-concern/excessive-sweating"
+          element={<ExcessiveSweating />}
+        />
+        <Route
+          path="/treatment-concern/seborrheic-dermatitis"
+          element={<SeborrheicDermatitis />}
+        />
+        <Route
+          path="/treatment-concernnail-infections"
+          element={<NailInfections />}
+        />
+        <Route
+          path="/treatment-concern/splitting-peeling-brittle-nails"
+          element={<SplittingPeelingBrittleNails />}
+        />
+        <Route
+          path="/treatment-concern/alma-double-chin-radio-frequency-skin-tightening"
+          element={<AlmaDoubleChinRadioFrequencySkinTightening />}
+        />
+        <Route
+          path="/treatment-concern/vampire-face-lift"
+          element={<VampireFaceLift />}
+        />
+        <Route
+          path="/treatment-concern/painless-laserHair-removal-concern"
+          element={<PainlessLaserHairRemoval2 />}
+        />
+        <Route
+          path="/treatment-concern/stretch-marks-treatment"
+          element={<StretchMarksTreatment />}
+        />
+        <Route
+          path="/treatment-concern/scars-treatment"
+          element={<ScarsTreatment />}
+        />
+        <Route
+          path="/treatment-concern/burn-scars-treatment"
+          element={<BurnScarsTreatment />}
         />
       </Routes>
       <Footer />
