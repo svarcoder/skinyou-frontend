@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -20,7 +21,7 @@ const services = [
     title: "Body & face laser hair removal",
     description:
       "Experience smooth, hair-free skin with our advanced, pain-free laser technology.",
-    link: "/",
+    link: "/treatments/painless-laser-hair-removal",
   },
   {
     id: 2,
@@ -28,7 +29,7 @@ const services = [
     title: "Tattoo removal",
     description:
       "Safely erase unwanted tattoos with precision laser treatments, leaving your skin clear.",
-    link: "/",
+    link: "/treatments/tattoo-removal",
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ const services = [
     title: "Fat Loss & Inch loss",
     description:
       "Achieve your body goals with non-invasive, targeted fat reduction and contouring.",
-    link: "/",
+    link: "/treatments/fat-loss-inch-loss",
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ const services = [
     title: "Botox",
     description:
       "Effortlessly smooth wrinkles and rejuvenate your skin with our expert Botox treatment.",
-    link: "/",
+    link: "/treatments/botox",
   },
   {
     id: 5,
@@ -52,12 +53,13 @@ const services = [
     title: "Body and Face Tightening",
     description:
       "Lift and tighten sagging skin with our cutting-edge, non-surgical radiofrequency treatments.",
-    link: "/",
+    link: "/treatments/body-face-tightening",
   },
 ];
 
 const Services2: React.FC = () => {
   const windowWidth = useWindowWidth();
+  const navigate = useNavigate();
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -171,6 +173,7 @@ const Services2: React.FC = () => {
                                 ? "#A8D9D8"
                                 : "white",
                           }}
+                          onClick={()=> navigate(`${service.link}`)}
                         >
                           Know More
                         </button>
@@ -242,6 +245,7 @@ const Services2: React.FC = () => {
                               ? "#A8D9D8"
                               : "white",
                         }}
+                        onClick={()=> navigate(`${service.link}`)}
                       >
                         Know More
                       </button>

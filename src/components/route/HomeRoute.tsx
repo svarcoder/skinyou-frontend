@@ -135,6 +135,24 @@ import PainlessLaserHairRemoval2 from "../pages/concern/PainlessLaserHairRemoval
 import StretchMarksTreatment from "../pages/concern/StretchMarksTreatment";
 import ScarsTreatment from "../pages/concern/ScarsTreatment";
 import BurnScarsTreatment from "../pages/concern/BurnScarsTreatment";
+import KeloidTreatment from "../pages/concern/KeloidTreatment";
+import PhotoFacial from "../pages/concern/PhotoFacial";
+import BirthMarkTreatment from "../pages/concern/BirthMarkTreatment";
+import InchLoss from "../pages/concern/InchLoss";
+import AcneScarTreatment from "../pages/concern/AcneScarTreatment";
+import PigmentationRemovalTreatment from "../pages/concern/PigmentationRemovalTreatment";
+import LaserSkinWhitening from "../pages/concern/LaserSkinWhitening";
+import FrownLineWorryLineTreatment from "../pages/concern/FrownLineWorryLineTreatment";
+import EyebrowShapingLiftingTreatment from "../pages/concern/EyebrowShapingLiftingTreatment";
+import PeriorbitalDarkCircleCrowsFeet from "../pages/concern/PeriorbitalDarkCircleCrowsFeet";
+import CheekEnhancementTreatment from "../pages/concern/CheekEnhancementTreatment";
+import LipEnhancementTreatment from "../pages/concern/LipEnhancementTreatment";
+import SmileLine from "../pages/concern/SmileLine";
+import ChinJawLineSkinTighteningTreatment from "../pages/concern/ChinJawLineSkinTighteningTreatment";
+import Cellulite from "../pages/concern/Cellulite";
+import FatDissolveInjection from "../pages/concern/FatDissolveInjection";
+import AccentUltraBodyShaping from "../pages/concern/AccentUltraBodyShaping";
+import VShapedFaceTightening from "../pages/concern/VShapedFaceTightening";
 
 const HomeRoute: React.FC = () => {
   return (
@@ -518,6 +536,79 @@ const HomeRoute: React.FC = () => {
         <Route
           path="/treatment-concern/burn-scars-treatment"
           element={<BurnScarsTreatment />}
+        />
+
+        <Route
+          path="/treatment-concern/keloid-treatment"
+          element={<KeloidTreatment />}
+        />
+        <Route
+          path="/treatment-concern/photo-facial"
+          element={<PhotoFacial />}
+        />
+        <Route
+          path="/treatment-concern/birth-mark-treatment"
+          element={<BirthMarkTreatment />}
+        />
+        <Route
+          path="/treatment-concern/inch-loss"
+          element={<InchLoss />}
+        />
+        <Route
+          path="/treatment-concern/acne-scar-treatment"
+          element={<AcneScarTreatment />}
+        />
+        <Route
+          path="/treatment-concern/pigmentation-removal-treatment"
+          element={<PigmentationRemovalTreatment />}
+        />
+        <Route
+          path="/treatment-concern/laser-skin-whitening"
+          element={<LaserSkinWhitening />}
+        />
+        <Route
+          path="/treatment-concern/frown-lineWorry-line-treatment"
+          element={<FrownLineWorryLineTreatment />}
+        />
+        <Route
+          path="/treatment-concern/eyebrow-shaping-lifting-treatment"
+          element={<EyebrowShapingLiftingTreatment />}
+        />
+        <Route
+          path="/treatment-concern/periorbital-dark-circle-crows-feet"
+          element={<PeriorbitalDarkCircleCrowsFeet />}
+        />
+        <Route
+          path="/treatment-concern/cheek-enhancement-reatment"
+          element={<CheekEnhancementTreatment />}
+        />
+        <Route
+          path="/treatment-concern/lip-enhancement-treatment"
+          element={<LipEnhancementTreatment />}
+        />
+        <Route
+          path="/treatment-concern/smile-line"
+          element={<SmileLine />}
+        />
+        <Route
+          path="/treatment-concern/chin-jaw-line-skin-tightening-treatment"
+          element={<ChinJawLineSkinTighteningTreatment />}
+        />
+        <Route
+          path="/treatment-concern/cellulite"
+          element={<Cellulite />}
+        />
+        <Route
+          path="/treatment-concern/fat-dissolve-injection"
+          element={<FatDissolveInjection />}
+        />
+        <Route
+          path="/treatment-concern/accent-ultra-body-shaping"
+          element={<AccentUltraBodyShaping />}
+        />
+        <Route
+          path="/treatment-concern/v-shaped-face-tightening"
+          element={<VShapedFaceTightening />}
         />
       </Routes>
       <Footer />
