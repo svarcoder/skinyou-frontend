@@ -10,6 +10,7 @@ interface SearchBarProps {
   onSearch: (results: SubItem[]) => void;
   query: string;
   setQuery: React.Dispatch<React.SetStateAction<string>>;
+  handleInputBlur: () => void
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({
@@ -17,6 +18,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
   onSearch,
   query,
   setQuery,
+  handleInputBlur
 }) => {
   useEffect(() => {
     if (query === "") {
@@ -36,6 +38,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       onChange={(e) => setQuery(e.target.value)}
       placeholder="Search..."
       className="border rounded p-2 w-full"
+      onBlur={handleInputBlur}
     />
   );
 };

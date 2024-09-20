@@ -599,3 +599,9 @@ h5 {
 .result-shown li {
   cursor: pointer;
 }
+
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+

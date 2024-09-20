@@ -626,12 +626,27 @@ const navItems = [
             path: "/treatment-concern/burn-scars-treatment",
             label: "Burn Scars Treatment",
           },
-          { path: "/treatment-concern/keloid-treatment", label: "Keloid Treatment" },
+          {
+            path: "/treatment-concern/keloid-treatment",
+            label: "Keloid Treatment",
+          },
           { path: "/treatment-concern/photo-facial", label: "Photo Facial" },
-          { path: "/treatment-concern/birth-mark-treatment", label: "Birth Mark Treatment" },
-          { path: "/treatment-concern/acne-scar-treatment", label: "Acne Scar Treatment" },
-          { path: "/treatment-concern/laser-skin-whitening", label: "Laser Skin Whitening" },
-          { path: "/treatment-concern/pigmentation-removal-treatment", label: "Pigmentation Removal Treatment" },
+          {
+            path: "/treatment-concern/birth-mark-treatment",
+            label: "Birth Mark Treatment",
+          },
+          {
+            path: "/treatment-concern/acne-scar-treatment",
+            label: "Acne Scar Treatment",
+          },
+          {
+            path: "/treatment-concern/laser-skin-whitening",
+            label: "Laser Skin Whitening",
+          },
+          {
+            path: "/treatment-concern/pigmentation-removal-treatment",
+            label: "Pigmentation Removal Treatment",
+          },
         ],
       },
       {
@@ -639,13 +654,31 @@ const navItems = [
         label: "Botox",
         dropdown: true,
         subElements: [
-          { path: "/treatment-concern/frown-lineWorry-line-treatment", label: "Frown Line / Worry Line Treatment" },
-          { path: "/treatment-concern/eyebrow-shaping-lifting-treatment", label: "Eyebrow Shaping / Lifting Treatment" },
-          { path: "/treatment-concern/periorbital-dark-circle-crows-feet", label: "Periorbital Dark Circle / Crows Feet" },
-          { path: "/treatment-concern/cheek-enhancement-reatment", label: "Cheek Enhancement Treatment" },
-          { path: "/treatment-concern/lip-enhancement-treatment", label: "Lip Enhancement Treatment" },
+          {
+            path: "/treatment-concern/frown-lineWorry-line-treatment",
+            label: "Frown Line / Worry Line Treatment",
+          },
+          {
+            path: "/treatment-concern/eyebrow-shaping-lifting-treatment",
+            label: "Eyebrow Shaping / Lifting Treatment",
+          },
+          {
+            path: "/treatment-concern/periorbital-dark-circle-crows-feet",
+            label: "Periorbital Dark Circle / Crows Feet",
+          },
+          {
+            path: "/treatment-concern/cheek-enhancement-reatment",
+            label: "Cheek Enhancement Treatment",
+          },
+          {
+            path: "/treatment-concern/lip-enhancement-treatment",
+            label: "Lip Enhancement Treatment",
+          },
           { path: "/treatment-concern/smile-line", label: "Smile Line" },
-          { path: "/treatment-concern/chin-jaw-line-skin-tightening-treatment", label: "Chin / Jaw Line Skin Tightening Treatment" },
+          {
+            path: "/treatment-concern/chin-jaw-line-skin-tightening-treatment",
+            label: "Chin / Jaw Line Skin Tightening Treatment",
+          },
         ],
       },
       {
@@ -655,8 +688,14 @@ const navItems = [
         subElements: [
           { path: "/treatment-concern/inch-loss", label: "Inch Loss" },
           { path: "/treatment-concern/cellulite", label: "Cellulite" },
-          { path: "/treatment-concern/fat-dissolve-injection", label: "Fat dissolve Injection" },
-          { path: "/treatment-concern/accent-ultra-body-shaping", label: "Accent Ultra Body Shaping" },
+          {
+            path: "/treatment-concern/fat-dissolve-injection",
+            label: "Fat dissolve Injection",
+          },
+          {
+            path: "/treatment-concern/accent-ultra-body-shaping",
+            label: "Accent Ultra Body Shaping",
+          },
         ],
       },
       {
@@ -668,8 +707,14 @@ const navItems = [
             path: "/treatment-concern/alma-double-chin-radio-frequency-skin-tightening",
             label: "Alma Double Chin Radio Frequency Skin Tightening",
           },
-          {    path: "/treatment-concern/vampire-face-lift", label: "Vampire Face lift" },
-          { path: "/treatment-concern/v-shaped-face-tightening", label: "V Shaped Face Tightening" },
+          {
+            path: "/treatment-concern/vampire-face-lift",
+            label: "Vampire Face lift",
+          },
+          {
+            path: "/treatment-concern/v-shaped-face-tightening",
+            label: "V Shaped Face Tightening",
+          },
         ],
       },
     ],
@@ -1022,6 +1067,7 @@ const NavBar: React.FC = () => {
               key={chunkIndex}
               className="menu-section"
               // style={{ overflowY: "auto", maxHeight: "300px" }} // Apply overflow here
+              onClick={(e) => e.stopPropagation()}
             >
               {chunk.map((item: any, itemIndex: any) => (
                 <li
@@ -1031,6 +1077,7 @@ const NavBar: React.FC = () => {
                       ? "nav-elem dropdown-submenu"
                       : "nav-elem"
                   }
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <a
                     href={item.dropdown ? "#" : item.path}
@@ -1040,6 +1087,7 @@ const NavBar: React.FC = () => {
                         : "nav-elem"
                     }
                     style={{ fontSize: "12px" }}
+                    onClick={(e) => e.stopPropagation()}
                   >
                     {item.label}
                     {(item.subItems || item.subElements) && (
@@ -1072,6 +1120,18 @@ const NavBar: React.FC = () => {
     setResults([]);
     setQuery("");
     navigate(`${path}`);
+  };
+
+  const [showInput, setShowInput] = useState(false);
+
+  const handleIconClick = () => {
+    setShowInput(true); // Show input when icon is clicked
+  };
+
+  const handleInputBlur = () => {
+    setShowInput(false); 
+    setResults([]);
+    setQuery("");
   };
 
   return (
@@ -1110,6 +1170,7 @@ const NavBar: React.FC = () => {
                         : "nav-link"
                     }
                     data-toggle={item.dropdown ? "dropdown" : ""}
+                    onClick={(e) => e.stopPropagation()}
                   >
                     {item.label}
                     {item.dropdown && <b className="caret"></b>}
@@ -1117,12 +1178,22 @@ const NavBar: React.FC = () => {
                   {item.dropdown && renderMenu(item.subItems, index)}
                 </li>
               ))}
-              <SearchBar
-                data={itemData}
-                onSearch={handleSearch}
-                query={query}
-                setQuery={setQuery}
-              />
+
+              {showInput ? (
+                <SearchBar
+                  data={itemData}
+                  onSearch={handleSearch}
+                  query={query}
+                  setQuery={setQuery}
+                  handleInputBlur={handleInputBlur}
+                />
+              ) : (
+                <i
+                  className="bi bi-search search-icon mt-1"
+                  onClick={handleIconClick}
+                ></i>
+              )}
+
               {results.length > 0 && (
                 <ul className="result-shown border rounded mt-2 bg-white shadow-lg w-full py-2 p-0">
                   {results.map((item) => (
